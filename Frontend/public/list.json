@@ -1,0 +1,66 @@
+[
+	{
+		"id": 1,
+		"name": "Glaucoma Congress",
+		"title": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, et totam.",
+		"price": 0,
+		"category": "Free",
+		"image": "./meeting1.jpg"
+	},
+	{
+		"id": 2,
+		"name": "Eye Congress",
+		"title": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, et totam.",
+		"price": 10,
+		"category": "Free",
+		"image": "./meeting2.jpg"
+	},
+	{
+		"id": 3,
+		"name": "Soon Congress!!!",
+		"title": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, et totam.",
+		"price": 20,
+		"category": "Free",
+		"image": "./meeting3.png"
+	},
+	{
+		"id": 4,
+		"name": "Soon Congress",
+		"title": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, et totam.",
+		"price": 110,
+		"category": "soon",
+		"image": "https://img.freepik.com/free-vector/flat-design-minimal-ophthalmologist-webinar_23-2149342093.jpg?t=st=1734613499~exp=1734617099~hmac=60f9e183081bd802e44d39e42e856f5e8bef1bde18c38344879dfb0da05309f1&w=1800"
+	},
+	{
+		"id": 5,
+		"name": "Free Stile Congress",
+		"title": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, et totam.",
+		"price": 330,
+		"category": "active",
+		"image": "https://img.freepik.com/free-vector/flat-design-minimal-ophthalmologist-webinar_23-2149342093.jpg?t=st=1734613499~exp=1734617099~hmac=60f9e183081bd802e44d39e42e856f5e8bef1bde18c38344879dfb0da05309f1&w=1800"
+	},
+	{
+		"id": 6,
+		"name": "Dock Congress",
+		"title": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, et totam.",
+		"price": 90,
+		"category": "Dea",
+		"image": "https://img.freepik.com/free-vector/flat-design-minimal-ophthalmologist-webinar_23-2149342093.jpg?t=st=1734613499~exp=1734617099~hmac=60f9e183081bd802e44d39e42e856f5e8bef1bde18c38344879dfb0da05309f1&w=1800"
+	},
+	{
+		"id": 7,
+		"name": "Story Congress",
+		"title": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, et totam.",
+		"price": 50,
+		"category": "story",
+		"image": "https://img.freepik.com/free-vector/flat-design-minimal-ophthalmologist-webinar_23-2149342093.jpg?t=st=1734613499~exp=1734617099~hmac=60f9e183081bd802e44d39e42e856f5e8bef1bde18c38344879dfb0da05309f1&w=1800"
+	},
+	{
+		"id": 8,
+		"name": "First Congress",
+		"title": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, et totam.",
+		"price": 80,
+		"category": "Free",
+		"image": "https://img.freepik.com/free-vector/flat-design-minimal-ophthalmologist-webinar_23-2149342093.jpg?t=st=1734613499~exp=1734617099~hmac=60f9e183081bd802e44d39e42e856f5e8bef1bde18c38344879dfb0da05309f1&w=1800"
+	}
+]
