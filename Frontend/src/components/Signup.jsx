@@ -15,6 +15,7 @@ function Signup() {
 		formState: { errors },
 	} = useForm()
 
+	axios.defaults.withCredentials = true
 	const onSubmit = async data => {
 		const userInfo = {
 			fullname: data.fullname,
@@ -22,7 +23,7 @@ function Signup() {
 			password: data.password,
 		}
 		await axios
-			.post('http://localhost:4002/user/signup', userInfo)
+			.post('https://ags-gray.vercel.app/user/signup', userInfo)
 			.then(res => {
 				console.log(res.data)
 				if (res.data) {

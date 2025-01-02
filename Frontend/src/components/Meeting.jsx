@@ -8,8 +8,9 @@ function Meeting() {
 
 	useEffect(() => {
 		const getConference = async () => {
+			axios.defaults.withCredentials = true
 			try {
-				const res = await axios.get('http://localhost:4002/conference')
+				const res = await axios.get('https://ags-gray.vercel.app/conference')
 				console.log(res.data)
 				setConference(res.data)
 			} catch (error) {

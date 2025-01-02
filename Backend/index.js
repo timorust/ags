@@ -13,7 +13,11 @@ dotenv.config()
 const app = express()
 
 // Enable CORS and JSON parsing
-app.use(cors())
+app.use(cors({
+    origin: ['https://'],
+    methods: ['GET', 'POST'],
+    credentials: true,
+}))
 app.use(express.json())
 
 // Environment variables

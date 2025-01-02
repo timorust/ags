@@ -9,10 +9,11 @@ import { useState } from 'react'
 function FreeConference() {
 	const [conference, setConference] = useState([])
 
+	axios.defaults.withCredentials = true
 	useEffect(() => {
 		const getConference = async () => {
 			try {
-				const res = await axios.get('http://localhost:4002/conference')
+				const res = await axios.get('https://ags-gray.vercel.app/conference')
 				const data = res.data.filter(data => data.category === 'Free')
 				setConference(data)
 			} catch (error) {
