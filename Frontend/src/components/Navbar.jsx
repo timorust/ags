@@ -40,24 +40,25 @@ function Navbar() {
 		}
 	}, [])
 	const navItems = (
-		<>
-			<li>
-				<a href='/'>{t('Home')}</a>
-			</li>
-			<li>
-				<a href='/meeting'>{t('Meeting')}</a>
-			</li>
-			<li>
-				<a href='/contact'>{t('Contact')}</a>
-			</li>
-			<li>
-				<a href='/about'>{t('About')}</a>
-			</li>
-			<li>
-				<a href='/registration'>{t('Registration')}</a>
-			</li>
-		</>
-	)
+	<>
+		<li>
+			<a href='/' className="text-green-500 hover:text-green-700 active:text-green-800 duration-200">{t('Home')}</a>
+		</li>
+		<li>
+			<a href='/meeting' className="text-green-500 hover:text-green-700 active:text-green-800 duration-200">{t('Meeting')}</a>
+		</li>
+		<li>
+			<a href='/contact' className="text-green-500 hover:text-green-700 active:text-green-800 duration-200">{t('Contact')}</a>
+		</li>
+		<li>
+			<a href='/about' className="text-green-500 hover:text-green-700 active:text-green-800 duration-200">{t('About')}</a>
+		</li>
+		<li>
+			<a href='/registration' className="text-green-500 hover:text-green-700 active:text-green-800 duration-200">{t('Registration')}</a>
+		</li>
+	</>
+)
+
 	return (
 		<>
 			<div
