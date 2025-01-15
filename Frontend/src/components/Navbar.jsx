@@ -42,22 +42,23 @@ function Navbar() {
 	const navItems = (
 		<>
 			<li>
-				<a href='/' className="text-blue-500 hover:text-blue-700 active:text-blue-800 duration-200">{t('Home')}</a>
+				<a href='/' className="text-cyan-400 hover:text-cyan-600 active:text-cyan-700 duration-200">{t('Home')}</a>
 			</li>
 			<li>
-				<a href='/meeting' className="text-blue-500 hover:text-blue-700 active:text-blue-800 duration-200">{t('Meeting')}</a>
+				<a href='/meeting' className="text-cyan-400 hover:text-cyan-600 active:text-cyan-700 duration-200">{t('Meeting')}</a>
 			</li>
 			<li>
-				<a href='/contact' className="text-blue-500 hover:text-blue-700 active:text-blue-800 duration-200">{t('Contact')}</a>
+				<a href='/contact' className="text-cyan-400 hover:text-cyan-600 active:text-cyan-700 duration-200">{t('Contact')}</a>
 			</li>
 			<li>
-				<a href='/about' className="text-blue-500 hover:text-blue-700 active:text-blue-800 duration-200">{t('About')}</a>
+				<a href='/about' className="text-cyan-400 hover:text-cyan-600 active:text-cyan-700 duration-200">{t('About')}</a>
 			</li>
 			<li>
-				<a href='/registration' className="text-blue-500 hover:text-blue-700 active:text-blue-800 duration-200">{t('Registration')}</a>
+				<a href='/registration' className="text-cyan-400 hover:text-cyan-600 active:text-cyan-700 duration-200">{t('Registration')}</a>
 			</li>
 		</>
 	)
+	
 	
 	return (
 		<>
