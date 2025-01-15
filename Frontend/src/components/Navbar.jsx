@@ -42,19 +42,19 @@ function Navbar() {
 	const navItems = (
 		<>
 			<li>
-				<a href='/' className="text-green-500 hover:text-green-700 active:text-green-800 duration-200">{t('Home')}</a>
+				<a href='/' className="text-blue-500 hover:text-blue-700 active:text-blue-800 duration-200">{t('Home')}</a>
 			</li>
 			<li>
-				<a href='/meeting' className="text-green-500 hover:text-green-700 active:text-green-800 duration-200">{t('Meeting')}</a>
+				<a href='/meeting' className="text-blue-500 hover:text-blue-700 active:text-blue-800 duration-200">{t('Meeting')}</a>
 			</li>
 			<li>
-				<a href='/contact' className="text-green-500 hover:text-green-700 active:text-green-800 duration-200">{t('Contact')}</a>
+				<a href='/contact' className="text-blue-500 hover:text-blue-700 active:text-blue-800 duration-200">{t('Contact')}</a>
 			</li>
 			<li>
-				<a href='/about' className="text-green-500 hover:text-green-700 active:text-green-800 duration-200">{t('About')}</a>
+				<a href='/about' className="text-blue-500 hover:text-blue-700 active:text-blue-800 duration-200">{t('About')}</a>
 			</li>
 			<li>
-				<a href='/registration' className="text-green-500 hover:text-green-700 active:text-green-800 duration-200">{t('Registration')}</a>
+				<a href='/registration' className="text-blue-500 hover:text-blue-700 active:text-blue-800 duration-200">{t('Registration')}</a>
 			</li>
 		</>
 	)
@@ -161,7 +161,7 @@ function Navbar() {
 						) : (
 							<div className=''>
 								<a
-  className='bg-green-500 text-white px-3 py-2 rounded-md hover:bg-green-700 duration-300 cursor-pointer'
+  className='bg-blue-500 text-white px-3 py-2 rounded-md hover:bg-blue-700 duration-300 cursor-pointer'
   onClick={() =>
     document.getElementById('my_modal_3').showModal()
   }
