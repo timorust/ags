@@ -107,7 +107,7 @@ function RegisterLecture() {
 						</div>
 						<div className='mb-6'>
 							<label className='block text-left text-gray-700 dark:bg-slate-900 dark:text-green-300'>
-								Expiries Years
+							Professional experience
 							</label>
 							<input
 								type='text'
@@ -115,7 +115,7 @@ function RegisterLecture() {
 								value={formData.lecture}
 								onChange={handleChange}
 								className='w-full px-4 py-2 border rounded-md  dark:bg-slate-900 dark:text-white'
-								placeholder='Enter lecture name'
+								placeholder='Enter professional experience'
 								required
 							/>
 						</div>

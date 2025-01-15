@@ -61,7 +61,7 @@ function SendEmail() {
 						onSubmit={handleSubmit}
 					>
 						<div className='mb-6'>
-							<label htmlFor='name' className='block text-left text-gray-700'>
+							<label htmlFor='name' className='block text-left text-gray-700 dark:bg-slate-900 dark:text-green-300'>
 								Your Name
 							</label>
 							<input
@@ -69,13 +69,13 @@ function SendEmail() {
 								name='name'
 								value={name}
 								onChange={e => setName(e.target.value)}
-								className='w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500'
+								className='w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500 dark:bg-slate-900 dark:text-white'
 								placeholder='Enter your name'
 								required
 							/>
 						</div>
 						<div className='mb-6'>
-							<label htmlFor='email' className='block text-left text-gray-700'>
+							<label htmlFor='email' className='block text-left text-gray-700 dark:bg-slate-900 dark:text-green-300'>
 								Your Email
 							</label>
 							<input
@@ -83,7 +83,7 @@ function SendEmail() {
 								name='email'
 								value={email}
 								onChange={e => setEmail(e.target.value)}
-								className='w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500'
+								className='w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500 dark:bg-slate-900 dark:text-white'
 								placeholder='Enter your email'
 								required
 							/>
@@ -91,7 +91,7 @@ function SendEmail() {
 						<div className='mb-6'>
 							<label
 								htmlFor='message'
-								className='block text-left text-gray-700'
+								className='block text-left text-gray-700 dark:bg-slate-900 dark:text-green-300'
 							>
 								Message
 							</label>
@@ -99,7 +99,7 @@ function SendEmail() {
 								name='message'
 								value={message}
 								onChange={e => setMessage(e.target.value)}
-								className='w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500'
+								className='w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500 dark:bg-slate-900 dark:text-white'
 								placeholder='Type your message here'
 								rows='5'
 								required
