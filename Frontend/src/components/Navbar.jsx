@@ -40,25 +40,24 @@ function Navbar() {
 		}
 	}, [])
 	const navItems = (
-	<>
-		<li>
-			<a href='/' className="text-green-500 hover:text-green-700 active:text-green-800 duration-200">{t('Home')}</a>
-		</li>
-		<li>
-			<a href='/meeting' className="text-green-500 hover:text-green-700 active:text-green-800 duration-200">{t('Meeting')}</a>
-		</li>
-		<li>
-			<a href='/contact' className="text-green-500 hover:text-green-700 active:text-green-800 duration-200">{t('Contact')}</a>
-		</li>
-		<li>
-			<a href='/about' className="text-green-500 hover:text-green-700 active:text-green-800 duration-200">{t('About')}</a>
-		</li>
-		<li>
-			<a href='/registration' className="text-green-500 hover:text-green-700 active:text-green-800 duration-200">{t('Registration')}</a>
-		</li>
-	</>
-)
-
+		<>
+			<li>
+				<a href='/'>{t('Home')}</a>
+			</li>
+			<li>
+				<a href='/meeting'>{t('Meeting')}</a>
+			</li>
+			<li>
+				<a href='/contact'>{t('Contact')}</a>
+			</li>
+			<li>
+				<a href='/about'>{t('About')}</a>
+			</li>
+			<li>
+				<a href='/registration'>{t('Registration')}</a>
+			</li>
+		</>
+	)
 	return (
 		<>
 			<div
@@ -161,13 +160,14 @@ function Navbar() {
 						) : (
 							<div className=''>
 								<a
-									className='bg-green-500 text-white px-3 py-2 rounded-md hover:bg-green-700 duration-300 cursor-pointer'
-									onClick={() =>
-										document.getElementById('my_modal_3').showModal()
-									}
-								>
-									{t('Login')}
-								</a>
+  className='bg-green-500 text-white px-3 py-2 rounded-md hover:bg-green-700 active:bg-green-800 duration-300 cursor-pointer'
+  onClick={() =>
+    document.getElementById('my_modal_3').showModal()
+  }
+>
+  {t('Login')}
+</a>
+
 
 								<Login />
 							</div>
