@@ -69,7 +69,7 @@ function Navbar() {
 			>
 				<div className='navbar '>
 					<div className='navbar-start'>
-						<div className='dropdown'>
+						<div className='dropdown dark:bg-slate-900 dark:text-white'>
 							<div
 								tabIndex={0}
 								role='button'
