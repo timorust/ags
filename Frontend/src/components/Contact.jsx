@@ -15,12 +15,12 @@ function SendEmail() {
 	const handleSubmit = e => {
 		e.preventDefault()
 
-		const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID
-		const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID
-		const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+		// const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID
+		// const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID
+		// const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY
 
 		emailjs
-    .sendForm(serviceId, templateId, form.current, publicKey)
+    .sendForm('service_2abe0eo', 'template_1y4kkli', form.current, '3yp6XZiNOVZhsT90R')
     .then(
         () => {
             setIsSent(true);
