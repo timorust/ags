@@ -16,7 +16,7 @@ function Banner() {
 							et totam. Tempora amet atque expedita, quae corrupti totam sed
 							pariatur corporis at veniam est voluptas animi!
 						</p>
-						<label className='input input-bordered flex items-center gap-2 dark:bg-slate-900 dark:text-white border-2 border-blue-500 focus-within:border-blue-700 rounded-md px-2 py-1'>
+						<label className='block text-left text-gray-700  dark:bg-slate-900 dark:text-green-300'>
   <svg
     xmlns='http://www.w3.org/2000/svg'
     viewBox='0 0 16 16'
@@ -28,7 +28,7 @@ function Banner() {
   </svg>
   <input
     type='text'
-    className='flex-grow outline-none border-none bg-transparent dark:text-white'
+    className='flex-grow outline-none  border rounded-md  dark:bg-slate-900 dark:text-white'
     placeholder='Email'
   />
 </label>
