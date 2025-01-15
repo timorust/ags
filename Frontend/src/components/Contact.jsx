@@ -1,5 +1,5 @@
 import { useState, useRef } from 'react'
-import emailjs from '@emailjs/browser'
+import emailjs from 'emailjs-com'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import CountdownTimer from './CountdownTimer'
