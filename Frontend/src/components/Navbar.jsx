@@ -69,11 +69,11 @@ function Navbar() {
 			>
 				<div className='navbar '>
 					<div className='navbar-start'>
-						<div className='dropdown dark:bg-slate-900 dark:text-white'>
+						<div className='dropdown'>
 							<div
 								tabIndex={0}
 								role='button'
-								className='btn btn-ghost lg:hidden'
+								className='btn btn-ghost lg:hidden dark:bg-slate-900 dark:text-white'
 							>
 								<svg
 									xmlns='http://www.w3.org/2000/svg'
