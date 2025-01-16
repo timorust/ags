@@ -2,7 +2,12 @@ import { Link } from 'react-router-dom'
 import { useForm } from 'react-hook-form'
 import axios from 'axios'
 import toast from 'react-hot-toast'
+import { useTranslation } from 'react-i18next'
+
+
 function Login() {
+
+	const { t } = useTranslation()
 	const {
 		register,
 		handleSubmit,
@@ -31,7 +36,7 @@ function Login() {
 				if (err.response) {
 					console.log(err)
 					toast.error('Error: ' + err.response.data.message)
-					setTimeout(() => {}, 2000)
+					setTimeout(() => { }, 2000)
 				}
 			})
 	}
@@ -49,38 +54,39 @@ function Login() {
 							✕
 						</Link>
 
-						<h3 className='font-bold text-lg'>Login</h3>
+						<h3 className='font-bold text-lg'>{t('Login')}</h3>
 						{/* Email */}
 						<div className='mt-4 space-y-2'>
-							<span>Email</span>
+							<span>{t('Email')}</span>
 							<br />
 							<input
 								type='email'
-								placeholder='Enter your email'
+								placeholder={t('Enter your email')}
 								className='w-80 px-3 py-1 border rounded-md outline-none dark:bg-slate-900 dark:text-white'
 								{...register('email', { required: true })}
 							/>
 							<br />
 							{errors.email && (
 								<span className='text-sm text-red-500'>
-									This field is required
+
+									{t('This field is required')}
 								</span>
 							)}
 						</div>
 						{/* password */}
 						<div className='mt-4 space-y-2'>
-							<span>Password</span>
+							<span>{t('Password')}</span>
 							<br />
 							<input
 								type='password'
-								placeholder='Enter your password'
+								placeholder={t('Enter your password')}
 								className='w-80 px-3 py-1 border rounded-md outline-none dark:bg-slate-900 dark:text-white'
 								{...register('password', { required: true })}
 							/>
 							<br />
 							{errors.password && (
 								<span className='text-sm text-red-500'>
-									This field is required
+									{t('This field is required')}
 								</span>
 							)}
 						</div>
@@ -88,15 +94,15 @@ function Login() {
 						{/* Button */}
 						<div className='flex justify-around mt-6'>
 							<button className='bg-pink-500 text-white rounded-md px-3 py-1 hover:bg-pink-700 duration-200'>
-								Login
+								{t('Login')}
 							</button>
 							<p>
-								Not registered?{' '}
+								{t('Not registered')}?
 								<Link
 									to='/signup'
 									className='underline text-blue-500 cursor-pointer'
 								>
-									Signup
+									{t('Signup')}
 								</Link>{' '}
 							</p>
 						</div>

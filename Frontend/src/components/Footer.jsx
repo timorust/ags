@@ -64,7 +64,7 @@ function Footer() {
 
 				<aside>
 					<p>
-						Copyright © 2024 - All right reserved by TIMORUST Industries Ltd
+						Copyright © 2025 - All right reserved by TIMORUST Industries Ltd
 					</p>
 				</aside>
 			</footer>

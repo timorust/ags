@@ -14,5 +14,12 @@
   "days": "Günlər",
   "hours": "Saat",
   "minutes": "Dəqiqə",
-  "seconds": "Saniyə"
+  "seconds": "Saniyə",
+  "Email": "E-poçt",
+  "Enter your email": "E-poçtunuzu daxil edin",
+  "This field is required": "Bu sahə tələb olunur",
+  "Password": "parol",
+  "Enter your password": "Parolunuzu daxil edin",
+  "Not registered": "Qeydiyyatdan keçməyib",
+  "Signup": "Qeydiyyatdan keçin"
 }

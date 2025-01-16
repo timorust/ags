@@ -14,5 +14,12 @@
   "days": "Days",
   "hours": "Hours",
   "minutes": "Minutes",
-  "seconds": "Seconds"
+  "seconds": "Seconds",
+  "Email": "Email",
+  "Enter your email": "Enter your email",
+  "This field is required": "This field is required",
+  "Password": "Password",
+  "Enter your password": "Enter your password",
+  "Not registered": "Not registered",
+  "Signup": "Signup"
 }
