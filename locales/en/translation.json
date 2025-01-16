@@ -6,8 +6,10 @@
 	"Registration": "Registration",
 	"AGS": "AGS",
 	"Time Until the Congress": "Time Until the Congress",
+	"Thank you for registering": "Thank you for registering",
 	"at": "at",
 	"Login": "Login",
+	"Last Name": "Last Name",
 	"The Azerbaijan Glaucoma Society": "The Azerbaijan Glaucoma Society",
 	"Get Started": "Get Started",
 	"Logout": "Logout",
@@ -17,6 +19,9 @@
 	"seconds": "Seconds",
 	"Email": "Email",
 	"Name": "Name",
+	"Enter your last name": "Enter your last name",
+	"First Name": "First Name",
+	"Enter your first name": "Enter your first name",
 	"Enter your email": "Enter your email",
 	"Enter your fullname": "Enter your fullname",
 	"This field is required": "This field is required",
@@ -24,6 +29,7 @@
 	"Enter your password": "Enter your password",
 	"Not registered": "Not registered",
 	"Have account": "Have account",
-	"Signup": "Signup"
+	"Signup": "Signup",
+	"We look forward to seeing you at the lecture": "We look forward to seeing you at the lecture"
 	
 }

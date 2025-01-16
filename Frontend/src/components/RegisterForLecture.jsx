@@ -3,8 +3,12 @@ import axios from 'axios'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import CountdownTimer from './CountdownTimer'
+import { useTranslation } from 'react-i18next'
 
 function RegisterLecture() {
+
+	const { t } = useTranslation()
+
 	const [formData, setFormData] = useState({
 		firstName: '',
 		lastName: '',
@@ -43,15 +47,15 @@ function RegisterLecture() {
 				{isRegistered ? (
 					<div className='text-center mt-12'>
 						<h2 className='text-2xl text-green-500'>
-							Thank you for registering!
+							{t('Thank you for registering')}!
 						</h2>
-						<p>We look forward to seeing you at the lecture.</p>
+						<p>{t('We look forward to seeing you at the lecture')}.</p>
 					</div>
 				) : (
 					<form onSubmit={handleSubmit} className='mt-12 max-w-lg mx-auto'>
 						<div className='mb-6'>
 							<label className='block text-left text-gray-700  dark:bg-slate-900 dark:text-green-300'>
-								First Name
+								{t('First Name')}
 							</label>
 							<input
 								type='text'
@@ -59,13 +63,13 @@ function RegisterLecture() {
 								value={formData.firstName}
 								onChange={handleChange}
 								className='w-full px-4 py-2 border rounded-md  dark:bg-slate-900 dark:text-white'
-								placeholder='Enter your first name'
+								placeholder={t('Enter your first name')}
 								required
 							/>
 						</div>
 						<div className='mb-6'>
 							<label className='block text-left text-gray-700 dark:bg-slate-900 dark:text-green-300'>
-								Last Name
+								{t('Last Name')}
 							</label>
 							<input
 								type='text'
@@ -73,13 +77,13 @@ function RegisterLecture() {
 								value={formData.lastName}
 								onChange={handleChange}
 								className='w-full px-4 py-2 border rounded-md  dark:bg-slate-900 dark:text-white'
-								placeholder='Enter your last name'
+								placeholder={t('Enter your last name')}
 								required
 							/>
 						</div>
 						<div className='mb-6'>
 							<label className='block text-left text-gray-700 dark:bg-slate-900 dark:text-green-300'>
-								Phone
+								{t('Phone')}
 							</label>
 							<input
 								type='text'
@@ -87,13 +91,13 @@ function RegisterLecture() {
 								value={formData.phone}
 								onChange={handleChange}
 								className='w-full px-4 py-2 border rounded-md  dark:bg-slate-900 dark:text-white'
-								placeholder='Enter your phone number'
+								placeholder={t('Enter your phone number')}
 								required
 							/>
 						</div>
 						<div className='mb-6'>
 							<label className='block text-left text-gray-700 dark:bg-slate-900 dark:text-green-300'>
-								Age
+								{t('Age')}
 							</label>
 							<input
 								type='number'
@@ -101,13 +105,13 @@ function RegisterLecture() {
 								value={formData.age}
 								onChange={handleChange}
 								className='w-full px-4 py-2 border rounded-md  dark:bg-slate-900 dark:text-white'
-								placeholder='Enter your age'
+								placeholder={t('Enter your age')}
 								required
 							/>
 						</div>
 						<div className='mb-6'>
 							<label className='block text-left text-gray-700 dark:bg-slate-900 dark:text-green-300'>
-								Professional experience
+								{t('Experience years')}
 							</label>
 							<input
 								type='text'
@@ -115,13 +119,13 @@ function RegisterLecture() {
 								value={formData.lecture}
 								onChange={handleChange}
 								className='w-full px-4 py-2 border rounded-md  dark:bg-slate-900 dark:text-white'
-								placeholder='Enter professional experience'
+								placeholder={t('Enter experience years')}
 								required
 							/>
 						</div>
 						<div className='mb-6'>
 							<label className='block text-left text-gray-700 dark:bg-slate-900 dark:text-green-300'>
-								Email
+								{t('Email')}
 							</label>
 							<input
 								type='email'
@@ -129,7 +133,7 @@ function RegisterLecture() {
 								value={formData.email}
 								onChange={handleChange}
 								className='w-full px-4 py-2 border rounded-md  dark:bg-slate-900 dark:text-white'
-								placeholder='Enter your email'
+								placeholder={t('Enter your email')}
 								required
 							/>
 						</div>
@@ -137,7 +141,7 @@ function RegisterLecture() {
 							type='submit'
 							className='w-full bg-green-500 text-white px-4 py-2 rounded-md'
 						>
-							Register
+							{t('Register')}
 						</button>
 					</form>
 				)}

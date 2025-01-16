@@ -6,8 +6,10 @@
 	"Registration": "Qeydiyyat",
 	"AGS": "AQC",
 	"Time Until the Congress": "Konfransın başlamasına qalan vaxt",
+	"Thank you for registering": "Qeydiyyatdan keçdiyiniz üçün təşəkkür edirik",
 	"at": "saat",
 	"Login": "Daxil",
+	"Last Name": "Soyadı",
 	"The Azerbaijan Glaucoma Society": "Azərbaycan Qlaukoma Cəmiyyəti",
 	"Get Started": "Başlayın",
 	"Logout": "Çıxın",
@@ -17,6 +19,9 @@
 	"seconds": "Saniyə",
 	"Email": "E-poçt",
 	"Name": "ad",
+	"First Name": "Ad",
+	"Enter your last name": "Soyadınızı daxil edin",
+	"Enter your first name": "Adınızı daxil edin",
 	"Enter your email": "E-poçtunuzu daxil edin",
 	"Enter your fullname": "Tam adınızı daxil edin",
 	"This field is required": "Bu sahə tələb olunur",
@@ -24,5 +29,6 @@
 	"Enter your password": "Parolunuzu daxil edin",
 	"Not registered": "Qeydiyyatdan keçməyib",
 	"Have account": "Hesab var",
-	"Signup": "Qeydiyyatdan keçin"
+	"Signup": "Qeydiyyatdan keçin",
+	"We look forward to seeing you at the lecture": "Sizi mühazirədə görməyi səbirsizliklə gözləyirik"
 }
