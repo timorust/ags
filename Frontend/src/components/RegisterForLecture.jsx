@@ -107,7 +107,7 @@ function RegisterLecture() {
 						</div>
 						<div className='mb-6'>
 							<label className='block text-left text-gray-700 dark:bg-slate-900 dark:text-green-300'>
-							Professional experience
+								Professional experience
 							</label>
 							<input
 								type='text'

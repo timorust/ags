@@ -20,17 +20,17 @@ function SendEmail() {
 		// const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY
 
 		emailjs
-    .sendForm('service_2abe0eo', 'template_1y4kkli', form.current, '3yp6XZiNOVZhsT90R')
-    .then(
-        () => {
-            setIsSent(true);
-            setErrorMessage('');
-        },
-        error => {
-            console.error('Failed to send email:', error);
-            setErrorMessage('Failed to send email. Please try again.');
-        }
-    )
+			.sendForm('service_2abe0eo', 'template_1y4kkli', form.current, '3yp6XZiNOVZhsT90R')
+			.then(
+				() => {
+					setIsSent(true);
+					setErrorMessage('');
+				},
+				error => {
+					console.error('Failed to send email:', error);
+					setErrorMessage('Failed to send email. Please try again.');
+				}
+			)
 
 	}
 

@@ -10,5 +10,9 @@
   "Login": "Login",
   "The Azerbaijan Glaucoma Society": "The Azerbaijan Glaucoma Society",
   "Get Started": "Get Started",
-  "Logout": "Logout"
+  "Logout": "Logout",
+  "Days": "Days",
+  "Hours": "Hours",
+  "Minutes": "Minutes",
+  "Seconds": "Seconds"
 }

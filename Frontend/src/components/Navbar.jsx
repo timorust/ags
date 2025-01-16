@@ -58,16 +58,15 @@ function Navbar() {
 			</li>
 		</>
 	)
-	
-	
+
+
 	return (
 		<>
 			<div
-				className={` max-w-screen-2xl container mx-auto md:px-20 px-4 dark:bg-slate-800 dark:text-white fixed top-0 left-0 right-0 z-50 ${
-					sticky
+				className={` max-w-screen-2xl container mx-auto md:px-20 px-4 dark:bg-slate-800 dark:text-white fixed top-0 left-0 right-0 z-50 ${sticky
 						? 'sticky-navbar shadow-md bg-base-200 dark:bg-slate-600 dark:text-white duration-300 transition-all ease-in-out'
 						: ''
-				}`}
+					}`}
 			>
 				<div className='navbar '>
 					<div className='navbar-start'>
@@ -162,13 +161,13 @@ function Navbar() {
 						) : (
 							<div className=''>
 								<a
-  className='bg-green-500 text-white px-3 py-2 rounded-md hover:bg-green-700 duration-300 cursor-pointer'
-  onClick={() =>
-    document.getElementById('my_modal_3').showModal()
-  }
->
-  {t('Login')}
-</a>
+									className='bg-green-500 text-white px-3 py-2 rounded-md hover:bg-green-700 duration-300 cursor-pointer'
+									onClick={() =>
+										document.getElementById('my_modal_3').showModal()
+									}
+								>
+									{t('Login')}
+								</a>
 
 
 								<Login />
