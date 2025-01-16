@@ -5,7 +5,12 @@ import axios from 'axios'
 import toast from 'react-hot-toast'
 import Navbar from './Navbar'
 import Footer from './Footer'
+import { useTranslation } from 'react-i18next'
+
+
 function Signup() {
+	const { t } = useTranslation()
+
 	const location = useLocation()
 	const navigate = useNavigate()
 	const from = location.state?.from?.pathname || '/'
@@ -53,72 +58,72 @@ function Signup() {
 								✕
 							</Link>
 
-							<h3 className='font-bold text-lg'>Signup</h3>
+							<h3 className='font-bold text-lg'>{t('Signup')}</h3>
 							<div className='mt-4 space-y-2'>
-								<span>Name</span>
+								<span>{t('Name')}</span>
 								<br />
 								<input
 									type='text'
-									placeholder='Enter your fullname'
+									placeholder={t('Enter your fullname')}
 									className='w-80 px-3 py-1 border rounded-md outline-none  dark:bg-slate-900 dark:text-white'
 									{...register('fullname', { required: true })}
 								/>
 								<br />
 								{errors.fullname && (
 									<span className='text-sm text-red-500'>
-										This field is required
+										{t('This field is requiredt')}
 									</span>
 								)}
 							</div>
 							{/* Email */}
 							<div className='mt-4 space-y-2'>
-								<span>Email</span>
+								<span>{t('Email')}</span>
 								<br />
 								<input
 									type='email'
-									placeholder='Enter your email'
+									placeholder={t('Enter your email')}
 									className='w-80 px-3 py-1 border rounded-md outline-none  dark:bg-slate-900 dark:text-white'
 									{...register('email', { required: true })}
 								/>
 								<br />
 								{errors.email && (
 									<span className='text-sm text-red-500'>
-										This field is required
+										{t('This field is required')}
 									</span>
 								)}
 							</div>
 							{/* Password */}
 							<div className='mt-4 space-y-2'>
-								<span>Password</span>
+								<span>{t('Password')}</span>
 								<br />
 								<input
 									type='text'
-									placeholder='Enter your password'
+									placeholder={t('Enter your password')}
 									className='w-80 px-3 py-1 border rounded-md outline-none  dark:bg-slate-900 dark:text-white'
 									{...register('password', { required: true })}
 								/>
 								<br />
 								{errors.password && (
 									<span className='text-sm text-red-500'>
-										This field is required
+										{t('This field is required')}
 									</span>
 								)}
 							</div>
 							{/* Button */}
 							<div className='flex justify-around mt-4'>
 								<button className='bg-pink-500 text-white rounded-md px-3 py-1 hover:bg-pink-700 duration-200'>
-									Signup
+									{t('Signup')}
 								</button>
 								<p className='text-xl'>
-									Have account?{' '}
+									{t('Have account')}?{' '}
 									<button
 										className='underline text-blue-500 cursor-pointer'
 										onClick={() =>
 											document.getElementById('my_modal_3').showModal()
 										}
 									>
-										Login
-									</button>{' '}
+										{t('Login')}
+									</button>
 									<Login />
 								</p>
 							</div>
