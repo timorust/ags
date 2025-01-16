@@ -71,7 +71,7 @@ function Signup() {
 								<br />
 								{errors.fullname && (
 									<span className='text-sm text-red-500'>
-										{t('This field is requiredt')}
+										{t('This field is required')}
 									</span>
 								)}
 							</div>
