@@ -27,8 +27,7 @@ function Signup() {
       const res = await axios.post('https://ags-az.onrender.com/user/signup', userInfo)
       if (res.data) {
         toast.success('Sign up Successfully')
-        // לאחר הצלחה נבצע את המעבר לדף הבית (שזה /)
-        navigate('/', { replace: true })
+        navigate('/conference', { replace: true })
       }
       localStorage.setItem('Users', JSON.stringify(res.data.user))
     } catch (err) {
