@@ -15,7 +15,7 @@ const VideoWithDescription = () => {
 
 
 						<video class="w-full" autoplay muted controls>
-							<source src="https://www.youtube.com/embed/dQw4w9WgXcQ" type="video/mp4"/>
+							<source src="https://www.youtube.com/embed/dQw4w9WgXcQ"/>
 							{/* <source src="/docs/videos/flowbite.mp4" type="video/mp4"/> */}
 								Your browser does not support the video tag.
 						</video>
