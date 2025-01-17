@@ -3,8 +3,11 @@ import { Link } from 'react-router-dom'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import CountdownTimer from './CountdownTimer'
+import { useTranslation } from 'react-i18next'
 
 function About() {
+
+	const { t } = useTranslation()
 	const [textIndex, setTextIndex] = useState(0)
 	const [imageIndex, setImageIndex] = useState(0)
 
@@ -46,8 +49,8 @@ function About() {
 			<div className='max-w-screen-2xl container mx-auto px-6 md:px-20'>
 				<div className='text-center mb-12'>
 					<h1 className='text-3xl md:text-5xl font-semibold dark:text-white text-black'>
-						We`re delighted to have you,
-						<span className='text-yellow-500'>Here! :)</span>
+					{t('We`re delighted to have you')},
+						<span className='text-yellow-500'>{t('Here')}! :)</span>
 					</h1>
 				</div>
 
@@ -89,7 +92,7 @@ function About() {
 				<div className='text-center mt-8'>
 					<Link to='/'>
 						<button className='bg-green-500 text-white px-6 py-3 rounded-full hover:bg-green-700 transition duration-300'>
-							Back
+							{t('Back')}
 						</button>
 					</Link>
 				</div>
