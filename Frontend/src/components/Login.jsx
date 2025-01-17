@@ -102,7 +102,7 @@ function Login() {
 									to='/signup'
 									className='underline text-blue-500 cursor-pointer'
 								>
-									{t('Signup')}
+									{t('Sign up')}
 								</Link>{' '}
 							</p>
 						</div>
