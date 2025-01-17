@@ -59,6 +59,11 @@ function Navbar() {
     </>
   )
 
+  // פונקציה חדשה לחיפוש דרך Google
+  const handleSearch = (query) => { // //שינוי
+    const searchURL = `https://www.google.com/search?q=${query}`;
+    window.open(searchURL, '_blank'); // //שינוי
+  };
 
   return (
     <>
@@ -112,6 +117,11 @@ function Navbar() {
                   type='text'
                   className='grow outline-none rounded-md px-1 dark:bg-slate-900 dark:text-white'
                   placeholder='Search'
+                  onKeyDown={(e) => { // //שינוי
+                    if (e.key === 'Enter') { // //שינוי
+                      handleSearch(e.target.value); // //שינוי
+                    }
+                  }}
                 />
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
