@@ -7,24 +7,36 @@ import { useTranslation } from 'react-i18next';
 
 function SearchInput() {
   const [query, setQuery] = useState('');
-
-  const handleSearch = (event) => {
-    if (event.key === 'Enter' && query.trim() !== '') {
-      const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
-      window.open(searchUrl, '_blank');
-    }
+  const [results, setResults] = useState([]);
+  
+  const handleSearch = (e) => {
+    setQuery(e.target.value);
   };
+
+  useEffect(() => {
+    const fetchResults = async () => {
+      if (query.length > 0) {
+        // כאן תוכל לשלב את חיפוש בגוגל או API אחר כדי להחזיר תוצאות חיפוש
+        const response = await fetch(`https://api.duckduckgo.com/?q=${query}&format=json`);
+        const data = await response.json();
+        setResults(data.RelatedTopics);  // זה יתעדכן לפי התוצאה של DuckDuckGo
+      } else {
+        setResults([]);
+      }
+    };
+
+    fetchResults();
+  }, [query]);
 
   return (
     <div className='hidden md:block'>
       <label className='px-3 py-2 border rounded-md flex items-center gap-2'>
         <input
           type='text'
+          value={query}
+          onChange={handleSearch}
           className='grow outline-none rounded-md px-1 dark:bg-slate-900 dark:text-white'
           placeholder='Search'
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          onKeyDown={handleSearch}  // להאזין לאירוע של לחיצה על מקש
         />
         <svg
           xmlns='http://www.w3.org/2000/svg'
@@ -39,6 +51,17 @@ function SearchInput() {
           />
         </svg>
       </label>
+      {results.length > 0 && (
+        <ul className='mt-2 border-t pt-2'>
+          {results.map((result, index) => (
+            <li key={index} className='p-2'>
+              <a href={result.FirstURL} className='text-cyan-400 hover:text-cyan-600' target='_blank' rel='noopener noreferrer'>
+                {result.Text}
+              </a>
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 }
@@ -121,11 +144,9 @@ function Navbar() {
               viewBox='0 0 24 24'
               onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
             >
-              <path d='M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2a1,1,0,0,0-1,1,6.78,6.78,0,0,0-.12.47,9.6,9.6,0,0,0-4.23-.71A6.49,6.49,0,0,0,1,12a6.5,6.5,0,0,0,12,6.51A6.53,6.53,0,0,0,19,17.09a8.39,8.39,0,0,1-2.15-1.15A8.22,8.22,0,0,1,21.64,13Z' />
+              <path d='M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73c-1.7-.17-3.4-.92-4.65-2.17a7.84,7.84,0,0,1-1.75-4.91A7.9,7.9,0,0,1,17,3a1,1,0,0,0-.91-1.17,1,1,0,0,0-1.11.91A5.91,5.91,0,0,0,12,4a5.91,5.91,0,0,0-3.74-1.37A1,1,0,0,0,7,3a1,1,0,0,0-.91,1.17A7.9,7.9,0,0,1,9.59,8.79c-.52,1.06-.6,2.27-.26,3.38a8.08,8.08,0,0,1-3.73,4.66A8.07,8.07,0,0,1,3.71,18.79a1,1,0,0,0-1.49.63A10.11,10.11,0,0,0,5.29,22a10.09,10.09,0,0,0,14.3-1.78A10.1,10.1,0,0,0,21.64,13Z' />
             </svg>
           </label>
-          <LanguageSwitcher />
-          {authUser ? <Logout /> : <Login />}
         </div>
       </div>
     </div>
