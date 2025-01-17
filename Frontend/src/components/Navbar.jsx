@@ -6,19 +6,12 @@ import LanguageSwitcher from './LanguageSwitcher';
 import { useTranslation } from 'react-i18next';
 
 function SearchInput() {
-  const [searchTerm, setSearchTerm] = useState('');
-  const [results, setResults] = useState([]);
-  
-  const handleChange = (e) => {
-    const value = e.target.value;
-    setSearchTerm(value);
+  const [query, setQuery] = useState('');
 
-    // Simulate search results (replace this with a real search API or function)
-    if (value) {
-      const searchResults = ['Search result 1', 'Search result 2', 'Search result 3', 'Search result 4', 'Search result 5', 'Another result'];
-      setResults(searchResults.filter(result => result.toLowerCase().includes(value.toLowerCase())).slice(0, 5));
-    } else {
-      setResults([]);
+  const handleSearch = (event) => {
+    if (event.key === 'Enter' && query.trim() !== '') {
+      const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+      window.open(searchUrl, '_blank');
     }
   };
 
@@ -29,8 +22,9 @@ function SearchInput() {
           type='text'
           className='grow outline-none rounded-md px-1 dark:bg-slate-900 dark:text-white'
           placeholder='Search'
-          value={searchTerm}
-          onChange={handleChange}
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          onKeyDown={handleSearch}  // להאזין לאירוע של לחיצה על מקש
         />
         <svg
           xmlns='http://www.w3.org/2000/svg'
@@ -45,15 +39,6 @@ function SearchInput() {
           />
         </svg>
       </label>
-      {results.length > 0 && (
-        <div className="absolute z-10 mt-2 w-full bg-white shadow-lg rounded-md dark:bg-slate-900 dark:text-white">
-          {results.map((result, index) => (
-            <div key={index} className="p-2 hover:bg-cyan-200 cursor-pointer">
-              {result}
-            </div>
-          ))}
-        </div>
-      )}
     </div>
   );
 }
@@ -99,9 +84,7 @@ function Navbar() {
 
   return (
     <div
-      className={`max-w-screen-2xl container mx-auto md:px-20 px-4 dark:bg-slate-800 dark:text-white fixed top-0 left-0 right-0 z-50 ${
-        sticky ? 'sticky-navbar shadow-md bg-base-200 dark:bg-slate-600 duration-300' : ''
-      }`}
+      className={`max-w-screen-2xl container mx-auto md:px-20 px-4 dark:bg-slate-800 dark:text-white fixed top-0 left-0 right-0 z-50 ${sticky ? 'sticky-navbar shadow-md bg-base-200 dark:bg-slate-600 duration-300' : ''}`}
     >
       <div className='navbar'>
         <div className='navbar-start'>
@@ -138,11 +121,11 @@ function Navbar() {
               viewBox='0 0 24 24'
               onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
             >
-              <path d='M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6A6.65,6.65,0,0,0,12,13.5a6.56,6.56,0,0,0,6.56-6.56,1,1,0,0,0-1-1A5.65,5.65,0,0,1,12,11a5.66,5.66,0,0,1-5.56-5.56,1,1,0,0,0-1,1A6.65,6.65,0,0,0,12,12.5Z' />
+              <path d='M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2a1,1,0,0,0-1,1,6.78,6.78,0,0,0-.12.47,9.6,9.6,0,0,0-4.23-.71A6.49,6.49,0,0,0,1,12a6.5,6.5,0,0,0,12,6.51A6.53,6.53,0,0,0,19,17.09a8.39,8.39,0,0,1-2.15-1.15A8.22,8.22,0,0,1,21.64,13Z' />
             </svg>
           </label>
-          {authUser ? <Logout /> : <Login />}
           <LanguageSwitcher />
+          {authUser ? <Logout /> : <Login />}
         </div>
       </div>
     </div>
