@@ -7,6 +7,9 @@
 	"AGS": "AGS",
 	"Time Until the Congress": "Time Until the Congress",
 	"Thank you for registering": "Thank you for registering",
+	"Thank you for your message": "Thank you for your message",
+	"Type your message here": "Type your message here",
+	"Your Email": "Your Email",
 	"at": "at",
 	"Login": "Login",
 	"Last Name": "Last Name",
@@ -16,8 +19,10 @@
 	"days": "Days",
 	"hours": "Hours",
 	"minutes": "Minutes",
+	"Message": "Message",
 	"seconds": "Seconds",
 	"Email": "Email",
+	"Enter your name": "Enter your name",
 	"Name": "Name",
 	"Enter your last name": "Enter your last name",
 	"First Name": "First Name",
@@ -30,6 +35,10 @@
 	"Not registered": "Not registered",
 	"Have account": "Have account",
 	"Signup": "Signup",
-	"We look forward to seeing you at the lecture": "We look forward to seeing you at the lecture"
+	"Send Message": "Send Message",
+	"We look forward to seeing you at the lecture": "We look forward to seeing you at the lecture",
+	"We Can`t Wait to See You": "We Can`t Wait to See You",
+	"We have received your message and will contact you soon": "We have received your message and will contact you soon",
+	"Please fill out the form below to send us your message and let us know you`re interested in our event. We will respond to you soon": "Please fill out the form below to send us your message and let us know you`re interested in our event. We will respond to you soon"
 	
 }

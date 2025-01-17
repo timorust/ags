@@ -3,8 +3,11 @@ import emailjs from '@emailjs/browser'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import CountdownTimer from './CountdownTimer'
+import { useTranslation } from 'react-i18next'
 
 function SendEmail() {
+
+	const { t } = useTranslation()
 	const form = useRef()
 	const [name, setName] = useState('')
 	const [email, setEmail] = useState('')
@@ -41,21 +44,21 @@ function SendEmail() {
 			<div className='max-w-screen-2xl container mx-auto md:px-20 px-6'>
 				<div className='mt-28 items-center justify-center text-center'>
 					<h1 className='text-2xl md:text-4xl'>
-						Join Our Event,{' '}
-						<span className='text-yellow-500'>We Can`t Wait to See You!</span>
+						{t('Join Our Event')},{' '}
+						<span className='text-yellow-500'>{t('We Can`t Wait to See You')}!</span>
 					</h1>
 					<p className='mt-12'>
-						Fill out the form below to send us a message and confirm your
-						interest in joining our event. We`ll get back to you shortly!
+						{t('Please fill out the form below to send us your message and let us know you`re interested in our event. We will respond to you soon')}!
+
 					</p>
 				</div>
 
 				{isSent ? (
 					<div className='mt-12 text-center'>
 						<h2 className='text-2xl text-green-500'>
-							Thank you for your message!
+						{t('Thank you for your message')}!
 						</h2>
-						<p>We have received your message and will contact you soon.</p>
+						<p>{t('We have received your message and will contact you soon')}.</p>
 					</div>
 				) : (
 					<form
@@ -65,7 +68,7 @@ function SendEmail() {
 					>
 						<div className='mb-6'>
 							<label htmlFor='name' className='block text-left text-gray-700 dark:bg-slate-900 dark:text-green-300'>
-								Your Name
+							{t('Your Name')}
 							</label>
 							<input
 								type='text'
@@ -73,13 +76,13 @@ function SendEmail() {
 								value={name}
 								onChange={e => setName(e.target.value)}
 								className='w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500 dark:bg-slate-900 dark:text-white'
-								placeholder='Enter your name'
+								placeholder={t('Enter your name')}
 								required
 							/>
 						</div>
 						<div className='mb-6'>
 							<label htmlFor='email' className='block text-left text-gray-700 dark:bg-slate-900 dark:text-green-300'>
-								Your Email
+							{t('Your Email')}
 							</label>
 							<input
 								type='email'
@@ -87,7 +90,7 @@ function SendEmail() {
 								value={email}
 								onChange={e => setEmail(e.target.value)}
 								className='w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500 dark:bg-slate-900 dark:text-white'
-								placeholder='Enter your email'
+								placeholder={t('Enter your email')}
 								required
 							/>
 						</div>
@@ -96,14 +99,14 @@ function SendEmail() {
 								htmlFor='message'
 								className='block text-left text-gray-700 dark:bg-slate-900 dark:text-green-300'
 							>
-								Message
+								{t('Message')}
 							</label>
 							<textarea
 								name='message'
 								value={message}
 								onChange={e => setMessage(e.target.value)}
 								className='w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500 dark:bg-slate-900 dark:text-white'
-								placeholder='Type your message here'
+								placeholder={t('Type your message here')}
 								rows='5'
 								required
 							></textarea>
@@ -115,7 +118,7 @@ function SendEmail() {
 							type='submit'
 							className='w-full bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-700 duration-300'
 						>
-							Send Message
+							{t('Send Message')}
 						</button>
 					</form>
 				)}
