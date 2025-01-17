@@ -5,12 +5,6 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   server: {
-
-    build: {
-      minify: 'esbuild',
-      outDir: 'dist',
-      assetsDir: 'assets',
-    },
     watch: {
       usePolling: true,
     },
