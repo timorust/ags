@@ -3,6 +3,7 @@
 	"Meeting": "Konfrans",
 	"Contact": "Əlaqə",
 	"About": "Haqqında",
+	"Back": "Geri",
 	"Registration": "Qeydiyyat",
 	"AGS": "AQC",
 	"Time Until the Congress": "Konfransın başlamasına qalan vaxt",
@@ -35,11 +36,13 @@
 	"Enter your password": "Parolunuzu daxil edin",
 	"Not registered": "Qeydiyyatdan keçməyib",
 	"Have account": "Hesab var",
+	"Here": "Burada",
 	"Join Our Event": "Tədbirimizə Qoşulun",
 	"Sign up": "Qeydiyyatdan keçin",
 	"Send Message": "Mesaj Göndər",
 	"We look forward to seeing you at the lecture": "Sizi mühazirədə görməyi səbirsizliklə gözləyirik",
 	"We Can`t Wait to See You": "Sizi görmək üçün səbirsizlənirik",
+	"We`re delighted to have you": "Sizinlə olmaqdan şadıq",
 	"We have received your message and will contact you soon": "Mesajınızı aldıq və tezliklə sizinlə əlaqə saxlayacağıq",
 	"Please fill out the form below to send us your message and let us know you`re interested in our event. We will respond to you soon": "Zəhmət olmasa bizə mesaj göndərmək üçün aşağıdakı formanı doldurun və tədbirimizlə maraqlandığınızı bizə bildirin. Tezliklə sizə cavab verəcəyik"
 }
