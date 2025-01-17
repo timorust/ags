@@ -7,7 +7,6 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import { useTranslation } from 'react-i18next'
 
-
 function Signup() {
 	const { t } = useTranslation()
 
@@ -32,7 +31,7 @@ function Signup() {
 				console.log(res.data)
 				if (res.data) {
 					toast.success('Sign up Successfully')
-					navigate(from, { replace: true })
+					navigate('/conference', { replace: true }) // שינוי כאן: הפנייה ל-Conferene במקום ל-from
 				}
 				localStorage.setItem('Users', JSON.stringify(res.data.user))
 			})
