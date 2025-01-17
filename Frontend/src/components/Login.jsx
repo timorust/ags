@@ -26,6 +26,7 @@ function Login() {
 				console.log(res.data)
 				if (res.data) {
 					toast.success('Login Successfully')
+					navigate('/conference')
 					const modal = document.getElementById('my_modal_3')
 					if (modal) {
 						modal.close()
@@ -34,7 +35,7 @@ function Login() {
 						window.location.reload()
 						localStorage.setItem('Users', JSON.stringify(res.data.user))
 					}, 1000)
-					navigate('/conference')
+					
 				}
 			})
 			.catch(err => {
