@@ -1,4 +1,4 @@
-import { Link, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { useForm } from 'react-hook-form'
 import axios from 'axios'
 import toast from 'react-hot-toast'
@@ -8,7 +8,6 @@ import { useTranslation } from 'react-i18next'
 function Login() {
 
 	const { t } = useTranslation()
-	const navigate = useNavigate()
 	const {
 		register,
 		handleSubmit,
@@ -26,26 +25,21 @@ function Login() {
 				console.log(res.data)
 				if (res.data) {
 					toast.success('Login Successfully')
-					navigate('/conference')
-					const modal = document.getElementById('my_modal_3')
-					if (modal) {
-						modal.close()
-					}
+					document.getElementById('my_modal_3').close()
 					setTimeout(() => {
 						window.location.reload()
 						localStorage.setItem('Users', JSON.stringify(res.data.user))
 					}, 1000)
-					
 				}
 			})
 			.catch(err => {
 				if (err.response) {
 					console.log(err)
 					toast.error('Error: ' + err.response.data.message)
+					setTimeout(() => { }, 2000)
 				}
 			})
 	}
-
 	return (
 		<div>
 			<dialog id='my_modal_3' className='modal'>
@@ -74,6 +68,7 @@ function Login() {
 							<br />
 							{errors.email && (
 								<span className='text-sm text-red-500'>
+
 									{t('This field is required')}
 								</span>
 							)}
@@ -98,9 +93,7 @@ function Login() {
 
 						{/* Button */}
 						<div className='flex justify-around mt-6'>
-							<button type="submit"
-								onClick={handleSubmit(onSubmit)}
-								className='bg-pink-500 text-white rounded-md px-3 py-1 hover:bg-pink-700 duration-200'>
+							<button className='bg-pink-500 text-white rounded-md px-3 py-1 hover:bg-pink-700 duration-200'>
 								{t('Login')}
 							</button>
 							<p>
