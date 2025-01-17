@@ -4,21 +4,20 @@ const VideoWithDescription = () => {
 			<div className='flex flex-col md:flex-row items-center space-y-12 md:space-y-0 md:space-x-16'>
 				<div className='flex-1 md:w-2/3'>
 					<div className='aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-xl'>
-						{/* <iframe
-							className='w-full h-full'
-							src='https://www.youtube.com/embed/dQw4w9WgXcQ'
-							title='Video Player'
-							frameBorder='0'
-							allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-							allowFullScreen
-						></iframe> */}
+						<iframe
+							class="w-full"
+							src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+							title="YouTube video player"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen>
+						</iframe>
 
 
-						<video class="w-full" autoplay muted controls>
-							<source src="https://www.youtube.com/embed/dQw4w9WgXcQ"/>
-							{/* <source src="/docs/videos/flowbite.mp4" type="video/mp4"/> */}
+						{/* <video class="w-full" autoplay muted controls>
+							<source src="/docs/videos/flowbite.mp4" type="video/mp4"/>
 								Your browser does not support the video tag.
-						</video>
+						</video> */}
 
 
 					</div>
