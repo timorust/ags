@@ -6,37 +6,31 @@ import LanguageSwitcher from './LanguageSwitcher';
 import { useTranslation } from 'react-i18next';
 
 function SearchInput() {
-  const [query, setQuery] = useState('');
+  const [searchTerm, setSearchTerm] = useState('');
   const [results, setResults] = useState([]);
   
-  const handleSearch = (e) => {
-    setQuery(e.target.value);
+  const handleChange = (e) => {
+    const value = e.target.value;
+    setSearchTerm(value);
+
+    // Simulate search results (replace this with a real search API or function)
+    if (value) {
+      const searchResults = ['Search result 1', 'Search result 2', 'Search result 3', 'Search result 4', 'Search result 5', 'Another result'];
+      setResults(searchResults.filter(result => result.toLowerCase().includes(value.toLowerCase())).slice(0, 5));
+    } else {
+      setResults([]);
+    }
   };
-
-  useEffect(() => {
-    const fetchResults = async () => {
-      if (query.length > 0) {
-        // כאן תוכל לשלב את חיפוש בגוגל או API אחר כדי להחזיר תוצאות חיפוש
-        const response = await fetch(`https://api.duckduckgo.com/?q=${query}&format=json`);
-        const data = await response.json();
-        setResults(data.RelatedTopics);  // זה יתעדכן לפי התוצאה של DuckDuckGo
-      } else {
-        setResults([]);
-      }
-    };
-
-    fetchResults();
-  }, [query]);
 
   return (
     <div className='hidden md:block'>
       <label className='px-3 py-2 border rounded-md flex items-center gap-2'>
         <input
           type='text'
-          value={query}
-          onChange={handleSearch}
           className='grow outline-none rounded-md px-1 dark:bg-slate-900 dark:text-white'
           placeholder='Search'
+          value={searchTerm}
+          onChange={handleChange}
         />
         <svg
           xmlns='http://www.w3.org/2000/svg'
@@ -52,15 +46,13 @@ function SearchInput() {
         </svg>
       </label>
       {results.length > 0 && (
-        <ul className='mt-2 border-t pt-2'>
+        <div className="absolute z-10 mt-2 w-full bg-white shadow-lg rounded-md dark:bg-slate-900 dark:text-white">
           {results.map((result, index) => (
-            <li key={index} className='p-2'>
-              <a href={result.FirstURL} className='text-cyan-400 hover:text-cyan-600' target='_blank' rel='noopener noreferrer'>
-                {result.Text}
-              </a>
-            </li>
+            <div key={index} className="p-2 hover:bg-cyan-200 cursor-pointer">
+              {result}
+            </div>
           ))}
-        </ul>
+        </div>
       )}
     </div>
   );
@@ -107,7 +99,9 @@ function Navbar() {
 
   return (
     <div
-      className={`max-w-screen-2xl container mx-auto md:px-20 px-4 dark:bg-slate-800 dark:text-white fixed top-0 left-0 right-0 z-50 ${sticky ? 'sticky-navbar shadow-md bg-base-200 dark:bg-slate-600 duration-300' : ''}`}
+      className={`max-w-screen-2xl container mx-auto md:px-20 px-4 dark:bg-slate-800 dark:text-white fixed top-0 left-0 right-0 z-50 ${
+        sticky ? 'sticky-navbar shadow-md bg-base-200 dark:bg-slate-600 duration-300' : ''
+      }`}
     >
       <div className='navbar'>
         <div className='navbar-start'>
@@ -144,9 +138,11 @@ function Navbar() {
               viewBox='0 0 24 24'
               onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
             >
-              <path d='M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73c-1.7-.17-3.4-.92-4.65-2.17a7.84,7.84,0,0,1-1.75-4.91A7.9,7.9,0,0,1,17,3a1,1,0,0,0-.91-1.17,1,1,0,0,0-1.11.91A5.91,5.91,0,0,0,12,4a5.91,5.91,0,0,0-3.74-1.37A1,1,0,0,0,7,3a1,1,0,0,0-.91,1.17A7.9,7.9,0,0,1,9.59,8.79c-.52,1.06-.6,2.27-.26,3.38a8.08,8.08,0,0,1-3.73,4.66A8.07,8.07,0,0,1,3.71,18.79a1,1,0,0,0-1.49.63A10.11,10.11,0,0,0,5.29,22a10.09,10.09,0,0,0,14.3-1.78A10.1,10.1,0,0,0,21.64,13Z' />
+              <path d='M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6A6.65,6.65,0,0,0,12,13.5a6.56,6.56,0,0,0,6.56-6.56,1,1,0,0,0-1-1A5.65,5.65,0,0,1,12,11a5.66,5.66,0,0,1-5.56-5.56,1,1,0,0,0-1,1A6.65,6.65,0,0,0,12,12.5Z' />
             </svg>
           </label>
+          {authUser ? <Logout /> : <Login />}
+          <LanguageSwitcher />
         </div>
       </div>
     </div>
