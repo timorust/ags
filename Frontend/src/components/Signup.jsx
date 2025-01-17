@@ -13,7 +13,7 @@ function Signup() {
 
 	const location = useLocation()
 	const navigate = useNavigate()
-	const from = location.state?.from?.pathname || '/conference'
+	const from = '/conference'
 	const {
 		register,
 		handleSubmit,
