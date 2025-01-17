@@ -26,7 +26,10 @@ function Login() {
 				console.log(res.data)
 				if (res.data) {
 					toast.success('Login Successfully')
-					document.getElementById('my_modal_3').close()
+					const modal = document.getElementById('my_modal_3')
+					if (modal) {
+						modal.close()
+					}
 					setTimeout(() => {
 						window.location.reload()
 						localStorage.setItem('Users', JSON.stringify(res.data.user))
@@ -38,10 +41,10 @@ function Login() {
 				if (err.response) {
 					console.log(err)
 					toast.error('Error: ' + err.response.data.message)
-					setTimeout(() => { }, 2000)
 				}
 			})
 	}
+
 	return (
 		<div>
 			<dialog id='my_modal_3' className='modal'>
@@ -70,7 +73,6 @@ function Login() {
 							<br />
 							{errors.email && (
 								<span className='text-sm text-red-500'>
-
 									{t('This field is required')}
 								</span>
 							)}
@@ -95,8 +97,8 @@ function Login() {
 
 						{/* Button */}
 						<div className='flex justify-around mt-6'>
-							<button type="button"
-								onClick={handleSubmit(onSubmit)} className='bg-pink-500 text-white rounded-md px-3 py-1 hover:bg-pink-700 duration-200'>
+							<button type="submit"
+								className='bg-pink-500 text-white rounded-md px-3 py-1 hover:bg-pink-700 duration-200'>
 								{t('Login')}
 							</button>
 							<p>
