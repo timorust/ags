@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { useForm } from 'react-hook-form'
 import axios from 'axios'
 import toast from 'react-hot-toast'
@@ -8,6 +8,7 @@ import { useTranslation } from 'react-i18next'
 function Login() {
 
 	const { t } = useTranslation()
+	const navigate = useNavigate()
 	const {
 		register,
 		handleSubmit,
@@ -30,6 +31,7 @@ function Login() {
 						window.location.reload()
 						localStorage.setItem('Users', JSON.stringify(res.data.user))
 					}, 1000)
+					navigate('/meeting')
 				}
 			})
 			.catch(err => {
@@ -93,7 +95,8 @@ function Login() {
 
 						{/* Button */}
 						<div className='flex justify-around mt-6'>
-							<button className='bg-pink-500 text-white rounded-md px-3 py-1 hover:bg-pink-700 duration-200'>
+							<button type="button"
+								onClick={handleSubmit(onSubmit)} className='bg-pink-500 text-white rounded-md px-3 py-1 hover:bg-pink-700 duration-200'>
 								{t('Login')}
 							</button>
 							<p>
