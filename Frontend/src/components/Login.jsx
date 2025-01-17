@@ -31,7 +31,7 @@ function Login() {
 						window.location.reload()
 						localStorage.setItem('Users', JSON.stringify(res.data.user))
 					}, 1000)
-					navigate('/meeting')
+					navigate('/conference')
 				}
 			})
 			.catch(err => {
