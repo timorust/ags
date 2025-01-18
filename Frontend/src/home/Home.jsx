@@ -4,6 +4,7 @@ import Footer from '../components/Footer'
 import FreeConference from '../components/FreeConference'
 import VideoWithDescription from '../components/VideoWithDescription'
 import CountdownTimer from '../components/CountdownTimer'
+import Hero from '../components/Hero'
 
 function Home() {
 	return (
@@ -13,6 +14,7 @@ function Home() {
 			<Banner />
 			<VideoWithDescription />
 			<FreeConference />
+			<Hero/>
 			<Footer />
 		</>
 	)
