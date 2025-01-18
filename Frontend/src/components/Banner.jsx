@@ -7,7 +7,7 @@ function Banner() {
 		<>
 			<div className='max-w-screen-2xl container mx-auto md:px-20 px-6 flex flex-col md:flex-row my-10'>
 				<div className='w-full order-2 md:order-1 md:w-1/2 mt-12 md:mt-36'>
-					<div className='space-y-8 overflow-hidden'>
+					<div className='space-y-8'>
 						<h1 className='text-2xl md:text-4xl font-bold'>
 							{t('The Azerbaijan Glaucoma Society')}
 						</h1>
@@ -114,9 +114,10 @@ dark:text-gray-300 font-light">
 					<img
 						src={banner}
 						alt='Banner'
-						className='w-[90%] max-w-[450px] md:w-[550px] md:h-[460px] md:ml-12 object-contain rounded-lg animate-slideIn transition-transform duration-1000 ease-in-out'
+						className='w-[90%] max-w-[450px] md:w-[550px] md:h-[460px] md:ml-12 object-contain rounded-lg transition-transform duration-500 ease-in-out transform hover:translate-x-3 hover:translate-y-3'
 					/>
 				</div>
+
 
 			</div>
 		</>
