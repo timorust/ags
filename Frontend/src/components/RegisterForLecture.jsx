@@ -43,23 +43,6 @@ function RegisterLecture() {
 		<>
 			<Navbar />
 			<div className="flex flex-col md:flex-row justify-center items-center md:space-x-6 mt-10">
-				{/* הוספתי margin ו-padding לכרטיס והחלפתי בין המונה לכרטיס */}
-				{/* <div className="card card-side bg-base-100 shadow-xl p-6 mr-20 m-4 mt-20 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl dark:bg-slate-900 dark:text-white">
-					<figure>
-						<img
-							src="https://media.licdn.com/dms/image/v2/D5603AQFcR0SmWJ_oQw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1719331799359?e=1742428800&v=beta&t=U0um6HtEHcwHz_thL7tN0ynKEPOeQQ5tW6HajXlnXz0"
-							alt="Dr. Jamil Hasanov"
-							className="w-32 sm:w-40 md:w-48 lg:w-56"
-						/>
-					</figure>
-					<div className="card-body bg-base-100">
-						<h2 className="card-title">Dr. Jamil Hasanov PhD!</h2>
-						<p>Zarifa Aliyeva National Eye Centre</p>
-						<div className="card-actions justify-end">
-							<button className="btn btn-primary">For reference</button>
-						</div>
-					</div>
-				</div> */}
 				<div className="w-full flex justify-center sm:justify-between card mx-auto card-side bg-base-100 shadow-xl p-6 m-4 mt-20 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl dark:bg-slate-900 dark:text-white">
 					<figure className="w-full flex justify-center">
 						<img
@@ -73,7 +56,7 @@ function RegisterLecture() {
 						<p className="text-center">Zarifa Aliyeva National Eye Centre</p>
 						<div className="card-actions justify-end w-full flex justify-center">
 							<button
-								className="btn btn-primary flex items-center gap-2"
+								className="text-blue-500 flex items-center gap-2"
 								onClick={() => window.location.href = 'mailto:your_email@example.com'}
 							>
 								<svg
