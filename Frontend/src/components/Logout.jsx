@@ -26,7 +26,7 @@ function Logout() {
 		<div>
 			<button
 				className='px-3 py-2 bg-pink-500 text-gray-500 
-dark:text-gray-300 font-light rounded-md cursor-pointer'
+dark:text-white font-light rounded-md cursor-pointer'
 				onClick={handleLogout}
 			>
 				{t('Logout')}
