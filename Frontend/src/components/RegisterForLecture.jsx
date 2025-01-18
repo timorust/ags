@@ -42,9 +42,9 @@ function RegisterLecture() {
 	return (
 		<>
 			<Navbar />
-			<div className="flex justify-between items-center space-x-6">
+			<div className="flex flex-col md:flex-row justify-center items-center md:space-x-6 mt-10">
 				{/* הוספתי margin ו-padding לכרטיס והחלפתי בין המונה לכרטיס */}
-				<div className="card card-side bg-base-100 shadow-xl p-6 m-4 mt-20">
+				<div className="card card-side bg-base-100 shadow-xl p-6 m-4 w-full md:w-auto">
 					<figure>
 						<img
 							src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
@@ -62,16 +62,16 @@ function RegisterLecture() {
 				<CountdownTimer targetDate='2025-03-15T09:00:00' />
 			</div>
 
-			<div className='max-w-screen-2xl container mx-auto md:px-20 px-6'>
+			<div className='max-w-screen-2xl container mx-auto md:px-20 px-6 mt-12'>
 				{isRegistered ? (
-					<div className='text-center mt-12'>
+					<div className='text-center'>
 						<h2 className='text-2xl text-green-500'>
 							{t('Thank you for registering')}!
 						</h2>
 						<p>{t('We look forward to seeing you at the lecture')}.</p>
 					</div>
 				) : (
-					<form onSubmit={handleSubmit} className='mt-12 max-w-lg mx-auto'>
+					<form onSubmit={handleSubmit} className='max-w-lg mx-auto'>
 						<div className='mb-6'>
 							<label className='block text-left text-gray-700 dark:bg-slate-900 dark:text-green-300'>
 								{t('First Name')}
@@ -81,7 +81,7 @@ function RegisterLecture() {
 								name='firstName'
 								value={formData.firstName}
 								onChange={handleChange}
-								className='w-full px-4 py-2 border rounded-md  dark:bg-slate-900 dark:text-white'
+								className='w-full px-4 py-2 border rounded-md dark:bg-slate-900 dark:text-white'
 								placeholder={t('Enter your first name')}
 								required
 							/>
@@ -95,7 +95,7 @@ function RegisterLecture() {
 								name='lastName'
 								value={formData.lastName}
 								onChange={handleChange}
-								className='w-full px-4 py-2 border rounded-md  dark:bg-slate-900 dark:text-white'
+								className='w-full px-4 py-2 border rounded-md dark:bg-slate-900 dark:text-white'
 								placeholder={t('Enter your last name')}
 								required
 							/>
@@ -109,7 +109,7 @@ function RegisterLecture() {
 								name='phone'
 								value={formData.phone}
 								onChange={handleChange}
-								className='w-full px-4 py-2 border rounded-md  dark:bg-slate-900 dark:text-white'
+								className='w-full px-4 py-2 border rounded-md dark:bg-slate-900 dark:text-white'
 								placeholder={t('Enter your phone number')}
 								required
 							/>
@@ -123,7 +123,7 @@ function RegisterLecture() {
 								name='age'
 								value={formData.age}
 								onChange={handleChange}
-								className='w-full px-4 py-2 border rounded-md  dark:bg-slate-900 dark:text-white'
+								className='w-full px-4 py-2 border rounded-md dark:bg-slate-900 dark:text-white'
 								placeholder={t('Enter your age')}
 								required
 							/>
@@ -137,7 +137,7 @@ function RegisterLecture() {
 								name='lecture'
 								value={formData.lecture}
 								onChange={handleChange}
-								className='w-full px-4 py-2 border rounded-md  dark:bg-slate-900 dark:text-white'
+								className='w-full px-4 py-2 border rounded-md dark:bg-slate-900 dark:text-white'
 								placeholder={t('Enter experience years')}
 								required
 							/>
@@ -151,7 +151,7 @@ function RegisterLecture() {
 								name='email'
 								value={formData.email}
 								onChange={handleChange}
-								className='w-full px-4 py-2 border rounded-md  dark:bg-slate-900 dark:text-white'
+								className='w-full px-4 py-2 border rounded-md dark:bg-slate-900 dark:text-white'
 								placeholder={t('Enter your email')}
 								required
 							/>
