@@ -56,7 +56,7 @@ function RegisterLecture() {
 						<p className="text-center">Zarifa Aliyeva National Eye Centre</p>
 						<div className="card-actions justify-end w-full flex justify-center">
 							<button
-								className="text-blue-500 flex items-center gap-2"
+								className="bg-blue-500 text-white rounded-md px-3 py-1 hover:bg-blue-700 duration-200"
 								onClick={() => window.location.href = 'mailto:your_email@example.com'}
 							>
 								<svg
