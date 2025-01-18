@@ -39,13 +39,7 @@ dark:text-gray-300 font-light">
 
 
 					</div>
-					{/* <button className='btn mt-6 bg-green-500 text-white hover:bg-green-700'>
-						{t('Get Started')}
-					</button> */}
-				</div>
-
-
-				<div className='grid grid-flow-col gap-4'>
+					<div className='grid grid-flow-col gap-4'>
 						{/* Twitter */}
 						<a
 							href='https://twitter.com'
@@ -112,7 +106,10 @@ dark:text-gray-300 font-light">
 						</a>
 
 					</div>
-					
+					{/* <button className='btn mt-6 bg-green-500 text-white hover:bg-green-700'>
+						{t('Get Started')}
+					</button> */}
+				</div>
 				<div className='order-1 w-full mt-20 md:w-1/2 flex justify-center md:justify-start overflow-hidden mr-10'>
 					<img
 						src={banner}
