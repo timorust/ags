@@ -44,7 +44,7 @@ function RegisterLecture() {
 			<Navbar />
 			<div className="flex flex-col md:flex-row justify-center items-center md:space-x-6 mt-10">
 				{/* הוספתי margin ו-padding לכרטיס והחלפתי בין המונה לכרטיס */}
-				<div className="card card-side bg-base-100 shadow-xl p-6 m-4 w-full md:w-auto">
+				<div className="card card-side bg-base-100 shadow-xl p-6 m-4 mt-20 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
 					<figure>
 						<img
 							src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
@@ -58,6 +58,7 @@ function RegisterLecture() {
 						</div>
 					</div>
 				</div>
+
 				{/* המונה נמצא בצד השני */}
 				<CountdownTimer targetDate='2025-03-15T09:00:00' />
 			</div>
