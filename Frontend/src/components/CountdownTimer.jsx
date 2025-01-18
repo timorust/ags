@@ -42,7 +42,7 @@ const CountdownTimer = ({ targetDate }) => {
 			<div className='flex justify-center space-x-8'>
 				{Object.keys(timeLeft).map(interval => (
 					<div key={interval} className='text-center'>
-						<span className='text-5xl font-bold text-blue-500'>
+						<span className='text-5xl font-bold text-green-500'>
 							{timeLeft[interval] || 0}
 						</span>
 						<div className='text-lg text-pink-600 capitalize dark:text-pink-300'>
