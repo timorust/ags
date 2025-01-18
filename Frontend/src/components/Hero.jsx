@@ -9,12 +9,12 @@ export default function Hero() {
           <div className="hero-content text-center text-secondary-content">
             <div className="max-w-lg">
               <h1 className="mb-5 sm:mb-7 text-4xl sm:text-5xl font-bold">
-                Let's make your
-                product a success
+                Azerbaijan Glaucoma Society
               </h1>
               <p className="mb-5 sm:mb-7 sm:text-lg">
-                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.
+                Join us for an insightful conference on the latest advancements in glaucoma research and treatment. Together, let's make strides in eye health.
               </p>
+
               {/* <button className="btn btn-warning sm:btn-wide">Get Started</button> */}
             </div>
           </div>
