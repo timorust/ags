@@ -110,13 +110,21 @@ dark:text-gray-300 font-light">
 						{t('Get Started')}
 					</button> */}
 				</div>
-				<div className='order-1 w-full mt-20 md:w-1/2 flex justify-center md:justify-start overflow-hidden mr-10 ml-10 pt-10 pb-10 pr-10'>
+				{/* <div className='order-1 w-full mt-20 md:w-1/2 flex justify-center md:justify-start overflow-hidden mr-10 ml-10 pt-10 pb-10 pr-10'>
 					<img
 						src={banner}
 						alt='Banner'
 						className='w-[90%] max-w-[450px] md:w-[550px] md:h-[460px] md:ml-12 object-contain rounded-lg animate-slideIn transition-transform duration-1000 ease-in-out'
 					/>
+				</div> */}
+				<div className='order-1 w-full mt-20 md:w-1/2 flex justify-center md:justify-start overflow-hidden mr-10 ml-10 pt-10 pb-10 pr-10'>
+					<img
+						src={banner}
+						alt='Banner'
+						className='w-full max-w-[450px] md:w-[550px] md:h-[460px] md:ml-12 object-cover rounded-lg animate-slideIn transition-transform duration-1000 ease-in-out'
+					/>
 				</div>
+
 
 
 			</div>
