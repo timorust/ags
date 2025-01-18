@@ -69,11 +69,26 @@ function RegisterLecture() {
 						/>
 					</figure>
 					<div className="card-body bg-base-100 w-full flex flex-col items-center dark:bg-slate-900 dark:text-white">
-						<h2 className="card-title text-center">Dr. Jamil Hasanov PhD!</h2>
+						<h2 className="card-title text-center">Dr. Jamil Hasanov PhD</h2>
 						<p className="text-center">Zarifa Aliyeva National Eye Centre</p>
 						<div className="card-actions justify-end w-full flex justify-center">
-							<button className="btn btn-primary">For reference</button>
+							<button
+								className="btn btn-primary flex items-center gap-2"
+								onClick={() => window.location.href = 'mailto:your_email@example.com'}
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 16 16"
+									fill="currentColor"
+									className="w-4 h-4 opacity-70"
+								>
+									<path d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z" />
+									<path d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" />
+								</svg>
+								Send Email
+							</button>
 						</div>
+
 					</div>
 				</div>
 
