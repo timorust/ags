@@ -14,8 +14,8 @@ function Banner() {
 						{/* <p className='text-sm md:text-xl whitespace-pre-line break-words text-gray-700  dark:bg-slate-900 dark:text-green-300'>
 							{t('Description')}
 						</p> */}
-						<p className="text-base md:text-lg leading-relaxed tracking-wide text-gray-800 bg-gray-100 rounded-lg shadow-sm p-4 
-dark:text-gray-200 dark:bg-gray-800 dark:shadow-md">
+						<p className="text-sm md:text-lg leading-relaxed tracking-wide text-gray-800 bg-gray-100 rounded-lg shadow-sm p-4 
+dark:text-gray-200">
 							{t('Description')}
 						</p>
 
