@@ -44,7 +44,7 @@ function RegisterLecture() {
 			<Navbar />
 			<div className="flex justify-between items-center space-x-6">
 				{/* הוספתי margin ו-padding לכרטיס והחלפתי בין המונה לכרטיס */}
-				<div className="card card-side bg-base-100 shadow-xl p-6 m-4">
+				<div className="card card-side bg-base-100 shadow-xl p-6 m-4 mt-20">
 					<figure>
 						<img
 							src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
