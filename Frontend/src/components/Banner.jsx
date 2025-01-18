@@ -39,7 +39,7 @@ dark:text-gray-300 font-light">
 
 
 					</div>
-					<div className='grid grid-flow-col gap-4'>
+					<div className='grid grid-flow-col gap-4 mt-10 pt-10'>
 						{/* Twitter */}
 						<a
 							href='https://twitter.com'
