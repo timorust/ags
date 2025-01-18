@@ -57,7 +57,7 @@ function RegisterLecture() {
 						<div className="card-actions justify-end w-full flex justify-center">
 							<button
 								className="text-cyan-400 hover:text-cyan-600 active:text-cyan-700 duration-200 flex items-center gap-2"
-								onClick={() => window.location.href = 'mailto:your_email@example.com'}
+								onClick={() => window.location.href = 'mailto:glaucomaaz@gmail.az'}
 							>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
