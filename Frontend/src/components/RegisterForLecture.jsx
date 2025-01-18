@@ -44,7 +44,7 @@ function RegisterLecture() {
 			<Navbar />
 			<div className="flex flex-col md:flex-row justify-center items-center md:space-x-6 mt-10">
 				{/* הוספתי margin ו-padding לכרטיס והחלפתי בין המונה לכרטיס */}
-				<div className="card card-side bg-base-100 shadow-xl p-6 m-4 mt-20 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto">
+				<div className="card card-side bg-base-100 shadow-xl p-6 m-4 mt-20 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl ml-10">
 					<figure>
 						<img
 							src="https://media.licdn.com/dms/image/v2/D5603AQFcR0SmWJ_oQw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1719331799359?e=1742428800&v=beta&t=U0um6HtEHcwHz_thL7tN0ynKEPOeQQ5tW6HajXlnXz0"
