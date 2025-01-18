@@ -8,7 +8,7 @@ i18n
 	.use(HttpBackend)
 	.init({
 		debug: true,
-		fallbackLng: "en",
+		fallbackLng: localStorage.getItem('language') || 'en',
 		interpolation: {
 			escapeValue: false,
 		},
