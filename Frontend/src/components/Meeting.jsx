@@ -2,8 +2,11 @@ import { Link } from 'react-router-dom'
 import Cards from './Cards'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
+import { useTranslation } from 'react-i18next'
 
 function Meeting() {
+
+	const { t } = useTranslation()
 	const [conference, setConference] = useState([])
 
 	useEffect(() => {
@@ -26,12 +29,7 @@ function Meeting() {
 					<span className='text-yellow-500'>Here! :)</span>
 				</h1>
 				<p className='mt-12'>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-					laborum quae nulla consectetur eum distinctio sed vitae illo impedit,
-					eveniet eaque beatae repellat animi ab quasi, autem odio deleniti amet
-					esse accusantium perspiciatis dolore cupiditate cum nam? Eius corporis
-					temporibus veniam fugit consequatur vitae vel molestiae, at amet eaque
-					mollitia!
+				{t('meetingDescription')}
 				</p>
 				<Link to='/'>
 					<button className='mt-6 bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-700 duration-300'>
