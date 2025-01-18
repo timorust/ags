@@ -65,10 +65,10 @@ function RegisterLecture() {
 						<img
 							src="https://media.licdn.com/dms/image/v2/D5603AQFcR0SmWJ_oQw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1719331799359?e=1742428800&v=beta&t=U0um6HtEHcwHz_thL7tN0ynKEPOeQQ5tW6HajXlnXz0"
 							alt="Dr. Jamil Hasanov"
-							className="w-32 sm:w-40 md:w-48 lg:w-56"
+							className="w-32 sm:w-40 md:w-48 lg:w-56 dark:bg-slate-900 dark:text-white"
 						/>
 					</figure>
-					<div className="card-body bg-base-100 w-full flex flex-col items-center">
+					<div className="card-body bg-base-100 w-full flex flex-col items-center dark:bg-slate-900 dark:text-white">
 						<h2 className="card-title text-center">Dr. Jamil Hasanov PhD!</h2>
 						<p className="text-center">Zarifa Aliyeva National Eye Centre</p>
 						<div className="card-actions justify-end w-full flex justify-center">
