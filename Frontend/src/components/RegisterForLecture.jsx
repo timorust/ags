@@ -42,11 +42,9 @@ function RegisterLecture() {
 	return (
 		<>
 			<Navbar />
-			<div className="flex justify-between items-center"> {/* שיניתי את הסידור כדי לשים את המונה והכרטיס ליד */}
-				<CountdownTimer targetDate='2025-03-15T09:00:00' />
-				
-				{/* הוספתי את הכרטיס החדש מצד ימין */}
-				<div className="card card-side bg-base-100 shadow-xl">
+			<div className="flex justify-between items-center space-x-6">
+				{/* הוספתי margin ו-padding לכרטיס והחלפתי בין המונה לכרטיס */}
+				<div className="card card-side bg-base-100 shadow-xl p-6 m-4">
 					<figure>
 						<img
 							src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
@@ -60,7 +58,10 @@ function RegisterLecture() {
 						</div>
 					</div>
 				</div>
+				{/* המונה נמצא בצד השני */}
+				<CountdownTimer targetDate='2025-03-15T09:00:00' />
 			</div>
+
 			<div className='max-w-screen-2xl container mx-auto md:px-20 px-6'>
 				{isRegistered ? (
 					<div className='text-center mt-12'>
@@ -72,7 +73,7 @@ function RegisterLecture() {
 				) : (
 					<form onSubmit={handleSubmit} className='mt-12 max-w-lg mx-auto'>
 						<div className='mb-6'>
-							<label className='block text-left text-gray-700  dark:bg-slate-900 dark:text-green-300'>
+							<label className='block text-left text-gray-700 dark:bg-slate-900 dark:text-green-300'>
 								{t('First Name')}
 							</label>
 							<input
