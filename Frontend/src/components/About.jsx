@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+auto rounded-t-lgimport { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Navbar from './Navbar'
 import Footer from './Footer'
@@ -60,7 +60,7 @@ function About() {
 							key={index}
 							src={image}
 							alt={`Image ${index + 1}`}
-							className={`absolute w-full h-full object-cover ${
+							className={`absolute w-full h-auto rounded-t-lg object-cover ${
 								index === imageIndex ? 'opacity-100' : 'opacity-0'
 							}`}
 						/>
