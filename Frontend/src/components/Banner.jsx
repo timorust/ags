@@ -11,15 +11,11 @@ function Banner() {
 						<h1 className='text-2xl md:text-4xl font-bold'>
 							{t('The Azerbaijan Glaucoma Society')}
 						</h1>
-						{/* <p className='text-sm md:text-xl whitespace-pre-line break-words text-gray-700  dark:bg-slate-900 dark:text-green-300'>
-							{t('Description')}
-						</p> */}
-						<p className="text-sm md:text-lg leading-relaxed tracking-wide text-gray-800 bg-gray-100 rounded-lg shadow-sm p-4 
-dark:text-gray-200">
+						<p className='text-sm md:text-xl eading-relaxed tracking-wide whitespace-pre-line break-words text-gray-500  dark:bg-slate-900 dark:text-green-100'>
 							{t('Description')}
 						</p>
 
-						<label className='flex items-center gap-2 dark:bg-slate-900 dark:text-white border-2 border-blue-500 focus-within:border-blue-700 rounded-md px-2 py-1'>
+						{/* <label className='flex items-center gap-2 dark:bg-slate-900 dark:text-white border-2 border-blue-500 focus-within:border-blue-700 rounded-md px-2 py-1'>
 							<svg
 								xmlns='http://www.w3.org/2000/svg'
 								viewBox='0 0 16 16'
@@ -34,13 +30,13 @@ dark:text-gray-200">
 								className='flex-grow outline-none border-none bg-transparent dark:text-white'
 								placeholder='Email'
 							/>
-						</label>
+						</label> */}
 
 
 					</div>
-					<button className='btn mt-6 bg-green-500 text-white hover:bg-green-700'>
+					{/* <button className='btn mt-6 bg-green-500 text-white hover:bg-green-700'>
 						{t('Get Started')}
-					</button>
+					</button> */}
 				</div>
 				<div className='order-1 w-full mt-20 md:w-1/2 flex justify-center md:justify-start overflow-hidden mr-10'>
 					<img
