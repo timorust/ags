@@ -19,13 +19,14 @@ function Logout() {
 			}, 3000)
 		} catch (error) {
 			toast.error('Error: ' + error)
-			setTimeout(() => {}, 2000)
+			setTimeout(() => { }, 2000)
 		}
 	}
 	return (
 		<div>
 			<button
-				className='px-3 py-2 bg-pink-500 text-white rounded-md cursor-pointer'
+				className='px-3 py-2 bg-pink-500 text-gray-500 
+dark:text-gray-300 font-light rounded-md cursor-pointer'
 				onClick={handleLogout}
 			>
 				{t('Logout')}
