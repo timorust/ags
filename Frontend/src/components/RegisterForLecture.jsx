@@ -47,8 +47,10 @@ function RegisterLecture() {
 				<div className="card card-side bg-base-100 shadow-xl p-6 m-4 mt-20 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
 					<figure>
 						<img
-							src="https://media.licdn.com/dms/image/v2/D5603AQFcR0SmWJ_oQw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1719331799359?e=1742428800&v=beta&t=U0um6HtEHcwHz_thL7tN0ynKEPOeQQ5tW6HajXlnXz0"
-							alt="Movie" />
+							src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
+							alt="Movie"
+							className="max-w-[200px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-[350px]"
+						/>
 					</figure>
 					<div className="card-body">
 						<h2 className="card-title">New movie is released!</h2>
@@ -58,6 +60,7 @@ function RegisterLecture() {
 						</div>
 					</div>
 				</div>
+
 
 				{/* המונה נמצא בצד השני */}
 				<CountdownTimer targetDate='2025-03-15T09:00:00' />
