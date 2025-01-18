@@ -9,6 +9,7 @@ const LanguageSwitcher = () => {
 		const newLanguage = language === 'en' ? 'az' : 'en'
 		i18n.changeLanguage(newLanguage)
 		setLanguage(newLanguage)
+		localStorage.setItem('language', newLanguage)
 	}
 
 	return (
