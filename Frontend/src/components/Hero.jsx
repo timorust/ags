@@ -7,11 +7,11 @@ export default function Hero() {
         <div className="hero h-96 md:h-[500px] rounded-box overflow-hidden" style={{ backgroundImage: `url("https://www.akupunktur-noll.de/wp-content/uploads/2016/08/short-sightedness-myopia-is-considered-by-specialists-to-be-a-cause-of-glaucoma-en.png")` }}>
           <div className="hero-overlay bg-opacity-60"></div>
           <div className="hero-content text-center text-secondary-content">
-            <div className="max-w-lg dark:bg-slate-900 dark:text-white">
-              <h1 className="mb-5 sm:mb-7 text-4xl sm:text-5xl font-bold">
+            <div className="max-w-lg">
+              <h1 className="mb-5 sm:mb-7 text-4xl sm:text-5xl font-bold dark:bg-slate-900 dark:text-white">
                 Azerbaijan Glaucoma Society
               </h1>
-              <p className="mb-5 sm:mb-7 sm:text-lg">
+              <p className="mb-5 sm:mb-7 sm:text-lg dark:bg-slate-900 dark:text-white">
                 Join us for an insightful conference on the latest advancements in glaucoma research and treatment. Together, let's make strides in eye health.
               </p>
 
