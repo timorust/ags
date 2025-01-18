@@ -11,7 +11,7 @@ function Banner() {
 						<h1 className='text-2xl md:text-4xl font-bold'>
 							{t('The Azerbaijan Glaucoma Society')}
 						</h1>
-						<p className='text-sm md:text-xl whitespace-pre-line break-words'>
+						<p className='text-sm md:text-xl whitespace-pre-line break-words text-gray-700  dark:bg-slate-900 dark:text-green-300'>
 							{t('Description')}
 						</p>
 						<label className='flex items-center gap-2 dark:bg-slate-900 dark:text-white border-2 border-blue-500 focus-within:border-blue-700 rounded-md px-2 py-1'>
