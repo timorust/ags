@@ -45,7 +45,8 @@ const CountdownTimer = ({ targetDate }) => {
 						<span className='text-5xl font-bold text-green-500'>
 							{timeLeft[interval] || 0}
 						</span>
-						<div className='text-lg text-green-500 capitalize dark:text-green-300'>
+						<div className='text-lg capitalize text-gray-500 
+dark:text-gray-300 font-light'>
 							{t(interval)}
 						</div>
 					</div>
