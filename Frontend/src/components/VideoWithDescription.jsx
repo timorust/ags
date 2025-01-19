@@ -6,7 +6,7 @@ const VideoWithDescription = () => {
 					<div className='aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-xl'>
 						<iframe
 							class="w-full"
-							src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+							src="https://www.youtube.com/watch?v=Ej2nGs2Wcno"
 							title="YouTube video player"
 							frameborder="0"
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
