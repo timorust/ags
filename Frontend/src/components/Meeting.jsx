@@ -77,7 +77,8 @@ function Meeting() {
       />
     </figure>
     <div className="card-body text-center">
-      <h2 className="card-title">Dr. Jamil Hasanov PhD</h2>
+      <h2 className="card-title">Dr. Sona IbrahImova PhD</h2>
+      <h6 className="card-title">Vice Chairman</h6>
       <p>Zarifa Aliyeva National Eye Centre</p>
       <div className="card-actions justify-center mt-4">
         <button
