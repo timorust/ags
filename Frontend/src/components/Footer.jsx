@@ -32,6 +32,23 @@ function Footer() {
 							</svg>
 						</a>
 
+						{/* Linkedin */}
+						<a
+							href="http://linkedin.com/in/azerbaijan-glaucoma-society-866084348"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								className="fill-current"
+							>
+								<path d="M19 0H5C2.24 0 0 2.24 0 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5V5c0-2.76-2.24-5-5-5zM8.339 19H5.339V9h3v10zm-1.5-11.5c-.967 0-1.75-.784-1.75-1.75S5.872 4 6.839 4c.967 0 1.75.784 1.75 1.75s-.783 1.75-1.75 1.75zm13.161 11.5h-3v-5.7c0-1.361-.027-3.115-1.9-3.115-1.902 0-2.193 1.486-2.193 3.02V19h-3V9h2.881v1.369h.041c.401-.757 1.381-1.556 2.842-1.556 3.041 0 3.6 2.001 3.6 4.601V19z" />
+							</svg>
+						</a>
+
 						{/* YouTube */}
 						<a
 							href='https://youtube.com'
