@@ -50,7 +50,6 @@ function Meeting() {
             <h2 className="card-title">Dr. Jamil Hasanov PhD</h2>
             <p>Zarifa Aliyeva National Eye Centre</p>
             <p className="text-gray-500 mt-2">Chairman</p>
-            <p className="text-gray-500 mt-2">Expert in Ocular Oncology</p>
             <div className="card-actions justify-center mt-4">
               <button
                 className="text-green-500 hover:text-green-700 active:text-green-800 flex items-center gap-2 transition duration-200"
@@ -83,7 +82,6 @@ function Meeting() {
             <h2 className="card-title">Dr. Sona IbrahImova PhD</h2>
             <p>Zarifa Aliyeva National Eye Centre</p>
             <p className="text-gray-500 mt-2">Vice Chairman</p>
-            <p className="text-gray-500 mt-2">Expert in Diabetic Retinopathy</p>
             <div className="card-actions justify-center mt-4">
               <button
                 className="text-green-500 hover:text-green-700 active:text-green-800 flex items-center gap-2 transition duration-200"
