@@ -36,21 +36,22 @@ function Meeting() {
         </Link> */}
         <div className="card-actions justify-end w-full flex justify-center mt-10">
           <button
-            className="text-cyan-400 hover:text-cyan-600 active:text-cyan-700 duration-200 flex items-center gap-2"
+            className="text-green-500 hover:text-green-700 active:text-green-800 transition duration-200 flex items-center gap-2"
             onClick={() => window.location.href = 'mailto:glaucomaaz@gmail.az'}
           >
+            {/* אייקון מעוצב מ-Heroicons */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 16 16"
+              viewBox="0 0 24 24"
               fill="currentColor"
-              className="w-6 h-6 opacity-70"  // הגדלתי את גודל האייקון
+              className="w-6 h-6"
             >
-              <path d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z" />
-              <path d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" />
+              <path d="M1.5 4.5A3 3 0 014.5 1.5h15a3 3 0 013 3v15a3 3 0 01-3 3h-15a3 3 0 01-3-3v-15zM4.062 3A1.5 1.5 0 003 4.5v15A1.5 1.5 0 004.5 21h15a1.5 1.5 0 001.5-1.5v-15A1.5 1.5 0 0019.5 3H4.062zM12 12.243l7.5-5.25v10.5h-15v-10.5l7.5 5.25zM5.685 6h12.63L12 11.757 5.685 6z" />
             </svg>
-            Send Email
+            <span className="text-sm">Send Email</span>
           </button>
         </div>
+
 
       </div>
 
