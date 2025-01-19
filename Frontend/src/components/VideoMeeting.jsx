@@ -8,20 +8,26 @@ function VideoMeeting() {
     {
       id: 1,
       title: t('Introduction to AGC 2025'),
-      description: t('Welcome and Overview'),
-      youtubeId: 'dQw4w9WgXcQ', // Example YouTube video ID
+      description: t('Azərbaycan Qlaukomatoloqlarının'),
+      youtubeId: '4E4RDUNbznM', // Example YouTube video ID
     },
     {
       id: 2,
       title: t('Keynote Speech'),
       description: t('Dr. Jamil Hasanov’s Vision'),
-      youtubeId: 'oHg5SJYRHA0',
+      youtubeId: 'Ej2nGs2Wcno',
     },
     {
       id: 3,
       title: t('Panel Discussion'),
+      description: t('Beynəlxalq “Qlaukoma həftəsi'),
+      youtubeId: 'oOz30gbA6x4',
+    },
+    {
+      id: 4,
+      title: t('Panel Discussion'),
       description: t('Innovations in Eye Care'),
-      youtubeId: '3JZ_D3ELwOQ',
+      youtubeId: '5rXkw20_ogA',
     },
   ]);
 
