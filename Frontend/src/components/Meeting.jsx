@@ -26,7 +26,7 @@ function Meeting() {
       {/* Header Section */}
       <div className="mt-28 text-center">
         <h1 className="text-2xl md:text-4xl">
-          {t('WELCOME TO AGC-2025')}<span className="text-yellow-500">!</span>
+          {t('WELCOME TO AGC-2025')}<span className="text-yellow-500"></span>
         </h1>
         <p className="mt-6 text-lg md:text-xl">{t('meetingDescription')}</p>
         <Link to="/">
