@@ -6,6 +6,7 @@ import VideoWithDescription from '../components/VideoWithDescription'
 import CountdownTimer from '../components/CountdownTimer'
 import Hero from '../components/Hero'
 import VideoMeeting from '../components/VideoMeeting'
+import VideoCurusel from '../components/VideoCurusel'
 
 function Home() {
 	return (
@@ -17,6 +18,7 @@ function Home() {
 			<FreeConference />
 			<Hero />
 			<VideoMeeting/>
+			<VideoCurusel/>
 			<Footer />
 		</>
 	)
