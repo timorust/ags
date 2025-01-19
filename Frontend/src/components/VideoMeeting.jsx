@@ -19,15 +19,21 @@ function VideoMeeting() {
     },
     {
       id: 3,
-      title: t('Panel Discussion'),
+      title: t('GLAUCOMATOLOGISTS'),
       description: t('Beynəlxalq “Qlaukoma həftəsi'),
       youtubeId: 'oOz30gbA6x4',
     },
     {
       id: 4,
-      title: t('Panel Discussion'),
+      title: t('AADI'),
       description: t('Innovations in Eye Care'),
       youtubeId: '5rXkw20_ogA',
+    },
+    {
+      id: 5,
+      title: t('LIVE SURGERY'),
+      description: t('5th CONFERENCE of AZERBAIJAN GLAUCOMATOLOGISTS. AADI.'),
+      youtubeId: '1gecYxpfcs8',
     },
   ]);
 
