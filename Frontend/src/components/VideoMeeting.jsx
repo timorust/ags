@@ -25,14 +25,8 @@ function VideoMeeting() {
     },
     {
       id: 4,
-      title: t('AADI'),
-      description: t('Innovations in Eye Care'),
-      youtubeId: '5rXkw20_ogA',
-    },
-    {
-      id: 5,
       title: t('LIVE SURGERY'),
-      description: t('5th CONFERENCE of AZERBAIJAN GLAUCOMATOLOGISTS. AADI.'),
+      description: t('5th CONFERENCE of AZERBAIJAN GLAUCOMATOLOGISTS. AADI'),
       youtubeId: '1gecYxpfcs8',
     },
   ]);
