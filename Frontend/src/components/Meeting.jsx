@@ -49,12 +49,12 @@ function Meeting() {
           <div className="card-body text-center">
             <h2 className="card-title">Dr. Jamil Hasanov PhD</h2>
             <p>Zarifa Aliyeva National Eye Centre</p>
-            <p className="text-gray-500 mt-2">Specialized in Glaucoma Surgery</p> {/* הוספתי טאג P נוסף */}
-            <p className="text-gray-500 mt-2">Expert in Ocular Oncology</p> {/* עוד טאג P */}
+            <p className="text-gray-500 mt-2">Specialized in Glaucoma Surgery</p>
+            <p className="text-gray-500 mt-2">Expert in Ocular Oncology</p>
             <div className="card-actions justify-center mt-4">
               <button
-                className="text-cyan-400 hover:text-cyan-600 active:text-cyan-700 flex items-center gap-2 transition duration-200"
-                onClick={() => (window.location.href = "mailto:glaucomaaz@gmail.az")}
+                className="text-green-500 hover:text-green-700 active:text-green-800 flex items-center gap-2 transition duration-200"
+                onClick={() => (window.location.href = "https://wa.me/+1234567890")} // כאן שמים את מספר הטלפון שלך
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -62,10 +62,9 @@ function Meeting() {
                   fill="currentColor"
                   className="w-4 h-4 opacity-70"
                 >
-                  <path d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z" />
-                  <path d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" />
+                  <path d="M12.292 10.293a1 1 0 0 0-1.414 0l-2.293 2.293a6.48 6.48 0 0 1-1.86-.768l-.07-.039a5.919 5.919 0 0 1-1.16-.65l-.032-.02a6.446 6.446 0 0 1-.826-1.358l-.02-.033a5.75 5.75 0 0 1-.282-.601l.057-.006a5.75 5.75 0 0 0-.028-5.847l.017-.029a6.516 6.516 0 0 1 2.586-3.062A6.513 6.513 0 0 1 15 2.5a6.5 6.5 0 0 1-4.208 5.058l-.187-.11-.387.644-.183.305-.298-.179a4.678 4.678 0 0 0-.17-.098l-.016-.009-.178.21a5.512 5.512 0 0 0-3.402-.831z" />
                 </svg>
-                Send Email
+                Send WhatsApp Message
               </button>
             </div>
           </div>
@@ -83,12 +82,12 @@ function Meeting() {
           <div className="card-body text-center">
             <h2 className="card-title">Dr. Sona IbrahImova PhD</h2>
             <p>Zarifa Aliyeva National Eye Centre</p>
-            <p className="text-gray-500 mt-2">Specialized in Retinal Diseases</p> {/* הוספתי טאג P נוסף */}
-            <p className="text-gray-500 mt-2">Expert in Diabetic Retinopathy</p> {/* עוד טאג P */}
+            <p className="text-gray-500 mt-2">Specialized in Retinal Diseases</p>
+            <p className="text-gray-500 mt-2">Expert in Diabetic Retinopathy</p>
             <div className="card-actions justify-center mt-4">
               <button
-                className="text-cyan-400 hover:text-cyan-600 active:text-cyan-700 flex items-center gap-2 transition duration-200"
-                onClick={() => (window.location.href = "mailto:glaucomaaz@gmail.az")}
+                className="text-green-500 hover:text-green-700 active:text-green-800 flex items-center gap-2 transition duration-200"
+                onClick={() => (window.location.href = "https://wa.me/+1234567890")} // כאן שמים את מספר הטלפון שלך
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -96,10 +95,9 @@ function Meeting() {
                   fill="currentColor"
                   className="w-4 h-4 opacity-70"
                 >
-                  <path d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z" />
-                  <path d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" />
+                  <path d="M12.292 10.293a1 1 0 0 0-1.414 0l-2.293 2.293a6.48 6.48 0 0 1-1.86-.768l-.07-.039a5.919 5.919 0 0 1-1.16-.65l-.032-.02a6.446 6.446 0 0 1-.826-1.358l-.02-.033a5.75 5.75 0 0 1-.282-.601l.057-.006a5.75 5.75 0 0 0-.028-5.847l.017-.029a6.516 6.516 0 0 1 2.586-3.062A6.513 6.513 0 0 1 15 2.5a6.5 6.5 0 0 1-4.208 5.058l-.187-.11-.387.644-.183.305-.298-.179a4.678 4.678 0 0 0-.17-.098l-.016-.009-.178.21a5.512 5.512 0 0 0-3.402-.831z" />
                 </svg>
-                Send Email
+                Send WhatsApp Message
               </button>
             </div>
           </div>
