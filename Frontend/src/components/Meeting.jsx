@@ -49,7 +49,7 @@ function Meeting() {
           <div className="card-body text-center">
             <h2 className="card-title">Dr. Jamil Hasanov PhD</h2>
             <p>Zarifa Aliyeva National Eye Centre</p>
-            <p className="text-gray-500 mt-2">Specialized in Glaucoma Surgery</p>
+            <p className="text-gray-500 mt-2">Chairman</p>
             <p className="text-gray-500 mt-2">Expert in Ocular Oncology</p>
             <div className="card-actions justify-center mt-4">
               <button
@@ -58,13 +58,13 @@ function Meeting() {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 16 16"
+                  viewBox="0 0 24 24"
                   fill="currentColor"
-                  className="w-4 h-4 opacity-70"
+                  className="w-6 h-6 opacity-70"
                 >
-                  <path d="M12.292 10.293a1 1 0 0 0-1.414 0l-2.293 2.293a6.48 6.48 0 0 1-1.86-.768l-.07-.039a5.919 5.919 0 0 1-1.16-.65l-.032-.02a6.446 6.446 0 0 1-.826-1.358l-.02-.033a5.75 5.75 0 0 1-.282-.601l.057-.006a5.75 5.75 0 0 0-.028-5.847l.017-.029a6.516 6.516 0 0 1 2.586-3.062A6.513 6.513 0 0 1 15 2.5a6.5 6.5 0 0 1-4.208 5.058l-.187-.11-.387.644-.183.305-.298-.179a4.678 4.678 0 0 0-.17-.098l-.016-.009-.178.21a5.512 5.512 0 0 0-3.402-.831z" />
+                  {/* אייקון ווטסאפ */}
+                  <path d="M12 2.25a9.75 9.75 0 0 0-9.75 9.75c0 1.528.405 2.987 1.133 4.263l-1.02 4.16 4.177-1.02a9.726 9.726 0 0 0 4.26 1.133A9.75 9.75 0 0 0 12 2.25zM12 21.75a9.75 9.75 0 0 0 9.75-9.75c0-1.527-.405-2.987-1.133-4.261l1.02-4.177-4.177 1.02a9.726 9.726 0 0 0-4.26-1.133A9.75 9.75 0 0 0 12 21.75z" />
                 </svg>
-                Send WhatsApp Message
               </button>
             </div>
           </div>
@@ -82,7 +82,7 @@ function Meeting() {
           <div className="card-body text-center">
             <h2 className="card-title">Dr. Sona IbrahImova PhD</h2>
             <p>Zarifa Aliyeva National Eye Centre</p>
-            <p className="text-gray-500 mt-2">Specialized in Retinal Diseases</p>
+            <p className="text-gray-500 mt-2">Vice Chairman</p>
             <p className="text-gray-500 mt-2">Expert in Diabetic Retinopathy</p>
             <div className="card-actions justify-center mt-4">
               <button
