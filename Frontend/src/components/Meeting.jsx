@@ -29,11 +29,28 @@ function Meeting() {
           {t('WELCOME TO AGC-2025')}<span className="text-yellow-500"></span>
         </h1>
         <p className="mt-6 text-lg md:text-xl">{t('meetingDescription')}</p>
-        <Link to="/">
+        {/* <Link to="/">
           <button className="mt-6 bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-700 transition duration-300">
             {t('Back')}
           </button>
-        </Link>
+        </Link> */}
+        <div className="card-actions justify-end w-full flex justify-center">
+          <button
+            className="text-cyan-400 hover:text-cyan-600 active:text-cyan-700 duration-200 flex items-center gap-2"
+            onClick={() => window.location.href = 'mailto:glaucomaaz@gmail.az'}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+              fill="currentColor"
+              className="w-4 h-4 opacity-70"
+            >
+              <path d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z" />
+              <path d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" />
+            </svg>
+            Send Email
+          </button>
+        </div>
       </div>
 
       {/* Featured Card Section */}
@@ -47,9 +64,9 @@ function Meeting() {
             />
           </figure>
           <div className="card-body text-center">
-            <h2 className="card-title">Dr. Jamil Hasanov PhD</h2>
-            <p>Zarifa Aliyeva National Eye Centre</p>
-            <p className="text-gray-500 mt-2">Chairman</p>
+            <h2 className="card-title">{t('Dr. Jamil Hasanov PhD')}</h2>
+            <p>{t('Zarifa Aliyeva National Eye Centre')}</p>
+            <p className="text-gray-500 mt-2">{t('Chairman')}</p>
             <div className="card-actions justify-center mt-4">
               <button
                 className="text-green-500 hover:text-green-700 active:text-green-800 flex items-center gap-2 transition duration-200"
@@ -79,9 +96,9 @@ function Meeting() {
             />
           </figure>
           <div className="card-body text-center">
-            <h2 className="card-title">Dr. Sona IbrahImova PhD</h2>
-            <p>Zarifa Aliyeva National Eye Centre</p>
-            <p className="text-gray-500 mt-2">Vice Chairman</p>
+            <h2 className="card-title">{t('Dr. Sona IbrahImova PhD')}</h2>
+            <p>{t('Zarifa Aliyeva National Eye Centre')}</p>
+            <p className="text-gray-500 mt-2">{t('Vice Chairman')}</p>
             <div className="card-actions justify-center mt-4">
               <button
                 className="text-green-500 hover:text-green-700 active:text-green-800 flex items-center gap-2 transition duration-200"
