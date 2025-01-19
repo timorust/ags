@@ -10,11 +10,11 @@ const Cards = ({ item }) => {
 
   return (
     <div className='dark:bg-slate-900 dark:text-white dark:border card bg-base-100 w-full shadow-xl transform transition-transform duration-700 ease-out hover:scale-105 rounded-lg'>
-      <figure className='overflow-hidden w-full h-64 sm:h-56 md:h-64 lg:h-72'> {/* התאמה לרספונסיביות */}
+      <figure className='overflow-hidden w-full h-64 sm:h-56 md:h-64 lg:h-72'> 
         <img
           src={item.image}
           alt='Shoes'
-          className='w-full h-full object-cover rounded-t-lg'  {/* תמונה מלאה עם חיתוך */}
+          className='w-full h-full object-cover rounded-t-lg' 
         />
       </figure>
       <div className='card-body'>
