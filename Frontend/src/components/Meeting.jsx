@@ -71,7 +71,7 @@ function Meeting() {
   <div className="card w-full max-w-md bg-base-100 shadow-xl p-6 dark:bg-slate-900 dark:text-white">
     <figure className="flex justify-center">
       <img
-        src="../../public/avatar_2.png"
+        src="/avatar_2.png"
         alt="Dr. Jamil Hasanov"
         className="w-32 sm:w-40 md:w-48 lg:w-56 rounded-full"
       />
