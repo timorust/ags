@@ -32,7 +32,7 @@ function Signup() {
 				console.log(res.data)
 				if (res.data) {
 					toast.success('Sign up Successfully')
-					navigate('/conference', { replace: true })
+					navigate(from, { replace: true })
 				}
 				localStorage.setItem('Users', JSON.stringify(res.data.user))
 			})
