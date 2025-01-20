@@ -108,7 +108,7 @@ function Navbar() {
               <img
                 src='/favicon.jpg'
                 alt='Logo'
-                className='h-8 w-8 object-cover'
+                className='h-8 w-8 object-cover dark:bg-slate-800 dark:text-white'
               />
               
             </a>
