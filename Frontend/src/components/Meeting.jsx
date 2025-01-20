@@ -28,8 +28,7 @@ function Meeting() {
         <h1 className="text-2xl md:text-4xl">
           {t('WELCOME TO AGC-2025')}<span className="text-yellow-500"></span>
         </h1>
-        <p className="mt-6 text-lg md:text-xl text-justify">{t('meetingDescription')}</p>
-
+        <p className="mt-6 text-lg md:text-xl text-justify leading-relaxed">{t('meetingDescription')}</p>
       </div>
 
       {/* Featured Card Section */}
