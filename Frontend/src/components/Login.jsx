@@ -26,8 +26,6 @@ function Login() {
 				if (res.data) {
 					toast.success('Login Successfully')
 					document.getElementById('my_modal_3').close()
-					navigate('/meeting', { replace: true })
-
 					setTimeout(() => {
 						window.location.reload()
 						localStorage.setItem('Users', JSON.stringify(res.data.user))
