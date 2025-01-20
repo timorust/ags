@@ -88,6 +88,13 @@ function Meeting() {
             <p>{t('Zarifa Aliyeva National Eye Centre')}</p>
             <p className="text-gray-500 mt-2">{t('Vice Chairman')}</p>
             <div className="card-actions justify-center mt-4">
+
+              <Link
+                to="/profile/sona-ibrahimova"
+                className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition duration-300"
+              >
+                {t('View Profile')}
+              </Link>
             </div>
           </div>
         </div>
