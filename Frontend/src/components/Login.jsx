@@ -28,7 +28,7 @@ function Login() {
 				if (res.data) {
 					toast.success('Login Successfully')
 					document.getElementById('my_modal_3').close()
-					navigate('/conference', { replace: true })
+					navigate(from, { replace: true })
 
 					setTimeout(() => {
 						window.location.reload()
