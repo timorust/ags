@@ -1,9 +1,9 @@
 [
 	{
 		"id": 1,
-		"name": "Glaucoma Congress",
-		"title": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, et totam.",
-		"price": 0,
+		"name": "2nd Conference of Glaucomatologists of Azerbaijan",
+		"title": "Scientific-practical conference `Modern diagnostics and treatment of glaucoma` On March 14, 2019, at the initiative of the National Ophthalmology Center named after Academician Zarifa Aliyeva and the Azerbaijan Ophthalmological Society, a scientific-practical conference `Modern diagnostics and treatment of glaucoma`` was held within the framework of the World Glaucoma Week from March 11 to 17. The conference included reports on modern diagnostic analysis of glaucoma, its treatment, and an exchange of views on the elimination of diseases. Ophthalmologists also presented their speeches on glaucoma..",
+		"price": 100,
 		"category": "Free",
 		"image": "./meeting1.jpg"
 	},
