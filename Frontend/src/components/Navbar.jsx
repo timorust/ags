@@ -106,7 +106,7 @@ function Navbar() {
             <a className='text-2xl font-bold cursor-pointer flex items-center gap-2'>
             <span className='text-yellow-500'>{t('AGS')}</span>
               <img
-                src='/public/eye-icon.svg'
+                src='https://img.icons8.com/?size=100&id=LmG49EnUQig9&format=png&color=000000'
                 alt='Logo'
                 className='h-8 w-8 object-cover'
               />
