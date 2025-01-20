@@ -41,7 +41,7 @@ function Meeting() {
               className="w-32 sm:w-40 md:w-48 lg:w-56 rounded-full"
             />
           </figure>
-          <div className="card-body text-center">
+          <div className="card-body text-justify">
             <h2 className="card-title">{t('Dr. Jamil Hasanov PhD')}</h2>
             <p>{t('Zarifa Aliyeva National Eye Centre')}</p>
             <p className="text-gray-500 mt-2">{t('Chairman')}</p>
@@ -59,7 +59,7 @@ function Meeting() {
               className="w-32 sm:w-40 md:w-48 lg:w-56 rounded-full"
             />
           </figure>
-          <div className="card-body text-center">
+          <div className="card-body text-justify">
             <h2 className="card-title">{t('Dr. Sona IbrahImova PhD')}</h2>
             <p>{t('Zarifa Aliyeva National Eye Centre')}</p>
             <p className="text-gray-500 mt-2">{t('Vice Chairman')}</p>
