@@ -103,9 +103,15 @@ function Navbar() {
                 {navItems}
               </ul>
             </div>
-            <a className=' text-2xl font-bold cursor-pointer'>
+            <a className='text-2xl font-bold cursor-pointer flex items-center gap-2'>
+              <img
+                src='/public/eye-icon.svg'
+                alt='Logo'
+                className='h-8 w-8 object-cover'
+              />
               <span className='text-yellow-500'>{t('AGS')}</span>
             </a>
+            
           </div>
           <div className='navbar-end space-x-3'>
             <div className='navbar-center hidden lg:flex'>
