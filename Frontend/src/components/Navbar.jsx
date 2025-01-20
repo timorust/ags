@@ -104,15 +104,16 @@ function Navbar() {
               </ul>
             </div>
             <a className='text-2xl font-bold cursor-pointer flex items-center gap-2'>
-            <span className='text-yellow-500'>{t('AGS')}</span>
+              <span className='text-yellow-500'>{t('AGS')}</span>
               <img
                 src='/favicon1.jpg'
                 alt='Logo'
-                className='h-8 w-8 object-cover bg-white dark:bg-slate-800 bg-black dark:bg-white'
+                className='h-8 w-8 object-cover bg-white dark:bg-black'
               />
-              
+
+
             </a>
-            
+
           </div>
           <div className='navbar-end space-x-3'>
             <div className='navbar-center hidden lg:flex'>
