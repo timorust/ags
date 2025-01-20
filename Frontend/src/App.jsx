@@ -8,7 +8,7 @@ import Signup from './components/Signup'
 import SendEmail from './components/Contact'
 import About from './components/About'
 import RegisterLecture from './components/RegisterForLecture'
-import ProfileSona from './ProfileSona';
+import ProfileSona from './components/ProfileSona';
 
 function App() {
 	const [authUser, setAuthUser] = useAuth()
