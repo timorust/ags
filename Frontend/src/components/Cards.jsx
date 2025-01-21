@@ -1,7 +1,10 @@
 import PropTypes from 'prop-types'
 import { useNavigate } from 'react-router-dom'
+import { useTranslation } from 'react-i18next';
 
 const Cards = ({ item }) => {
+
+  const { t } = useTranslation();
   const navigate = useNavigate()
 
   const handleClick = () => {
@@ -19,7 +22,8 @@ const Cards = ({ item }) => {
       </figure>
       <div className='card-body'>
         <h2 className='card-title'>
-          {item.name}
+        {t(item.name)}
+          {/* {item.name} */}
           <div className='badge badge-secondary'>{item.category}</div>
         </h2>
         <p>{item.title}</p>
