@@ -42,7 +42,7 @@ function FreeConference() {
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 600,
         settings: {
           slidesToShow: 2, // הצגת 2 כרטיסים במסכים בינוניים
           slidesToScroll: 2,
