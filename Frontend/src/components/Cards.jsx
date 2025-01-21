@@ -28,7 +28,7 @@ const Cards = ({ item }) => {
         <h2 className='card-title truncate text-lg sm:text-xl' title={t(item.name)}>
         {t(item.name)}
         {truncateText(t(item.name), 30)}
-          <div className='badge badge-secondary text-sm'>{item.category}</div>
+          {/* <div className='badge badge-secondary text-sm'>{item.category}</div> */}
         </h2>
         <p className='truncate text-sm sm:text-base' title={item.title}>
           {truncateText(item.title, 50)}
