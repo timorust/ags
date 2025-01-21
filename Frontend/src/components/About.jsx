@@ -22,7 +22,7 @@ function About() {
 	]
 
 	const images = [
-		'https://scontent.ftlv5-1.fna.fbcdn.net/v/t39.30808-6/472960886_1711674146050070_2443952260339271910_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=MMw3GgZpdR8Q7kNvgEPbOYy&_nc_zt=23&_nc_ht=scontent.ftlv5-1.fna&_nc_gid=AVxJFbHSsrLRigCC5vSIPBK&oh=00_AYA0tBrFRJwlEjjEUO-g1fZkwL9DL548pMCEtnG1Zhi2zg&oe=6794D296',
+		'https://scontent.ftlv5-1.fna.fbcdn.net/v/t39.30808-6/472925064_1711675439383274_5789284051879283593_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=EUDza2bR828Q7kNvgE_NBPm&_nc_zt=23&_nc_ht=scontent.ftlv5-1.fna&_nc_gid=AIe51nJlb1f3cbGPZlFwtGP&oh=00_AYDcII2Q_2qb2vE7JDYg_ftMzsH6Q02J1PFTF8gdVY0iQA&oe=6794BBE7',
 		'/meeting2.jpg',
 		'/meeting1.jpg',
 		'/meeting2.jpg',
