@@ -11,6 +11,10 @@ const Cards = ({ item }) => {
     navigate('/registration')
   }
 
+  const truncateText = (text, maxLength) => {
+    return text.length > maxLength ? text.substring(0, maxLength) + '...' : text;
+  };
+
   return (
     <div className='dark:bg-slate-900 dark:text-white dark:border card bg-base-100 w-full shadow-xl transform transition-transform duration-700 ease-out hover:scale-105 rounded-lg'>
       <figure className='overflow-hidden w-full h-64 sm:h-56 md:h-64 lg:h-72'> 
@@ -21,16 +25,18 @@ const Cards = ({ item }) => {
         />
       </figure>
       <div className='card-body'>
-        <h2 className='card-title'>
+        <h2 className='card-title truncate text-lg sm:text-xl' title={t(item.name)}>
         {t(item.name)}
-          {/* {item.name} */}
-          <div className='badge badge-secondary'>{item.category}</div>
+        {truncateText(t(item.name), 30)}
+          <div className='badge badge-secondary text-sm'>{item.category}</div>
         </h2>
-        <p>{item.title}</p>
-        <div className='card-actions justify-between'>
-          <div className='badge badge-outline'>{item.price}</div>
+        <p className='truncate text-sm sm:text-base' title={item.title}>
+          {truncateText(item.title, 50)}
+        </p>
+        <div className='card-actions justify-between mt-4'>
+          <div className='badge badge-outline text-sm sm:text-base'>{item.price}</div>
           <div
-            className='cursor-pointer px-2 py-2 rounded-full border-[2px] hover:bg-pink-500 hover:text-white duration-200'
+            className='cursor-pointer px-3 py-2 rounded-full border-[2px] hover:bg-pink-500 hover:text-white duration-200'
             onClick={handleClick}
           >
             Buy Now
