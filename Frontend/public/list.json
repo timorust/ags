@@ -1,27 +1,27 @@
 [
 	{
 		"id": 1,
-		"name": "Glaucoma Congress",
-		"title": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, et totam.",
-		"price": 0,
+		"name": "V Conference of Glaucomatologists of Azerbaijan",
+		"title": "On March 15, 2024, the “V Conference of Azerbaijani Glaucomatologists” was held within the framework of the International “Glaucoma Week” at the joint initiative of the National Ophthalmology Center named after Academician Zarifa Aliyeva and the Azerbaijan Ophthalmological Society.",
+		"price": 100,
 		"category": "Free",
-		"image": "./meeting1.jpg"
+		"image": "http://eye.gov.az/content_img/2550003d7.jpg"
 	},
 	{
 		"id": 2,
-		"name": "Eye Congress",
-		"title": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, et totam.",
+		"name": "Global Conference of Glaucomatologists of Azerbaijan",
+		"title": "Azərbaycan qlaukomatoloqlar cəmiyyəti (AQC) qlaukoma mütəhəssislərini birləşdirən və öz kliniki və elmi biliklərini qlaukoma xəstəliyindən əziyyət çəkənlərin, həmkarların və rezidentlərin xeirinə bölüşən bir təşkilatdır. AQC əsas məqsədi qlaukoma və risk altında olan bütün şəxslərə mükəmməl və hərtərəfli qayğı göstərmək, onların həyat keyfiyyətini yaxşılaşdırmaq, AQC üzvlərinə fikir və fikir mübadiləsi aparmaq üçün kollegial mühit təmin etmək və birgə qlaukoma xəstəliyinə qalib gəlməkdir. Təşkilatın fəaliyyəti qlaukoma kimi ağır, geniş yayılmış və körluğa aparan xəstəliyinin profilaktikasını, erkən diaqnostikasını və mühtəlif müalicə üsullarını həyata keçirməkdən ibarətdir. Bununla yanaşı, cəmiyyət qlaukoma xəstəliyi barədə geniş təbliğatın aparılmasına böyük diqqət yetirir. AQC 2025-ci ildə yaranmişdır.",
 		"price": 10,
 		"category": "Free",
-		"image": "./meeting2.jpg"
+		"image": "https://scontent.ftlv5-1.fna.fbcdn.net/v/t39.30808-6/472748249_1711675192716632_1150598687949898602_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=YHx4pDmGVpsQ7kNvgGboS-V&_nc_zt=23&_nc_ht=scontent.ftlv5-1.fna&_nc_gid=Ahghd_F9juSG46GYn83zihY&oh=00_AYBwdX4O3Dyf-FL38g0YWildK_cXFMFITLym-JmRPb9CvQ&oe=6794B2FC"
 	},
 	{
 		"id": 3,
-		"name": "Soon Congress!!!",
-		"title": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, et totam.",
+		"name": "III Conference of Glaucomatologists of Azerbaijan",
+		"title": "On March 11, 2022, a scientific and practical conference on `Modern diagnostics and treatment of glaucoma` was held within the framework of the International `Glaucoma Week` at the joint initiative of the National Ophthalmology Center named after Academician Zarifa Aliyeva and the Azerbaijan Ophthalmological Society. The purpose of the conference was to talk about modern diagnostic analysis of glaucoma, its treatment, and new innovative treatment methods.",
 		"price": 20,
 		"category": "Free",
-		"image": "./meeting3.png"
+		"image": "https://scontent.ftlv5-1.fna.fbcdn.net/v/t39.30808-6/472792530_1711675259383292_8311521413766314205_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=XkSbecJsik4Q7kNvgHexCDP&_nc_zt=23&_nc_ht=scontent.ftlv5-1.fna&_nc_gid=AKmhC67tr-RGDwKU0n5ET_Y&oh=00_AYDed8vNUg473TyQ4GzJWMUtd5UqgwsyyLYg7qIUfYsYAQ&oe=6794A42D"
 	},
 	{
 		"id": 4,
@@ -29,7 +29,7 @@
 		"title": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, et totam.",
 		"price": 110,
 		"category": "soon",
-		"image": "./meeting3.png"
+		"image": "https://img.freepik.com/free-vector/flat-design-minimal-ophthalmologist-webinar_23-2149342093.jpg?t=st=1734613499~exp=1734617099~hmac=60f9e183081bd802e44d39e42e856f5e8bef1bde18c38344879dfb0da05309f1&w=1800"
 	},
 	{
 		"id": 5,
@@ -41,24 +41,24 @@
 	},
 	{
 		"id": 6,
-		"name": "Dock Congress",
-		"title": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, et totam.",
+		"name": "IV Conference of Glaucomatologists of Azerbaijan",
+		"title": "On March 10, 2023, at the joint initiative of the National Ophthalmology Center named after Academician Zarifa Aliyeva and the Azerbaijan Ophthalmologists Society, a scientific-practical conference on “Modern diagnostics and treatment of glaucoma” was held within the framework of the International “Glaucoma Week” dedicated to the 100th anniversary of the birth of Academician Zarifa Aliyeva.",
 		"price": 90,
-		"category": "Dea",
-		"image": "./meeting3.png"
+		"category": "Free",
+		"image": "http://eye.gov.az/content_img/259bb029f.jpg"
 	},
 	{
 		"id": 7,
-		"name": "Story Congress",
-		"title": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, et totam.",
+		"name": "II Conference of Glaucomatologists of Azerbaijan",
+		"title": "Scientific-practical conference `Modern diagnostics and treatment of glaucoma` On March 14, 2019, at the initiative of the National Ophthalmology Center named after Academician Zarifa Aliyeva and the Azerbaijan Ophthalmological Society, a scientific-practical conference `Modern diagnostics and treatment of glaucoma` was held within the framework of the World Glaucoma Week from March 11 to 17. The conference included reports on modern diagnostic analysis of glaucoma, its treatment, and an exchange of views on the elimination of diseases. Ophthalmologists also presented their speeches on glaucoma.",
 		"price": 50,
-		"category": "story",
-		"image": "./meeting3.png"
+		"category": "Free",
+		"image": "https://scontent.ftlv5-1.fna.fbcdn.net/v/t39.30808-6/472792530_1711675259383292_8311521413766314205_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=XkSbecJsik4Q7kNvgHexCDP&_nc_zt=23&_nc_ht=scontent.ftlv5-1.fna&_nc_gid=AKmhC67tr-RGDwKU0n5ET_Y&oh=00_AYDed8vNUg473TyQ4GzJWMUtd5UqgwsyyLYg7qIUfYsYAQ&oe=6794A42D"
 	},
 	{
 		"id": 8,
-		"name": "First Congress",
-		"title": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, et totam.",
+		"name": "Soon Conference of Glaucomatologists of Azerbaijan",
+		"title": "Since glaucoma is a serious, currently incurable disease that leads to blindness, special attention is paid to this problem. For 6 years now, as a tradition, the scientific and practical conference of Azerbaijani glaucomatologists has been held in mid-March. This conference brings together local and foreign specialists involved in glaucoma every year and provides an opportunity to discuss innovations, clinical and scientific experiences in the field. The knowledge and experience gained in this conference are used by our local ophthalmologists, both in Baku and in all regions of our country, creating broad opportunities for the prevention, early diagnosis and appropriate treatment of glaucoma among the population. This year, adhering to the tradition, we invite all our colleagues who are interested in glaucoma to participate in the VI conference of Azerbaijani glaucomatologists on March 15.",
 		"price": 80,
 		"category": "Free",
 		"image": "./meeting3.png"
