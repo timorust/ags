@@ -16,9 +16,9 @@ const Cards = ({ item }) => {
   };
 
   return (
-    <div className='dark:bg-slate-900 dark:text-white dark:border card bg-base-100 w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 2xl:w-1/3 shadow-xl transform transition-transform duration-700 ease-out hover:scale-105 rounded-lg m-2'>
+    <div className='dark:bg-slate-900 dark:text-white dark:border card bg-base-100 w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 shadow-xl transform transition-transform duration-700 ease-out hover:scale-105 rounded-lg m-2'>
       {/* עיצוב תמונה רספונסיבי */}
-      <figure className='overflow-hidden w-full h-48 sm:h-56 md:h-64 lg:h-72 xl:h-96'>
+      <figure className='overflow-hidden w-full h-64 sm:h-72 md:h-80 lg:h-96'>
         <img
           src={item.image}
           alt={t(item.name)}
