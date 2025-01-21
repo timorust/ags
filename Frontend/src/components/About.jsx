@@ -22,7 +22,7 @@ function About() {
 	]
 
 	const images = [
-		'/meeting1.jpg',
+		'https://scontent.ftlv5-1.fna.fbcdn.net/v/t39.30808-6/472960886_1711674146050070_2443952260339271910_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_ohc=MMw3GgZpdR8Q7kNvgEPbOYy&_nc_zt=23&_nc_ht=scontent.ftlv5-1.fna&_nc_gid=AVxJFbHSsrLRigCC5vSIPBK&oh=00_AYA0tBrFRJwlEjjEUO-g1fZkwL9DL548pMCEtnG1Zhi2zg&oe=6794D296',
 		'/meeting2.jpg',
 		'/meeting1.jpg',
 		'/meeting2.jpg',
