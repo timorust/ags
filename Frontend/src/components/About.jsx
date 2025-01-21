@@ -22,8 +22,8 @@ function About() {
 	]
 
 	const images = [
-		'https://scontent.ftlv5-1.fna.fbcdn.net/v/t39.30808-6/472925064_1711675439383274_5789284051879283593_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=EUDza2bR828Q7kNvgE_NBPm&_nc_zt=23&_nc_ht=scontent.ftlv5-1.fna&_nc_gid=AIe51nJlb1f3cbGPZlFwtGP&oh=00_AYDcII2Q_2qb2vE7JDYg_ftMzsH6Q02J1PFTF8gdVY0iQA&oe=6794BBE7',
-		'/meeting2.jpg',
+		'https://scontent.ftlv5-1.fna.fbcdn.net/v/t1.6435-9/54519863_395658020985029_4037793252840046592_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=JIKGAE8H4bMQ7kNvgGWCaLG&_nc_zt=23&_nc_ht=scontent.ftlv5-1.fna&_nc_gid=ApLVVzSKmpRAICfkCQ925cB&oh=00_AYBMK3lYvWCTMMwN8lEHbC_yuiX0MyWQnuLJbyYpfUNzFQ&oe=67B65E79',
+		'https://scontent.ftlv5-1.fna.fbcdn.net/v/t1.6435-9/53649948_395656340985197_4848800296572289024_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=mtVyY901VuAQ7kNvgE-u0QZ&_nc_zt=23&_nc_ht=scontent.ftlv5-1.fna&_nc_gid=AqGpnKQv6kwV5QHujxubaD0&oh=00_AYDBiYQumeI8pQWq1RdOKmmuce6wvUhIYTepQWBE07SqpQ&oe=67B64690',
 		'/meeting1.jpg',
 		'/meeting2.jpg',
 	]
