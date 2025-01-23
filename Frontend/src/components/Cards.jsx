@@ -17,6 +17,7 @@ const Cards = ({ item }) => {
 
   return (
     <div className='dark:bg-slate-900 dark:text-white dark:border card bg-base-100 w-full shadow-xl transform transition-transform duration-700 ease-out hover:scale-105 rounded-lg'>
+      {/* התמונה בתוך הכרטיס */}
       <figure className='overflow-hidden w-full h-64 sm:h-56 md:h-64 lg:h-72'>
         <a href={item.url} target="_blank" rel="noopener noreferrer">
           <img
@@ -26,19 +27,28 @@ const Cards = ({ item }) => {
           />
         </a>
       </figure>
+  
+      {/* גוף הכרטיס */}
       <div className='card-body'>
-        <h6 className="card-title text-lg sm:text-xl whitespace-normal break-words"
-          title={t(item.name)}>
-          
-          {truncateText(t(item.name), 30)}
-          {/* <div className='badge badge-secondary text-sm'>{item.category}</div> */}
+        {/* שם הפריט (item.name) */}
+        <h6 
+          className="card-title text-lg sm:text-xl whitespace-normal break-words max-w-full overflow-hidden text-ellipsis" // הגדרות לתמיכה בטקסט ארוך
+          title={t(item.name)} // תצוגת הטקסט המלאה ב-tooltip
+        >
+          {truncateText(t(item.name), 30)} {/* קיצוץ אם הטקסט מאוד ארוך */}
         </h6>
-        <p className="text-sm sm:text-base whitespace-normal break-words" 
-          title={item.title}>
-          {truncateText(item.title, 50)}
+  
+        {/* תיאור הפריט (item.title) */}
+        <p 
+          className="text-sm sm:text-base whitespace-normal break-words max-w-full overflow-hidden text-ellipsis" // הגדרות לתמיכה בטקסט ארוך
+          title={item.title} // תצוגת הטקסט המלאה ב-tooltip
+        >
+          {truncateText(item.title, 50)} {/* קיצוץ אם הטקסט מאוד ארוך */}
         </p>
+  
+        {/* פעולות הכרטיס */}
         <div className='card-actions justify-between mt-4'>
-
+          {/* כפתור קישור */}
           <a
             href={item.url}
             target="_blank"
@@ -47,11 +57,10 @@ const Cards = ({ item }) => {
           >
             {t('Visit Link')}
           </a>
-          {/* <div className='badge badge-outline text-sm sm:text-base'>{item.price}</div> */}
-
+  
+          {/* כפתור הרשמה אם הקטגוריה היא "Free" */}
           {item.category === 'Free' && (
             <div
-
               className='rounded-full border-[2px] bg-green-500 text-white px-3 py-2 rounded-md hover:bg-green-700 duration-300 cursor-pointer'
               onClick={handleClick}
             >
@@ -62,6 +71,7 @@ const Cards = ({ item }) => {
       </div>
     </div>
   )
+  
 }
 
 Cards.propTypes = {
