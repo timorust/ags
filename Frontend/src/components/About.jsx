@@ -67,7 +67,7 @@ function About() {
 					))}
 				</div>
 
-				<div className='bg-gray-100 dark:bg-blue-100 p-4 rounded-md shadow-md mb-12'>
+				<div className='bg-gray-100 dark:bg-blue-300 p-4 rounded-md shadow-md mb-12'>
 					<div
 						className='text-xl dark:text-white text-gray-700 marquee-container'
 						style={{
