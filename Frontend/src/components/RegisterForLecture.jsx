@@ -43,7 +43,7 @@ function RegisterLecture() {
 		<>
 			<Navbar />
 			<CountdownTimer targetDate='2025-03-15T09:00:00' />
-			<div className='max-w-screen-2xl container mx-auto md:px-20 px-6'>
+			<div className='max-w-screen-2xl container mx-auto md:px-20 px-6 mb-10'>
 				{isRegistered ? (
 					<div className='text-center mt-12'>
 						<h2 className='text-2xl text-green-500'>
