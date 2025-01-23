@@ -9,7 +9,8 @@ function Banner() {
 				<div className='w-full order-2 md:order-1 md:w-1/2 mt-12 md:mt-36'>
 					<div className='space-y-8'>
 						<h1 className='text-2xl md:text-4xl font-bold'>
-							{t('The Azerbaijan Glaucoma Society')}
+						<span className='text-yellow-500'>{t('The Azerbaijan Glaucoma Society')}!</span>
+							
 						</h1>
 
 						<p className="text-base md:text-lg  text-justify leading-relaxed tracking-normal text-gray-500 dark:text-gray-300 font-light">
