@@ -67,7 +67,7 @@ function About() {
 					))}
 				</div>
 
-				<div className='bg-gray-100 dark:bg-blue-300 p-4 rounded-md shadow-md mb-12'>
+				<div className='bg-gray-100 dark:bg-yellow-300 p-4 rounded-md shadow-md mb-12'>
 					<div
 						className='text-xl dark:text-white text-gray-700 marquee-container'
 						style={{
@@ -91,9 +91,9 @@ function About() {
 
 				<div className='text-center mt-8'>
 					<Link to='/'>
-						<button className='rounded-full border-[2px] bg-green-500 text-white px-3 py-2 rounded-md hover:bg-green-700 duration-300 cursor-pointer'>
+						<div className='rounded-full border-[2px] bg-green-500 text-white px-3 py-2 rounded-md hover:bg-green-700 duration-300 cursor-pointer'>
 							{t('Back')}
-						</button>
+						</div>
 					</Link>
 				</div>
 			</div>
