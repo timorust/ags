@@ -17,33 +17,44 @@ const Cards = ({ item }) => {
 
   return (
     <div className='dark:bg-slate-900 dark:text-white dark:border card bg-base-100 w-full shadow-xl transform transition-transform duration-700 ease-out hover:scale-105 rounded-lg'>
-      <figure className='overflow-hidden w-full h-64 sm:h-56 md:h-64 lg:h-72'> 
-        <img
-          src={item.image}
-          alt='Shoes'
-          className='w-full h-full object-cover rounded-t-lg' 
-        />
+      <figure className='overflow-hidden w-full h-64 sm:h-56 md:h-64 lg:h-72'>
+        <a href={item.url} target="_blank" rel="noopener noreferrer">
+          <img
+            src={item.image}
+            alt='Shoes'
+            className='w-full h-full object-cover rounded-t-lg'
+          />
+        </a>
       </figure>
       <div className='card-body'>
         <h2 className='card-title truncate text-lg sm:text-xl' title={t(item.name)}>
-        {t(item.name)}
-        {truncateText(t(item.name), 30)}
+          {t(item.name)}
+          {truncateText(t(item.name), 30)}
           {/* <div className='badge badge-secondary text-sm'>{item.category}</div> */}
         </h2>
         <p className='truncate text-sm sm:text-base' title={item.title}>
           {truncateText(item.title, 50)}
         </p>
         <div className='card-actions justify-between mt-4'>
+
+          <a
+            href={item.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className='cursor-pointer px-2 py-2 rounded-full border-[2px] hover:bg-blue-500 hover:text-white duration-200'
+          >
+            {t('Visit Link')}
+          </a>
           <div className='badge badge-outline text-sm sm:text-base'>{item.price}</div>
-          
+
           {item.category === 'Free' && (
-						<div
-							className='cursor-pointer px-2 py-2 rounded-full border-[2px] hover:bg-pink-500 hover:text-white duration-200'
-							onClick={handleClick}
-						>
-							Register
-						</div>
-					)}
+            <div
+              className='cursor-pointer px-2 py-2 rounded-full border-[2px] hover:bg-pink-500 hover:text-white duration-200'
+              onClick={handleClick}
+            >
+              Register
+            </div>
+          )}
         </div>
       </div>
     </div>
