@@ -23,7 +23,7 @@ function SendEmail() {
 		// const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY
 
 		emailjs
-			.sendForm('service_2abe0eo', 'template_1y4kkli', form.current, '3yp6XZiNOVZhsT90R')
+			.sendForm('service_exqhb0f', 'template_j4gkju7', form.current, '3dVg7ytY-YkeoqWne')
 			.then(
 				() => {
 					setIsSent(true);
