@@ -12,13 +12,12 @@ function About() {
 	const [imageIndex, setImageIndex] = useState(0)
 
 	const textContent = [
-		'Welcome to our event! We are excited to have you.',
-		'Our mission is to bring people together.',
-		"Don't forget to check out our gallery!",
-		'Stay tuned for more updates about our upcoming events.',
-		'Stay tuned for more updates about our upcoming events.',
-		'Stay tuned for more updates about our upcoming events.',
-		'Stay tuned for more updates about our upcoming events.',
+		'The Azerbaijan Glaucoma Society (AGS) is an organization',
+		'that unites glaucoma specialists and shares their clinical',
+		"and scientific knowledge for the benefit of glaucoma patients",
+		"colleagues and residents. The main goal of the AGS is to provide, improve their quality of life",
+        "excellent and comprehensive care to all people with glaucoma and those at risk",
+		'provide a collegial environment for AGS members to exchange ideas and opinions'
 	]
 
 	const images = [
