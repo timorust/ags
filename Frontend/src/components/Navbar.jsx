@@ -108,7 +108,7 @@ function Navbar() {
               <img
                 src='/favicon2.jpg'
                 alt='Logo'
-                className='h-8 w-8 object-cover bg-black dark:bg-black'
+                className='h-8 w-8 object-cover dark:bg-black'
               />
               <span className='text-yellow-500'>{t('AGS')}</span>
 
