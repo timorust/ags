@@ -35,12 +35,7 @@ const Cards = ({ item }) => {
         </p>
         <div className='card-actions justify-between mt-4'>
           <div className='badge badge-outline text-sm sm:text-base'>{item.price}</div>
-          {/* <div
-            className='cursor-pointer px-3 py-2 rounded-full border-[2px] hover:bg-pink-500 hover:text-white duration-200'
-            onClick={handleClick}
-          >
-            Buy Now
-          </div> */}
+          
           {item.category === 'Free' && (
 						<div
 							className='cursor-pointer px-2 py-2 rounded-full border-[2px] hover:bg-pink-500 hover:text-white duration-200'
