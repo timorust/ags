@@ -5,6 +5,7 @@ import { useAuth } from '../context/AuthProvider'
 import LanguageSwitcher from './LanguageSwitcher'
 import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
+import banner from '../assets/banner.png'
 
 function Navbar() {
   const { t } = useTranslation()
@@ -106,7 +107,7 @@ function Navbar() {
             <a className='text-2xl font-bold cursor-pointer flex items-center gap-2'>
               
               <img
-                src='/favicon2.jpg'
+                src={banner}
                 alt='Logo'
                 className='h-8 w-8 object-cover dark:bg-black'
               />

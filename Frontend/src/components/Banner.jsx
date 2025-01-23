@@ -11,11 +11,8 @@ function Banner() {
 						<h1 className='text-2xl md:text-4xl font-bold'>
 							{t('The Azerbaijan Glaucoma Society')}
 						</h1>
-						{/* <p className='text-sm md:text-xl eading-relaxed tracking-wide whitespace-pre-line break-words text-gray-500  dark:bg-slate-900 dark:text-green-100'>
-							{t('Description')}
-						</p> */}
-						<p className="text-base md:text-lg  text-justify leading-relaxed tracking-normal text-gray-500 
-dark:text-gray-300 font-light">
+
+						<p className="text-base md:text-lg  text-justify leading-relaxed tracking-normal text-gray-500 dark:text-gray-300 font-light">
 							{t('Description')}
 						</p>
 
