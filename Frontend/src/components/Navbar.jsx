@@ -104,12 +104,12 @@ function Navbar() {
                 {navItems}
               </ul>
             </div>
-            <a className='text-2xl font-bold cursor-pointer flex items-center gap-2 overflow-hidden'>
+            <a className='text-2xl font-bold cursor-pointer flex items-center gap-2'>
               
               <img
                 src={banner}
                 alt='Logo'
-                className='h-8 w-8 object-cover dark:bg-black'
+                className='h-8 w-8 object-cover'
               />
               <span className='text-yellow-500'>{t('AGS')}</span>
 
