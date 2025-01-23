@@ -5,6 +5,7 @@
 @tailwind utilities;
 
 body {
+	background-color: rgb(255, 105, 180 / 0.5);
 	font-family: 'Poppins', sans-serif;
 }
 /* הוספת אנימציה ב-CSS */
