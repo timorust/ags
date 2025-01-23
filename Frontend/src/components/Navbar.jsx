@@ -109,7 +109,7 @@ function Navbar() {
               <img
                 src={banner}
                 alt='Logo'
-                className='h-8 w-8 object-cover dark:bg-black'
+                className='h-8 w-8 object-cover dark:bg-black overflow-hidden'
               />
               <span className='text-yellow-500'>{t('AGS')}</span>
 
