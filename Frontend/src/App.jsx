@@ -8,7 +8,6 @@ import Signup from './components/Signup'
 import SendEmail from './components/Contact'
 import About from './components/About'
 import RegisterLecture from './components/RegisterForLecture'
-// import ProfileSona from './components/ProfileSona';
 
 function App() {
 	const [authUser, setAuthUser] = useAuth()
@@ -18,11 +17,20 @@ function App() {
 				<Routes>
 					<Route path='/' element={<Home />} />
 					<Route
+						path="/signup"
+						element={
+							authUser ? (
+								<Navigate to="/meeting" />
+							) : (
+								<Signup onSignupSuccess={() => setAuthUser(true)} />
+							)
+						}
+					/>
+					<Route
 						path='/meeting'
 						element={authUser ? <Meetings /> : <Navigate to='/signup' />}
 					/>
-					{/* <Route path="/profile/sona-ibrahimova" element={<ProfileSona />} /> */}
-					<Route path='/signup' element={<Signup />} />
+					{/* <Route path='/signup' element={<Signup />} /> */}
 					<Route path='/contact' element={<SendEmail />} />
 					<Route path='/about' element={<About />} />
 					<Route path='/registration' element={<RegisterLecture />} />
