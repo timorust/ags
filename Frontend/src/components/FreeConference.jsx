@@ -9,11 +9,29 @@ import { useState } from 'react';
 function FreeConference() {
   const [conference, setConference] = useState([]);
 
+  // useEffect(() => {
+  //   const getConference = async () => {
+  //     try {
+  //       const res = await axios.get('https://ags-az.onrender.com/conference');
+  //       const data = Array.isArray(res.data) ? res.data.filter(d => d.category === 'Free') : [];
+  //       setConference(data);
+  //     } catch (error) {
+  //       console.error('Error fetching data:', error);
+  //       setConference([]);
+  //     }
+  //   };
+
+  //   getConference();
+  // }, []);
+
+
+
   useEffect(() => {
     const getConference = async () => {
       try {
         const res = await axios.get('https://ags-az.onrender.com/conference');
-        const data = Array.isArray(res.data) ? res.data.filter(d => d.category === 'Free') : [];
+        // הסרתי את הסינון לפי קטגוריה
+        const data = Array.isArray(res.data) ? res.data : []; // מאחסן את כל הנתונים
         setConference(data);
       } catch (error) {
         console.error('Error fetching data:', error);
@@ -23,6 +41,7 @@ function FreeConference() {
 
     getConference();
   }, []);
+
 
   var settings = {
     dots: true,
