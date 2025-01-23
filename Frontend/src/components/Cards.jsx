@@ -41,7 +41,7 @@ const Cards = ({ item }) => {
             href={item.url}
             target="_blank"
             rel="noopener noreferrer"
-            className='cursor-pointer px-2 py-2 rounded-full border-[2px] hover:bg-blue-500 hover:text-white duration-200'
+            className='rounded-full border-[2px] bg-blue-500 text-white px-3 py-2 rounded-md hover:bg-blue-700 duration-300 cursor-pointer'
           >
             {t('Visit Link')}
           </a>
@@ -50,7 +50,7 @@ const Cards = ({ item }) => {
           {item.category === 'Free' && (
             <div
             
-              className='rounded-full border-[2px] bg-green-500 text-white px-2 py-2 rounded-md hover:bg-green-700 duration-300 cursor-pointer'
+              className='rounded-full border-[2px] bg-green-500 text-white px-3 py-2 rounded-md hover:bg-green-700 duration-300 cursor-pointer'
               onClick={handleClick}
             >
               Register
