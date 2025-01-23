@@ -47,7 +47,7 @@ function About() {
 		<>
 			<Navbar />
 			<CountdownTimer targetDate='2025-03-15T09:00:00' />
-			<div className='max-w-screen-2xl container mx-auto px-6 md:px-20'>
+			<div className='max-w-screen-2xl container mx-auto px-6 md:px-20 mb-10'>
 				<div className='text-center mb-12'>
 					<h1 className='text-3xl md:text-5xl font-semibold dark:text-white text-black'>
 						{t('We`re delighted to have you')},
@@ -91,7 +91,7 @@ function About() {
 
 				<div className='text-center mt-8'>
 					<Link to='/'>
-						<button className='bg-green-500 text-white px-6 py-3 rounded-full hover:bg-green-700 transition duration-300'>
+						<button className='rounded-full border-[2px] bg-green-500 text-white px-3 py-2 rounded-md hover:bg-green-700 duration-300 cursor-pointer'>
 							{t('Back')}
 						</button>
 					</Link>
