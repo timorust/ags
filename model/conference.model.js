@@ -6,6 +6,7 @@ const conferenceSchema = mongoose.Schema({
     category: String,
     image: String,
     title: String,
+    url: String,
 })
 const Conference = mongoose.model("Conference", conferenceSchema)
 
