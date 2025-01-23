@@ -82,7 +82,7 @@ function FreeConference() {
     <div className='max-w-screen-2xl container mx-auto md:px-20 px-4 py-12'>
       <div>
         <h1 className='font-semibold text-2xl md:text-3xl pb-4'>
-        <span className='text-yellow-500'>{t('Free Offered Conferences')}</span>
+        <span className='text-yellow-500'>Free Offered Conferences</span>
           
         </h1>
         <p className='text-gray-600 mb-6'>
