@@ -27,12 +27,12 @@ const Cards = ({ item }) => {
         </a>
       </figure>
       <div className='card-body'>
-        <h2 className="card-title text-lg sm:text-xl whitespace-normal break-words"
+        <h6 className="card-title text-lg sm:text-xl whitespace-normal break-words"
           title={t(item.name)}>
-          {t(item.name)}
+          
           {truncateText(t(item.name), 30)}
           {/* <div className='badge badge-secondary text-sm'>{item.category}</div> */}
-        </h2>
+        </h6>
         <p className="text-sm sm:text-base whitespace-normal break-words" 
           title={item.title}>
           {truncateText(item.title, 50)}
