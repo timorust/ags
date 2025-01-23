@@ -45,7 +45,7 @@ const Cards = ({ item }) => {
           >
             {t('Visit Link')}
           </a>
-          <div className='badge badge-outline text-sm sm:text-base'>{item.price}</div>
+          {/* <div className='badge badge-outline text-sm sm:text-base'>{item.price}</div> */}
 
           {item.category === 'Free' && (
             <div
