@@ -104,12 +104,13 @@ function Navbar() {
               </ul>
             </div>
             <a className='text-2xl font-bold cursor-pointer flex items-center gap-2'>
-              <span className='text-yellow-500'>{t('AGS')}</span>
+              
               <img
-                src='/favicon1.jpg'
+                src='/favicon2.jpg'
                 alt='Logo'
                 className='h-8 w-8 object-cover bg-white dark:bg-black bg-black dark:bg-white'
               />
+              <span className='text-yellow-500'>{t('AGS')}</span>
 
 
             </a>

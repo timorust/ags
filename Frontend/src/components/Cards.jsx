@@ -49,7 +49,8 @@ const Cards = ({ item }) => {
 
           {item.category === 'Free' && (
             <div
-              className='cursor-pointer px-2 py-2 rounded-full border-[2px] hover:bg-pink-500 hover:text-white duration-200'
+            
+              className='rounded-full border-[2px] bg-green-500 text-white px-3 py-2 rounded-md hover:bg-green-700 duration-300 cursor-pointer'
               onClick={handleClick}
             >
               Register
