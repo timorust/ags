@@ -102,9 +102,7 @@ function Banner() {
 						</a>
 
 					</div>
-					{/* <button className='btn mt-6 bg-green-500 text-white hover:bg-green-700'>
-						{t('Get Started')}
-					</button> */}
+
 				</div>
 				<div className='order-1 w-full mt-20 md:w-1/2 flex justify-center md:justify-start overflow-hidden mr-10 ml-10 pt-10 pb-10 pr-10'>
 					<img
