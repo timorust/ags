@@ -79,7 +79,7 @@ function FreeConference() {
   };
 
   return (
-    <div className='max-w-screen-2xl container mx-auto md:px-20 px-4 py-12'>
+    <div className='max-w-screen-2xl container mx-auto md:px-20 px-4 py-12 mb-5'>
       <div>
         <h1 className='font-semibold text-2xl md:text-3xl pb-4'>
         <span className='text-yellow-500'>Free Offered Conferences</span>
