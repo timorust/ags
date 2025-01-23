@@ -27,12 +27,14 @@ const Cards = ({ item }) => {
         </a>
       </figure>
       <div className='card-body'>
-        <h2 className='card-title truncate text-lg sm:text-xl' title={t(item.name)}>
+        <h2 className="card-title text-lg sm:text-xl whitespace-normal break-words"
+          title={t(item.name)}>
           {t(item.name)}
           {truncateText(t(item.name), 30)}
           {/* <div className='badge badge-secondary text-sm'>{item.category}</div> */}
         </h2>
-        <p className='truncate text-sm sm:text-base' title={item.title}>
+        <p className="text-sm sm:text-base whitespace-normal break-words" 
+          title={item.title}>
           {truncateText(item.title, 50)}
         </p>
         <div className='card-actions justify-between mt-4'>
@@ -49,7 +51,7 @@ const Cards = ({ item }) => {
 
           {item.category === 'Free' && (
             <div
-            
+
               className='rounded-full border-[2px] bg-green-500 text-white px-3 py-2 rounded-md hover:bg-green-700 duration-300 cursor-pointer'
               onClick={handleClick}
             >
