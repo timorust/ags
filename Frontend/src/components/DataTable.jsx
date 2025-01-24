@@ -1,38 +1,58 @@
 import PropTypes from 'prop-types';
 
-function DataTable({ data }) {
-  return (
-    <div className="overflow-x-auto">
-      <table className="table w-full border-collapse border border-gray-200 shadow-lg rounded-lg dark:text-white text-black dark:bg-slate-900 dark:text-white">
-        {/* כותרת הטבלה */}
-        <thead className="bg-gray-100">
-          <tr>
-            <th className="px-4 py-2 border border-gray-300">#</th>
-            <th className="px-4 py-2 border border-gray-300">Name</th>
-            <th className="px-4 py-2 border border-gray-300">Job</th>
-            <th className="px-4 py-2 border border-gray-300">Favorite Color</th>
-          </tr>
-        </thead>
+function DataTable() {
+  // נתוני הדוגמה
+  const data = [
+    { id: 1, name: 'Cy Ganderton', job: 'Quality Control Specialist', color: 'Blue' },
+    { id: 2, name: 'Hart Hagerty', job: 'Desktop Support Technician', color: 'Purple' },
+    { id: 3, name: 'Brice Swyre', job: 'Tax Accountant', color: 'Red' },
+    { id: 4, name: 'Jane Doe', job: 'Software Engineer', color: 'Green' },
+  ];
 
-        {/* תוכן הטבלה */}
-        <tbody>
-          {data.map((item, index) => (
-            <tr
-              key={item.id || index}
-              className={index % 2 === 0 ? 'bg-base-200' : 'bg-white'}
-            >
-              <th className="px-4 py-2 border border-gray-300 text-center">{index + 1}</th>
-              <td className="px-4 py-2 border border-gray-300">{item.name}</td>
-              <td className="px-4 py-2 border border-gray-300">{item.job}</td>
-              <td className="px-4 py-2 border border-gray-300">{item.color}</td>
+  return (
+    <div className="bg-white dark:bg-slate-900 dark:text-white text-black min-h-screen flex flex-col items-center py-8">
+      {/* כותרת והקדמה לטבלה */}
+      <h2 className="text-2xl font-semibold mb-4">Employee Details</h2>
+      <p className="text-gray-600 dark:text-gray-400 mb-6 text-center max-w-md">
+        Below is a list of employee details, including job titles and favorite colors.
+      </p>
+
+      {/* הטבלה */}
+      <div className="overflow-x-auto w-full max-w-4xl px-4">
+        <table className="table w-full border-collapse border border-gray-200 shadow-lg rounded-lg">
+          {/* כותרת הטבלה */}
+          <thead className="bg-gray-100 dark:bg-gray-800">
+            <tr>
+              <th className="px-4 py-2 border border-gray-300 dark:border-gray-700">#</th>
+              <th className="px-4 py-2 border border-gray-300 dark:border-gray-700">Name</th>
+              <th className="px-4 py-2 border border-gray-300 dark:border-gray-700">Job</th>
+              <th className="px-4 py-2 border border-gray-300 dark:border-gray-700">Favorite Color</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+
+          {/* תוכן הטבלה */}
+          <tbody>
+            {data.map((item, index) => (
+              <tr
+                key={item.id || index}
+                className={index % 2 === 0 ? 'bg-gray-100 dark:bg-gray-800' : 'bg-white dark:bg-gray-900'}
+              >
+                <th className="px-4 py-2 border border-gray-300 dark:border-gray-700 text-center">
+                  {index + 1}
+                </th>
+                <td className="px-4 py-2 border border-gray-300 dark:border-gray-700">{item.name}</td>
+                <td className="px-4 py-2 border border-gray-300 dark:border-gray-700">{item.job}</td>
+                <td className="px-4 py-2 border border-gray-300 dark:border-gray-700">{item.color}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }
 
+// פרופ טייפס (להבהרה בלבד, לא חובה בקומפוננטה הזו)
 DataTable.propTypes = {
   data: PropTypes.arrayOf(
     PropTypes.shape({
@@ -41,7 +61,7 @@ DataTable.propTypes = {
       job: PropTypes.string.isRequired,
       color: PropTypes.string.isRequired,
     })
-  ).isRequired,
+  ),
 };
 
 export default DataTable;
