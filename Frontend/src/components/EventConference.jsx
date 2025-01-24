@@ -8,7 +8,7 @@ function EventConference() {
   const [conference] = useState([
     {
       id: 1,
-      image: 'https://via.placeholder.com/300', // Replace with your local or hosted image URLs
+      image: 'https://eye.gov.az/content_img/105d39fbd.jpg', // Replace with your local or hosted image URLs
       name: 'Conference 1',
       category: 'active',
       title: 'This is the first event conference.',
