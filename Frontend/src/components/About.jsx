@@ -53,12 +53,19 @@ function About() {
 						{t('We are glad to see you at the National Ophthalmology Center named after Academician Zarifa Aliyeva')}
 						<span className='text-yellow-500'>!</span>
 					</h1> */}
-					<h1 className="text-3xl md:text-5xl font-semibold dark:text-white text-black break-words whitespace-normal leading-tight text-center sm:text-left">
+					{/* <h1 className="text-3xl md:text-5xl font-semibold dark:text-white text-black break-words whitespace-normal leading-tight text-center sm:text-left">
+						{t(
+							"We are glad to see you at the National Ophthalmology Center named after Academician Zarifa Aliyeva"
+						)}
+						<span className="text-yellow-500">!</span>
+					</h1> */}
+					<h1 className="text-2xl sm:text-4xl lg:text-5xl xl:text-6xl font-semibold dark:text-white text-black break-words whitespace-normal leading-snug sm:leading-normal lg:leading-relaxed text-center max-w-full sm:max-w-3xl lg:max-w-4xl mx-auto">
 						{t(
 							"We are glad to see you at the National Ophthalmology Center named after Academician Zarifa Aliyeva"
 						)}
 						<span className="text-yellow-500">!</span>
 					</h1>
+
 
 				</div>
 
