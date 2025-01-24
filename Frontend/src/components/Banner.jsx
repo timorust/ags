@@ -55,7 +55,7 @@ function Banner() {
 
 						{/* YouTube */}
 						<a
-							href='https://youtube.com'
+							href='https://www.youtube.com/channel/UC85NArLz-MnZhF5hjeV_2KA'
 							target='_blank'
 							rel='noopener noreferrer'
 						>

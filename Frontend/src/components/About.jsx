@@ -50,7 +50,7 @@ function About() {
 			<div className='max-w-screen-2xl container mx-auto px-6 md:px-20 mb-10'>
 				<div className='text-center mb-12'>
 					<h1 className='text-3xl md:text-5xl font-semibold dark:text-white text-black'>
-						{t('We`re delighted to have you')},
+						{t('We are glad to see you at the National Ophthalmology Center named after Academician Zarifa Aliyeva!')},
 						<span className='text-yellow-500'>{t('Here')}! :)</span>
 					</h1>
 				</div>
