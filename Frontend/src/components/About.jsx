@@ -59,7 +59,7 @@ function About() {
 
 				</div>
 
-				<div className="relative w-full h-96 overflow-hidden rounded-md shadow-lg sm:mb-12 mb-0">
+				<div className="relative w-full h-96 overflow-hidden rounded-md shadow-lg sm:mb-12 mb-0 sm:p-4 p-0">
 					{images.map((image, index) => (
 						<img
 							key={index}
@@ -70,6 +70,7 @@ function About() {
 						/>
 					))}
 				</div>
+
 
 
 
