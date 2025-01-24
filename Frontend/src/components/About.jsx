@@ -16,7 +16,7 @@ function About() {
 		'that unites glaucoma specialists and shares their clinical',
 		"and scientific knowledge for the benefit of glaucoma patients",
 		"colleagues and residents. The main goal of the AGS is to provide, improve their quality of life",
-        "excellent and comprehensive care to all people with glaucoma and those at risk",
+		"excellent and comprehensive care to all people with glaucoma and those at risk",
 		'provide a collegial environment for AGS members to exchange ideas and opinions'
 	]
 
@@ -49,10 +49,17 @@ function About() {
 			<CountdownTimer targetDate='2025-03-15T09:00:00' />
 			<div className='max-w-screen-2xl container mx-auto px-6 md:px-20 mb-10'>
 				<div className='text-center mb-12'>
-					<h1 className='text-3xl md:text-5xl font-semibold dark:text-white text-black'>
+					{/* <h1 className='text-3xl md:text-5xl font-semibold dark:text-white text-black'>
 						{t('We are glad to see you at the National Ophthalmology Center named after Academician Zarifa Aliyeva')}
 						<span className='text-yellow-500'>!</span>
+					</h1> */}
+					<h1 className="text-3xl md:text-5xl font-semibold dark:text-white text-black break-words whitespace-normal leading-tight text-center sm:text-left">
+						{t(
+							"We are glad to see you at the National Ophthalmology Center named after Academician Zarifa Aliyeva"
+						)}
+						<span className="text-yellow-500">!</span>
 					</h1>
+
 				</div>
 
 				<div className='relative w-full h-96 mb-12 overflow-hidden rounded-md shadow-lg'>
