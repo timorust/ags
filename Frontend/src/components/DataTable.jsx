@@ -6,10 +6,10 @@ import Footer from './Footer'
 function DataTable() {
   // נתוני הדוגמה
   const data = [
-    { id: 1, name: 'Cy Ganderton', job: 'Quality Control Specialist', color: 'Blue' },
-    { id: 2, name: 'Hart Hagerty', job: 'Desktop Support Technician', color: 'Purple' },
-    { id: 3, name: 'Brice Swyre', job: 'Tax Accountant', color: 'Red' },
-    { id: 4, name: 'Jane Doe', job: 'Software Engineer', color: 'Green' },
+    { id: 1, name: 'Cy Ganderton', job: 'Quality Control Specialist', topic: 'Blue' },
+    { id: 2, name: 'Hart Hagerty', job: 'Desktop Support Technician', topic: 'Purple' },
+    { id: 3, name: 'Brice Swyre', job: 'Tax Accountant', topic: 'Red' },
+    { id: 4, name: 'Jane Doe', job: 'Software Engineer', topic: 'Green' },
   ];
 
   return (
@@ -30,9 +30,9 @@ function DataTable() {
           <thead className="bg-gray-100 dark:bg-gray-800">
             <tr>
               <th className="px-4 py-2 border border-gray-300 dark:border-gray-700">#</th>
-              <th className="px-4 py-2 border border-gray-300 dark:border-gray-700">Name</th>
+              <th className="px-4 py-2 border border-gray-300 dark:border-gray-700">Lecture name</th>
               <th className="px-4 py-2 border border-gray-300 dark:border-gray-700">Job</th>
-              <th className="px-4 py-2 border border-gray-300 dark:border-gray-700">Favorite Color</th>
+              <th className="px-4 py-2 border border-gray-300 dark:border-gray-700">Lecture topic</th>
             </tr>
           </thead>
 
@@ -48,7 +48,7 @@ function DataTable() {
                 </th>
                 <td className="px-4 py-2 border border-gray-300 dark:border-gray-700">{item.name}</td>
                 <td className="px-4 py-2 border border-gray-300 dark:border-gray-700">{item.job}</td>
-                <td className="px-4 py-2 border border-gray-300 dark:border-gray-700">{item.color}</td>
+                <td className="px-4 py-2 border border-gray-300 dark:border-gray-700">{item.topic}</td>
               </tr>
             ))}
           </tbody>
@@ -68,7 +68,7 @@ DataTable.propTypes = {
       id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
       name: PropTypes.string.isRequired,
       job: PropTypes.string.isRequired,
-      color: PropTypes.string.isRequired,
+      topic: PropTypes.string.isRequired,
     })
   ),
 };
