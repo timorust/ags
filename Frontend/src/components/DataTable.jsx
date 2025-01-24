@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 function DataTable({ data }) {
   return (
     <div className="overflow-x-auto">
-      <table className="table w-full border-collapse border border-gray-200 shadow-lg rounded-lg dark:text-white text-black">
+      <table className="table w-full border-collapse border border-gray-200 shadow-lg rounded-lg dark:text-white text-black dark:bg-slate-900 dark:text-white">
         {/* כותרת הטבלה */}
         <thead className="bg-gray-100">
           <tr>
