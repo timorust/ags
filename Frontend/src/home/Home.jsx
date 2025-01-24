@@ -7,6 +7,7 @@ import CountdownTimer from '../components/CountdownTimer'
 import Hero from '../components/Hero'
 import VideoMeeting from '../components/VideoMeeting'
 import EventConference from '../components/EventConference'
+import DataTable from '../components/DataTable';
 
 function Home() {
 	const tableData = [
