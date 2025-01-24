@@ -1,4 +1,7 @@
 import PropTypes from 'prop-types';
+import CountdownTimer from './CountdownTimer'
+import Navbar from './Navbar'
+import Footer from './Footer'
 
 function DataTable() {
   // נתוני הדוגמה
@@ -10,6 +13,9 @@ function DataTable() {
   ];
 
   return (
+    <>
+    <Navbar />
+    <CountdownTimer targetDate='2025-03-15T09:00:00' />
     <div className="bg-white dark:bg-slate-900 dark:text-white text-black min-h-screen flex flex-col items-center py-8">
       {/* כותרת והקדמה לטבלה */}
       <h2 className="text-2xl font-semibold mb-4">Employee Details</h2>
@@ -49,6 +55,9 @@ function DataTable() {
         </table>
       </div>
     </div>
+    <Footer />
+    </>
+    
   );
 }
 
