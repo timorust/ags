@@ -18,7 +18,7 @@ function DataTable() {
     <>
       <Navbar />
       <CountdownTimer targetDate="2025-03-15T09:00:00" />
-      <div className="bg-white dark:bg-slate-900 dark:text-white text-black min-h-screen flex flex-col items-center py-8">
+      <div className="dark:bg-slate-900 dark:text-white min-h-screen flex flex-col items-center py-8">
         <h2 className="text-2xl font-semibold mb-4">Employee Details</h2>
         <p className="text-gray-600 dark:text-gray-400 mb-6 text-center max-w-md">
           Below is a list of employee details, including job titles and favorite colors.
