@@ -6,6 +6,7 @@ import VideoWithDescription from '../components/VideoWithDescription'
 import CountdownTimer from '../components/CountdownTimer'
 import Hero from '../components/Hero'
 import VideoMeeting from '../components/VideoMeeting'
+import EventConference from '../components/EventConference'
 
 function Home() {
 	return (
@@ -14,7 +15,8 @@ function Home() {
 			<Navbar />
 			<Banner />
 			<VideoWithDescription />
-			<FreeConference />
+			{/* <FreeConference /> */}
+			<EventConference/>
 			<Hero />
 			<VideoMeeting/>
 			<Footer />
