@@ -10,6 +10,9 @@ function DataTable() {
     { id: 2, name: 'Hart Hagerty', job: 'Desktop Support Technician', topic: 'Purple' },
     { id: 3, name: 'Brice Swyre', job: 'Tax Accountant', topic: 'Red' },
     { id: 4, name: 'Jane Doe', job: 'Software Engineer', topic: 'Green' },
+    { id: 5, name: 'Jane Doe', job: 'Software Engineer', topic: 'Green' },
+    { id: 6, name: 'Jane Doe', job: 'Software Engineer', topic: 'Green' },
+    { id: 7, name: 'Jane Doe', job: 'Software Engineer', topic: 'Green' },
   ];
 
   return (
