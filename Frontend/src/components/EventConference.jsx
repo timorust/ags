@@ -13,7 +13,7 @@ function EventConference() {
       category: 'active',
       title: 'This is the first event conference.',
       price: 0,
-      url: 'https://example.com/conference1',
+      url: 'https://eye.gov.az/?smode=content&item=28_aprel_akad_Zerife_xanim_konfrans_2023',
     },
     {
       id: 2,
