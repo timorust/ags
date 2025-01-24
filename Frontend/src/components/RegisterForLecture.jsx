@@ -28,7 +28,7 @@ function RegisterLecture() {
 		e.preventDefault()
 
 		try {
-			await axios.post('https://ags-az.onrender.com/registration', formData)
+			await axios.post('https://www.ags-az.com/registration', formData)
 			setIsRegistered(true)
 		} catch (error) {
 			console.error(

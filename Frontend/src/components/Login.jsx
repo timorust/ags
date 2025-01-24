@@ -20,7 +20,7 @@ function Login() {
 			password: data.password,
 		}
 		await axios
-			.post('https://ags-az.onrender.com/user/login', userInfo)
+			.post('https://www.ags-az.com/user/login', userInfo)
 			.then(res => {
 				console.log(res.data)
 				if (res.data) {

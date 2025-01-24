@@ -27,7 +27,7 @@ function Signup() {
 			password: data.password,
 		}
 		await axios
-			.post('https://ags-az.onrender.com/user/signup', userInfo)
+			.post('https://www.ags-az.com/user/signup', userInfo)
 			.then(res => {
 				console.log(res.data)
 				if (res.data) {
