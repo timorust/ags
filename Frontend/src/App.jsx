@@ -8,6 +8,7 @@ import Signup from './components/Signup'
 import SendEmail from './components/Contact'
 import About from './components/About'
 import RegisterLecture from './components/RegisterForLecture'
+import DataTable from './components/DataTable'
 
 function App() {
 	const [authUser, setAuthUser] = useAuth()
@@ -16,6 +17,7 @@ function App() {
 			<div className='dark:bg-slate-900 dark:text-white'>
 				<Routes>
 					<Route path='/' element={<Home />} />
+					<Route path='/list' element={<DataTable />} />
 					<Route
 						path="/signup"
 						element={
