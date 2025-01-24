@@ -17,7 +17,7 @@ function EventConference() {
     },
     {
       id: 2,
-      image: 'https://via.placeholder.com/300',
+      image: 'http://eye.gov.az/content_img/25b89fed.jpg',
       name: 'Conference 2',
       category: 'active',
       title: 'Second event to explore new opportunities.',
@@ -26,7 +26,7 @@ function EventConference() {
     },
     {
       id: 3,
-      image: 'https://via.placeholder.com/300',
+      image: 'http://eye.gov.az/content_img/61807f6c.jpg',
       name: 'Conference 3',
       category: 'active',
       title: 'Third conference with premium insights.',
