@@ -49,16 +49,6 @@ function About() {
 			<CountdownTimer targetDate='2025-03-15T09:00:00' />
 			<div className='max-w-screen-2xl container mx-auto px-6 md:px-20 mb-10'>
 				<div className='text-center mb-12'>
-					{/* <h1 className='text-3xl md:text-5xl font-semibold dark:text-white text-black'>
-						{t('We are glad to see you at the National Ophthalmology Center named after Academician Zarifa Aliyeva')}
-						<span className='text-yellow-500'>!</span>
-					</h1> */}
-					{/* <h1 className="text-3xl md:text-5xl font-semibold dark:text-white text-black break-words whitespace-normal leading-tight text-center sm:text-left">
-						{t(
-							"We are glad to see you at the National Ophthalmology Center named after Academician Zarifa Aliyeva"
-						)}
-						<span className="text-yellow-500">!</span>
-					</h1> */}
 					<h1 className="text-2xl sm:text-4xl lg:text-5xl xl:text-6xl font-semibold dark:text-white text-black break-words whitespace-normal leading-snug sm:leading-normal lg:leading-relaxed text-center max-w-full sm:max-w-3xl lg:max-w-4xl mx-auto">
 						{t(
 							"We are glad to see you at the National Ophthalmology Center named after Academician Zarifa Aliyeva"
@@ -69,7 +59,19 @@ function About() {
 
 				</div>
 
-				<div className='relative w-full h-96 mb-12 overflow-hidden rounded-md shadow-lg'>
+				{/* <div className='relative w-full h-96 mb-12 overflow-hidden rounded-md shadow-lg'>
+					{images.map((image, index) => (
+						<img
+							key={index}
+							src={image}
+							alt={`Image ${index + 1}`}
+							className={`absolute w-full h-auto rounded-t-lg object-cover ${index === imageIndex ? 'opacity-100' : 'opacity-0'
+								}`}
+						/>
+					))}
+				</div> */}
+
+				<div className="relative w-full h-96 mb-0 sm:mb-12 overflow-hidden rounded-md shadow-lg">
 					{images.map((image, index) => (
 						<img
 							key={index}
@@ -80,6 +82,7 @@ function About() {
 						/>
 					))}
 				</div>
+
 
 				<div className='bg-gray-100 dark:bg-blue-300 p-4 rounded-md shadow-md mb-12'>
 					<div
