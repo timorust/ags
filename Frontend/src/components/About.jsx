@@ -93,13 +93,13 @@ function About() {
 					</div>
 				</div>
 
-				<div className='text-center mt-8'>
+				{/* <div className='text-center mt-8'>
 					<Link to='/'>
 						<button className='rounded-full border-[2px] bg-green-500 text-white px-3 py-2 rounded-md hover:bg-green-700 duration-300 cursor-pointer'>
 							{t('Back')}
 						</button>
 					</Link>
-				</div>
+				</div> */}
 			</div>
 			<Footer />
 		</>

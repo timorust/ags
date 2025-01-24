@@ -29,7 +29,7 @@ function FreeConference() {
   useEffect(() => {
     const getConference = async () => {
       try {
-        const res = await axios.get('https://ags-az.onrender.com/conference');
+        const res = await axios.get('https://www.ags-az.com/conference');
         // הסרתי את הסינון לפי קטגוריה
         const data = Array.isArray(res.data) ? res.data : []; // מאחסן את כל הנתונים
         setConference(data);
