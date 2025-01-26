@@ -55,6 +55,9 @@ function Navbar() {
         <a href='/about' className="text-cyan-400 hover:text-cyan-600 active:text-cyan-700 duration-200">{t('About')}</a>
       </li>
       <li>
+        <a href='/registration' className="text-cyan-400 hover:text-cyan-600 active:text-cyan-700 duration-200">{t('Media')}</a>
+      </li>
+      <li>
         <a href='/registration' className="text-cyan-400 hover:text-cyan-600 active:text-cyan-700 duration-200">{t('Registration')}</a>
       </li>
       <li>

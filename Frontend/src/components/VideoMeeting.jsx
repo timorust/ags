@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import Navbar from './Navbar';
+import CountdownTimer from './CountdownTimer';
+import Footer from './Footer';
 
 function VideoMeeting() {
   const { t } = useTranslation();
@@ -32,6 +35,9 @@ function VideoMeeting() {
   ]);
 
   return (
+    <> 
+    <Navbar/>
+    <CountdownTimer/>
     <div className="max-w-screen-2xl container mx-auto px-6 md:px-20">
       {/* Header Section */}
       <div className="mt-28 text-center">
@@ -64,6 +70,8 @@ function VideoMeeting() {
         ))}
       </div>
     </div>
+    <Footer/>
+    </>
   );
 }
 

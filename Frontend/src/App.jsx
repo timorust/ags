@@ -9,6 +9,7 @@ import SendEmail from './components/Contact'
 import About from './components/About'
 import RegisterLecture from './components/RegisterForLecture'
 import DataTable from './components/DataTable'
+import VideoMeeting from './components/VideoMeeting'
 
 function App() {
 	const [authUser, setAuthUser] = useAuth()
@@ -18,6 +19,7 @@ function App() {
 				<Routes>
 					<Route path='/' element={<Home />} />
 					<Route path='/list' element={<DataTable />} />
+					<Route path='/media' element={<VideoMeeting />} />
 					<Route
 						path="/signup"
 						element={
