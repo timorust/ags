@@ -43,7 +43,7 @@ function EventConference() {
       url: 'https://www.sociedadglaucoma.com/',
     },
     {
-      id: 5,
+      id: 6,
       image: 'https://subspecialtyday.ascrs.org/-/media/all-annual-meetings/am-2024/am2024-images/2024-gd-hero.jpeg?cx=0.75&cy=0.44&cw=767&ch=767&hash=0ED3FEB8D9C021692101BCB147ACFD17',
       name: 'ASCRS Glaucoma Day',
       category: 'active',
@@ -52,7 +52,7 @@ function EventConference() {
       url: 'https://subspecialtyday.ascrs.org/glaucoma-day',
     },
     {
-      id: 6,
+      id: 5,
       image: 'https://scontent.fgyd21-1.fna.fbcdn.net/v/t39.30808-6/473675674_941754381430060_5723316019145664580_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=105&ccb=1-7&_nc_sid=e5c1b6&_nc_ohc=shwfjSnDe24Q7kNvgHJe7XL&_nc_zt=23&_nc_ht=scontent.fgyd21-1.fna&_nc_gid=AIzDXuZHQ-Q3Rq5ObvXHWcr&oh=00_AYBZtcSUbj8MB_Ef9_rgmlBMXPt0RtFPZIWrx78PoYd86g&oe=67996BEE',
       name: 'World Glaucoma Congress (WGC 2025)',
       category: 'active',
