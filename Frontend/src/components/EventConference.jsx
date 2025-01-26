@@ -35,7 +35,7 @@ function EventConference() {
     },
     {
       id: 4,
-      image: 'https://www.sociedadglaucoma.com/wp-content/uploads/2024/02/cartel-seg-2024_p.jpg',
+      image: 'https://www.sociedadglaucoma.com/wp-content/uploads/2025/01/cartel-seg-2025.jpg',
       name: 'Congress of the Spanish Society of Glaucoma (SEG 2025)',
       category: 'active',
       title: 'Dates: 6 March - 8 March 2025',
