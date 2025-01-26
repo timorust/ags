@@ -8,21 +8,21 @@ function EventConference() {
   const [conference] = useState([
     {
       id: 1,
-      image: 'https://eye.gov.az/content_img/105d39fbd.jpg', // Replace with your local or hosted image URLs
-      name: 'Conference 1',
-      category: 'active',
-      title: 'This is the first event conference.',
+      image: '/meeting3.png', // Replace with your local or hosted image URLs
+      name: 'Soon Conference of Glaucomatologists of Azerbaijan',
+      category: 'Freee',
+      title: 'Since glaucoma is a serious, currently incurable disease that leads to blindness, special attention is paid to this problem. For 6 years now, as a tradition, the scientific and practical conference of Azerbaijani glaucomatologists has been held in mid-March. This conference brings together local and foreign specialists involved in glaucoma every year and provides an opportunity to discuss innovations, clinical and scientific experiences in the field. The knowledge and experience gained in this conference are used by our local ophthalmologists, both in Baku and in all regions of our country, creating broad opportunities for the prevention, early diagnosis and appropriate treatment of glaucoma among the population. This year, adhering to the tradition, we invite all our colleagues who are interested in glaucoma to participate in the VI conference of Azerbaijani glaucomatologists on March 15.',
       price: 0,
       url: 'https://eye.gov.az/?smode=content&item=28_aprel_akad_Zerife_xanim_konfrans_2023',
     },
     {
       id: 2,
-      image: 'http://eye.gov.az/content_img/25b89fed.jpg',
-      name: 'Conference 2',
+      image: 'https://anzgsconference.com/wp-content/uploads/2024/07/rananz.jpg',
+      name: 'Australian and New Zealand Glaucoma Society Congress (ANZGS 2025)',
       category: 'active',
       title: 'Second event to explore new opportunities.',
       price: 0,
-      url: 'https://example.com/conference2',
+      url: 'https://anzgsconference.com/',
     },
     {
       id: 3,
