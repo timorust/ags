@@ -15,7 +15,7 @@ function DataTable() {
       <CountdownTimer targetDate="2025-03-15T09:00:00" />
       <div className="dark:bg-slate-900 dark:text-white min-h-screen flex flex-col items-center py-8">
         <h2 className="text-2xl font-semibold mb-4"><span className='text-yellow-500'>Information about the lecturers</span></h2>
-        <p className="text-gray-600 dark:text-gray-400 mb-6 text-center max-w-md">
+        <p className="text-justify leading-relaxed text-gray-600 dark:text-gray-400 mb-6 text-center max-w-md">
           Discover groundbreaking advancements in glaucoma care with two esteemed specialists. With advanced degrees and extensive clinical expertise, they will share the latest innovations and practices shaping the future of glaucoma management at The Azerbaijan Glaucoma Society conference.
         </p>
 
