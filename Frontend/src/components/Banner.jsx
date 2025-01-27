@@ -71,7 +71,7 @@ function Banner() {
 						</a>
 						{/* Facebook */}
 						<a
-							href='https://facebook.com'
+							href='https://www.facebook.com/profile.php?id=61572442263665&sk=about&locale=az_AZ'
 							target='_blank'
 							rel='noopener noreferrer'
 						>
