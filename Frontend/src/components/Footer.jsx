@@ -11,9 +11,9 @@ function Footer() {
 					<Link className='link link-hover' to='/'>{t('Home')}</Link>
 					<Link className='link link-hover' to='/meeting'>{t('Event')}</Link>
 					<Link className='link link-hover' to='/contact'>{t('Contact')}</Link>
-					<Link className='link link-hover' to='/about'>{t('About us')}</Link>
+					<Link className='link link-hover' to='/about'>{t('About')}</Link>
 					<Link className='link link-hover' to='/media'>{t('Media')}</Link>
-					<Link className='link link-hover' to='/registration'>{t('Registration')}</Link>
+					<Link className='link link-hover' to='/registration'>{t('Register')}</Link>
 				</nav>
 				<nav>
 					<div className='grid grid-flow-col gap-4'>
