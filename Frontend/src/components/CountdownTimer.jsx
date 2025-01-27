@@ -35,9 +35,13 @@ const CountdownTimer = ({ targetDate }) => {
 			<h2 className='text-2xl font-bold mt-4 mb-4 text-center text-gray-800 dark:text-white'>
 				<span className='text-blue-500'>{t('AGC-2025 WILL START IN')}</span>
 				<br />
-				<span className='text-md text-pink-500 dark:text-pink-500'>
+				{/* <span className='text-lg text-pink-500 dark:text-pink-500'>
 					15|03|2025 {t('at')} 09:00
+				</span> */}
+				<span className="text-md text-pink-500 dark:text-pink-400 font-medium">
+					15|03|2025 <span className="text-gray-600 dark:text-gray-400">@</span> 09:00
 				</span>
+
 			</h2>
 			<div className='flex justify-center space-x-8'>
 				{Object.keys(timeLeft).map(interval => (
