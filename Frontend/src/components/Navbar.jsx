@@ -44,25 +44,25 @@ function Navbar() {
   const navItems = (
     <>
       <li>
-        <a href='/' className="text-cyan-400 hover:text-cyan-600 active:text-cyan-700 duration-200">{t('Home')}</a>
+        <a href='/' className="text-blue-300 hover:text-blue-600 active:text-blue-700 duration-200">{t('Home')}</a>
       </li>
       <li>
-        <a href='/meeting' className="text-cyan-400 hover:text-cyan-600 active:text-cyan-700 duration-200">{t('Event')}</a>
+        <a href='/meeting' className="text-blue-300 hover:text-blue-600 active:text-blue-700 duration-200">{t('Event')}</a>
       </li>
       <li>
-        <a href='/contact' className="text-cyan-400 hover:text-cyan-600 active:text-cyan-700 duration-200">{t('Contact')}</a>
+        <a href='/contact' className="text-blue-300 hover:text-blue-600 active:text-blue-700 duration-200">{t('Contact')}</a>
       </li>
       <li>
-        <a href='/about' className="text-cyan-400 hover:text-cyan-600 active:text-cyan-700 duration-200">{t('About')}</a>
+        <a href='/about' className="text-blue-300 hover:text-blue-600 active:text-blue-700 duration-200">{t('About')}</a>
       </li>
       <li>
-        <a href='/media' className="text-cyan-400 hover:text-cyan-600 active:text-cyan-700 duration-200">{t('Media')}</a>
+        <a href='/media' className="text-blue-300 hover:text-blue-600 active:text-blue-700 duration-200">{t('Media')}</a>
       </li>
       <li>
-        <a href='/registration' className="text-cyan-400 hover:text-cyan-600 active:text-cyan-700 duration-200">{t('Join')}</a>
+        <a href='/registration' className="text-blue-300 hover:text-blue-600 active:text-blue-700 duration-200">{t('Join')}</a>
       </li>
       <li>
-        <a href='/list' className="text-cyan-400 hover:text-cyan-600 active:text-cyan-700 duration-200">{t('Program')}</a>
+        <a href='/list' className="text-blue-300 hover:text-blue-600 active:text-blue-700 duration-200">{t('Program')}</a>
       </li>
     </>
   )
