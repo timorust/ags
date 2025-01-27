@@ -47,7 +47,7 @@ function Navbar() {
         <a href='/' className="text-blue-500 hover:text-blue-600 active:text-blue-700 duration-200">{t('Home')}</a>
       </li>
       <li>
-        <a href='/meeting' className="text-blue-500 hover:text-blue-600 active:text-blue-700 duration-200">{t('Event')}</a>
+        <a href='/meeting' className="text-blue-500 hover:text-blue-600 active:text-blue-700 duration-200">{t('Events')}</a>
       </li>
       <li>
         <a href='/contact' className="text-blue-500 hover:text-blue-600 active:text-blue-700 duration-200">{t('Contact')}</a>
