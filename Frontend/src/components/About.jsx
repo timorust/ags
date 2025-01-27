@@ -50,7 +50,7 @@ function About() {
 			<div className='max-w-screen-2xl container mx-auto px-6 md:px-20 mb-10'>
 				<div className='mt-28 items-center justify-center text-center'>
 					<h1 className="text-lg md:text-xl mb-10 dark:text-white text-grey break-words whitespace-normal leading-snug sm:leading-normal lg:leading-relaxed text-center max-w-full sm:max-w-3xl lg:max-w-4xl mx-auto">
-						{t('AboutTitle')}<span className="text-blue-500">!</span>
+						{t('AboutTitle')}<span className="text-yellow-500">!</span>
 					</h1>
 
 

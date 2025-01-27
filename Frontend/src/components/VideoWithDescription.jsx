@@ -32,7 +32,7 @@ const VideoWithDescription = () => {
 				</div> */}
 
 				<div className="flex-1 md:w-1/3 text-left">
-					<h3 className="text-3xl font-bold mb-6 text-blue-500">
+					<h3 className="text-3xl font-bold mb-6 text-yellow-500">
 						Our call to fight glaucoma
 					</h3>
 					<ul className="text-gray-700 dark:text-gray-300 text-xl leading-relaxed mb-20 list-disc pl-6">
