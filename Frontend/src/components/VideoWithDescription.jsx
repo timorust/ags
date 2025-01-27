@@ -21,11 +21,11 @@ const VideoWithDescription = () => {
 					</div>
 				</div>
 
-				<div className="flex-1 md:w-1/3 text-justify">
+				<div className="flex-1 md:w-1/3 text-justify mr-20">
 					<h3 className="font-semibold text-2xl md:text-3xl pb-4">
-						<span className="text-blue-300">{t('Our call to fight glaucoma')}</span>
+						<span className="text-blue-500">{t('Our call to fight glaucoma')}</span>
 					</h3>
-					<ul className="mb-5 sm:mb-7 sm:text-lg dark:text-black">
+					<ul className="mb-5 sm:mb-7 sm:text-lg dark:text-white">
 						<li>Early Detection and Regular Screenings !!!</li>
 						<li>Effective Treatment !!!</li>
 						<li>Research and Innovation !!!</li>
