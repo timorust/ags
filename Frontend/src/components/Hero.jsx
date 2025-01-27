@@ -13,7 +13,7 @@ export default function Hero() {
           <div className="hero-content text-center text-secondary-content">
             <div className="max-w-lg">
               <h1 className="mb-5 sm:mb-7 text-4xl sm:text-5xl font-bold dark:text-black">
-                <span className="text-blue-300">{t('The Azerbaijan Glaucoma Society')}</span>
+                <span className="text-blue-300">{t('Azerbaijan Glaucoma Society')}</span>
               </h1>
               <p className="mb-5 sm:mb-7 sm:text-lg dark:text-black">
                 <span className="text-blue-300">{t('heroText')}</span>
