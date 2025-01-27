@@ -13,7 +13,7 @@ function Footer() {
 					<Link className='link link-hover' to='/contact'>{t('Contact')}</Link>
 					<Link className='link link-hover' to='/about'>{t('About')}</Link>
 					<Link className='link link-hover' to='/media'>{t('Media')}</Link>
-					<Link className='link link-hover' to='/registration'>{t('Register')}</Link>
+					<Link className='link link-hover' to='/registration'>{t('Join')}</Link>
 				</nav>
 				<nav>
 					<div className='grid grid-flow-col gap-4'>
