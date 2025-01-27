@@ -8,7 +8,7 @@ function Footer() {
 			<hr />
 			<footer className='footer footer-center p-10 text-base-content rounded dark:bg-slate-900 dark:text-white'>
 				<nav className='grid grid-flow-col gap-4'>
-					<Link className='link link-hover text-blue-300 hover:text-blue-600 active:text-blue-700 duration-200' to='/'>{t('Home')}</Link>
+					{/* <Link className='link link-hover text-blue-300 hover:text-blue-600 active:text-blue-700 duration-200' to='/'>{t('Home')}</Link> */}
 					<Link className='link link-hover text-blue-300 hover:text-blue-600 active:text-blue-700 duration-200' to='/meeting'>{t('Event')}</Link>
 					<Link className='link link-hover text-blue-300 hover:text-blue-600 active:text-blue-700 duration-200' to='/contact'>{t('Contact')}</Link>
 					<Link className='link link-hover text-blue-300 hover:text-blue-600 active:text-blue-700 duration-200' to='/about'>{t('About')}</Link>
