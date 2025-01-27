@@ -40,7 +40,7 @@ const CountdownTimer = ({ targetDate }) => {
 				</span> */}
 				<span className="text-md text-pink-500 dark:text-pink-400 font-medium">
 					15|03|2025
-					<span className="ml-2 text-green-500 dark:text-green-400">09:00</span>
+					<span className="ml-2 text-pink-500 dark:text-green-400">  09:00</span>
 				</span>
 
 
