@@ -44,25 +44,25 @@ function Navbar() {
   const navItems = (
     <>
       <li>
-        <a href='/' className="text-blue-300 hover:text-blue-600 active:text-blue-700 duration-200">{t('Home')}</a>
+        <a href='/' className="text-blue-500 hover:text-blue-600 active:text-blue-700 duration-200">{t('Home')}</a>
       </li>
       <li>
-        <a href='/meeting' className="text-blue-300 hover:text-blue-600 active:text-blue-700 duration-200">{t('Event')}</a>
+        <a href='/meeting' className="text-blue-500 hover:text-blue-600 active:text-blue-700 duration-200">{t('Event')}</a>
       </li>
       <li>
-        <a href='/contact' className="text-blue-300 hover:text-blue-600 active:text-blue-700 duration-200">{t('Contact')}</a>
+        <a href='/contact' className="text-blue-500 hover:text-blue-600 active:text-blue-700 duration-200">{t('Contact')}</a>
       </li>
       <li>
-        <a href='/about' className="text-blue-300 hover:text-blue-600 active:text-blue-700 duration-200">{t('About')}</a>
+        <a href='/about' className="text-blue-500 hover:text-blue-600 active:text-blue-700 duration-200">{t('About')}</a>
       </li>
       <li>
-        <a href='/media' className="text-blue-300 hover:text-blue-600 active:text-blue-700 duration-200">{t('Media')}</a>
+        <a href='/media' className="text-blue-500 hover:text-blue-600 active:text-blue-700 duration-200">{t('Media')}</a>
       </li>
       <li>
-        <a href='/registration' className="text-blue-300 hover:text-blue-600 active:text-blue-700 duration-200">{t('Join')}</a>
+        <a href='/registration' className="text-blue-500 hover:text-blue-600 active:text-blue-700 duration-200">{t('Join')}</a>
       </li>
       <li>
-        <a href='/list' className="text-blue-300 hover:text-blue-600 active:text-blue-700 duration-200">{t('Program')}</a>
+        <a href='/list' className="text-blue-500 hover:text-blue-600 active:text-blue-700 duration-200">{t('Program')}</a>
       </li>
     </>
   )
@@ -77,7 +77,7 @@ function Navbar() {
     <>
       <div
         className={` max-w-screen-2xl container mx-auto md:px-20 px-4 dark:bg-slate-800 dark:text-white fixed top-0 left-0 right-0 z-50 ${sticky
-          ? 'sticky-navbar shadow-md bg-base-200 dark:bg-slate-600 dark:text-white duration-300 transition-all ease-in-out'
+          ? 'sticky-navbar shadow-md bg-base-200 dark:bg-slate-600 dark:text-white duration-500 transition-all ease-in-out'
           : ''
           }`}
       >
@@ -126,7 +126,7 @@ function Navbar() {
                   className='h-8 w-8 object-cover'
                 />
               </Link>
-              <span className='text-blue-300'>{t('AGS')}</span>
+              <span className='text-blue-500'>{t('AGS')}</span>
             </a>
 
           </div>
@@ -194,7 +194,7 @@ function Navbar() {
             ) : (
               <div className=''>
                 <a
-                  className='bg-green-500 text-white px-3 py-2 rounded-md hover:bg-green-700 duration-300 cursor-pointer'
+                  className='bg-green-500 text-white px-3 py-2 rounded-md hover:bg-green-700 duration-500 cursor-pointer'
                   onClick={() =>
                     document.getElementById('my_modal_3').showModal()
                   }
