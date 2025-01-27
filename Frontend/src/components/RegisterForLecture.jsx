@@ -44,17 +44,14 @@ function RegisterLecture() {
 			<Navbar />
 			<CountdownTimer targetDate='2025-03-15T09:00:00' />
 			<div className='max-w-screen-2xl container mx-auto md:px-20 px-6 mb-10'>
-				<p>{t('We look forward to seeing you at the lecture')}.</p>
 				{isRegistered ? (
 					<div className='text-center mt-12'>
 						<h2 className='text-2xl text-green-500'>
 							{t('Thank you for registering')}!
 						</h2>
-						<h2>{t('Conference registration')}.</h2>
+						<p>{t('We look forward to seeing you at the lecture')}.</p>
 					</div>
-
 				) : (
-
 					<form onSubmit={handleSubmit} className='mt-12 max-w-lg mx-auto'>
 						<div className='mb-6'>
 							<label className='block text-left text-gray-700  dark:bg-slate-900 dark:text-green-300'>
