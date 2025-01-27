@@ -87,7 +87,7 @@ function Navbar() {
               <div
                 tabIndex={0}
                 role='button'
-                className='btn btn-ghost md:hidden'
+                className='btn btn-ghost lg:hidden'
               >
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -104,12 +104,19 @@ function Navbar() {
                   />
                 </svg>
               </div>
-              <ul
+              {/* <ul
                 tabIndex={0}
                 className='menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 dark:bg-slate-900 dark:text-white'
               >
                 {navItems}
+              </ul> */}
+              <ul
+                tabIndex={0}
+                className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100/80 rounded-box w-40 dark:bg-slate-900/80 dark:text-white"
+              >
+                {navItems}
               </ul>
+
             </div>
             <a className='text-2xl font-bold cursor-pointer flex items-center gap-2'>
               <Link to="/">
