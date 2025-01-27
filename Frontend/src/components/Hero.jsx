@@ -16,7 +16,7 @@ export default function Hero() {
                 <span className="text-blue-300">{t('The Azerbaijan Glaucoma Society')}</span>
               </h1>
               <p className="mb-5 sm:mb-7 sm:text-lg dark:text-black">
-                <span className="text-blue-300">{t('Join us for an insightful conference on the latest advancements in glaucoma research and treatment. Together, let`s make strides in eye health.')}</span>
+                <span className="text-blue-300">{t('heroText')}</span>
 
               </p>
 
