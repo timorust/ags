@@ -16,7 +16,7 @@ function VideoMeeting() {
     },
     {
       id: 2,
-      title: t('Keynote Speech'),
+      title: t('A video about the historical figures and luminaries of ophthalmology in our country was presented at the 5th Conference of Azerbaijani Glaucomatologists.'),
       description: t('Dr. Jamil Hasanov’s Vision'),
       youtubeId: 'Ej2nGs2Wcno',
     },
