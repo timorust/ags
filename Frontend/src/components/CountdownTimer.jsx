@@ -39,7 +39,7 @@ const CountdownTimer = ({ targetDate }) => {
 					15|03|2025 {t('at')} 09:00
 				</span> */}
 				<span className="text-md text-pink-500 dark:text-pink-400 font-medium">
-					15|03|2025 <span className="text-green-500 dark:text-green-400">{t('at')}</span> 09:00
+					15|03|2025 <span className="text-green-500 dark:text-green-400"></span> 09:00
 				</span>
 
 			</h2>
