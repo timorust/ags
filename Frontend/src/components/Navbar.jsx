@@ -111,15 +111,14 @@ function Navbar() {
               </ul>
             </div>
             <a className='text-2xl font-bold cursor-pointer flex items-center gap-2'>
-              
-              <img
-                src={banner}
-                alt='logo'
-                className='h-8 w-8 object-cover'
-              />
-              <span className='text-yellow-500'>{t('AGS')}</span>
-
-
+              <Link to="/">
+                <img
+                  src={banner}
+                  alt='logo'
+                  className='h-8 w-8 object-cover'
+                />
+                <span className='text-yellow-500'>{t('AGS')}</span>
+              </Link>
             </a>
 
           </div>
