@@ -35,7 +35,7 @@ const CountdownTimer = ({ targetDate }) => {
 			<h2 className='text-2xl font-bold mt-4 mb-4 text-center text-gray-800 dark:text-white'>
 				<span className='text-blue-500'>{t('AGC-2025 WILL START IN')}</span>
 				<br />
-				<span className='text-lg text-pink-500 dark:text-pink-500'>
+				<span className='text-md text-pink-500 dark:text-pink-500'>
 					15|03|2025 {t('at')} 09:00
 				</span>
 			</h2>
