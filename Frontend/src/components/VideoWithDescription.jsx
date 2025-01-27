@@ -32,10 +32,10 @@ const VideoWithDescription = () => {
 				</div> */}
 
 				<div className="flex-1 md:w-1/3 text-left">
-					<h3 className="text-3xl font-bold mb-6 text-yellow-500">
+					<h3 className="font-semibold text-2xl md:text-3xl pb-4">
 						Our call to fight glaucoma
 					</h3>
-					<ul className="text-gray-700 dark:text-gray-300 text-xl leading-relaxed mb-20 list-disc pl-6">
+					<ul className="mb-5 sm:mb-7 sm:text-lg dark:text-black">
 						<li>Early Detection and Regular Screenings !!!</li>
 						<li>Effective Treatment !!!</li>
 						<li>Research and Innovation !!!</li>
