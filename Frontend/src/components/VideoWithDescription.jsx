@@ -17,7 +17,7 @@ const VideoWithDescription = () => {
 					</div>
 				</div>
 				<div className='flex-1 md:w-1/3 text-left'>
-					<h3 className='text-3xl font-bold mb-6 text-blue-600'>
+					<h3 className='text-3xl font-bold mb-6 text-blue-300'>
 						Learn About Our Topic
 					</h3>
 					<p className='text-gray-700 dark:text-gray-300 text-xl leading-relaxed mb-6'>

@@ -103,7 +103,7 @@ function EventConference() {
     <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 py-12">
       <div>
         <h1 className="font-semibold text-2xl md:text-3xl pb-4">
-          <span className="text-yellow-500">{t('Glaucoma conferences in 2025')}</span>
+          <span className="text-blue-300">{t('Glaucoma conferences in 2025')}</span>
         </h1>
         {/* <p className="text-gray-600 mb-6">
           Discover upcoming conferences with exciting opportunities to learn and connect.
