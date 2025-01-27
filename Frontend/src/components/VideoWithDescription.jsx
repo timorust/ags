@@ -16,9 +16,9 @@ const VideoWithDescription = () => {
 						></iframe>
 					</div>
 				</div>
-				<div className='flex-1 md:w-1/3 text-left'>
+				{/* <div className='flex-1 md:w-1/3 text-left'>
 					<h3 className='text-3xl font-bold mb-6 text-blue-500'>
-						Learn About Our Topic
+					Our call to fight glaucoma
 					</h3>
 					<p className='text-gray-700 dark:text-gray-300 text-xl leading-relaxed mb-6'>
 						This video provides an in-depth explanation of the topic at hand.
@@ -29,7 +29,22 @@ const VideoWithDescription = () => {
 						Watch the video, take notes, and feel free to reach out with any
 						questions. We’re here to help you succeed!
 					</p>
+				</div> */}
+
+				<div className="flex-1 md:w-1/3 text-left">
+					<h3 className="text-3xl font-bold mb-6 text-blue-500">
+						Our call to fight glaucoma
+					</h3>
+					<ul className="text-gray-700 dark:text-gray-300 text-xl leading-relaxed mb-20 list-disc pl-6">
+						<li>Early Detection and Regular Screenings !!!</li>
+						<li>Effective Treatment !!!</li>
+						<li>Research and Innovation !!!</li>
+						<li>Patient Education !!!</li>
+						<li>Advocacy and Support !!!</li>
+						<li>Lifestyle and Risk Management !!!</li>
+					</ul>
 				</div>
+
 			</div>
 		</div>
 	)
