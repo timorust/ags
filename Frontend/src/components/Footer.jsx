@@ -6,7 +6,7 @@ function Footer() {
 	return (
 		<div>
 			<hr />
-			<footer className='footer footer-center p-10 text-base-content rounded dark:bg-slate-900 dark:text-white ml-6'>
+			<footer className='footer footer-center p-10 text-base-content rounded dark:bg-slate-900 dark:text-white mr-12'>
 				<nav className='grid grid-flow-col gap-4'>
 					<Link className='link link-hover text-cyan-400 hover:text-cyan-600 active:text-cyan-700 duration-200' to='/'>{t('Home')}</Link>
 					<Link className='link link-hover text-cyan-400 hover:text-cyan-600 active:text-cyan-700 duration-200' to='/meeting'>{t('Event')}</Link>
