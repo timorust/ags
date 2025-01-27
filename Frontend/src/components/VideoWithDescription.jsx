@@ -1,4 +1,8 @@
+import { useTranslation } from 'react-i18next'
+
 const VideoWithDescription = () => {
+
+	const { t } = useTranslation()
 	return (
 		<div className='max-w-screen-2xl container mx-auto md:px-20 px-4 mt-20 pt-16 dark:bg-slate-800 dark:text-white'>
 			<div className='flex flex-col md:flex-row items-center space-y-12 md:space-y-0 md:space-x-16'>
