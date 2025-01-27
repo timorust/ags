@@ -21,7 +21,7 @@ const VideoWithDescription = () => {
 					</div>
 				</div>
 
-				<div className="flex-1 md:w-1/3 text-justify mr-20">
+				<div className="flex-1 md:w-1/3 text-justify ml-20">
 					<h3 className="font-semibold text-2xl md:text-3xl pb-4">
 						<span className="text-blue-500">{t('Our call to fight glaucoma')}</span>
 					</h3>
