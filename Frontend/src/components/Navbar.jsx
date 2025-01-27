@@ -126,7 +126,7 @@ function Navbar() {
                   className='h-8 w-8 object-cover'
                 />
               </Link>
-              <span className='text-blue-500'>{t('AGS')}</span>
+              <span className='text-yellow-500'>{t('AGS')}</span>
             </a>
 
           </div>
