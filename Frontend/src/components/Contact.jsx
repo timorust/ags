@@ -45,7 +45,7 @@ function SendEmail() {
 				<div className='mt-28 items-center justify-center text-center'>
 					<h1 className='text-2xl md:text-4xl'>
 						{t('Join Our Event')},{' '}
-						<span className='text-blue-300'>{t('We Can`t Wait to See You')}!</span>
+						<span className='text-blue-500'>{t('We Can`t Wait to See You')}!</span>
 					</h1>
 					<p className='mt-12'>
 						{t('Please fill out the form below to send us your message and let us know you`re interested in our event. We will respond to you soon')}!

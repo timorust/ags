@@ -26,7 +26,7 @@ function Meeting() {
       {/* Header Section */}
       <div className="mt-28 text-center">
         <h1 className="text-2xl md:text-4xl">
-          <span className="text-blue-300">{t('WELCOME TO AGC-2025')}</span>
+          <span className="text-blue-500">{t('WELCOME TO AGC-2025')}</span>
         </h1>
         {/* Featured Card Section */}
         <div className="flex justify-center mt-20 gap-6 flex-wrap">

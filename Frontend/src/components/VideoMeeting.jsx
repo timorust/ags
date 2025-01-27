@@ -42,7 +42,7 @@ function VideoMeeting() {
       {/* Header Section */}
       <div className="mt-28 text-center">
         <h1 className="text-2xl md:text-4xl">
-          <span className="text-blue-300">{t('MEDIA GALLERY')}</span>
+          <span className="text-blue-500">{t('MEDIA GALLERY')}</span>
         </h1>
         <p className="mt-6 text-lg md:text-xl"></p>
       </div>
