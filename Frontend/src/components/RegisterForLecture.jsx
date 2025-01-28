@@ -44,7 +44,7 @@ function RegisterLecture() {
 			<Navbar />
 			<CountdownTimer targetDate='2025-03-15T09:00:00' />
 			<div className='max-w-screen-2xl container mx-auto md:px-20 px-6 mb-6'>
-			<div className='mt-20 items-center justify-center text-center'>
+			<div className='mt-10 items-center justify-center text-center'>
 					<h1 className='text-2xl md:text-4xl'>
 						<span className='text-yellow-500'>{t('Conference registration')}!</span>
 					</h1>
