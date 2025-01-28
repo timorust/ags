@@ -44,6 +44,16 @@ function RegisterLecture() {
 			<Navbar />
 			<CountdownTimer targetDate='2025-03-15T09:00:00' />
 			<div className='max-w-screen-2xl container mx-auto md:px-20 px-6 mb-10'>
+			<div className='mt-28 items-center justify-center text-center'>
+					<h1 className='text-2xl md:text-4xl'>
+						{t('Join Our Event')},{' '}
+						<span className='text-yellow-500'>{t('We Can`t Wait to See You')}!</span>
+					</h1>
+					<p className='mt-12'>
+						{t('Please fill out the form below to send us your message and let us know you`re interested in our event. We will respond to you soon')}!
+
+					</p>
+				</div>
 				{isRegistered ? (
 					<div className='text-center mt-12'>
 						<h2 className='text-2xl text-green-500'>
