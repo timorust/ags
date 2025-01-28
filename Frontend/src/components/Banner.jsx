@@ -13,7 +13,7 @@ function Banner() {
 							
 						</h1>
 
-						<p className="text-base md:text-lg  text-justify leading-relaxed tracking-normal text-gray-500 dark:text-gray-300 font-light">
+						<p className="text-base md:text-lg text-justify leading-relaxed tracking-normal text-gray-500 dark:text-gray-300 font-light">
 							{t('Description')}
 						</p>
 
