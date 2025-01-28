@@ -5,8 +5,8 @@ const VideoWithDescription = () => {
 	const { t } = useTranslation()
 	return (
 		<div className='max-w-screen-2xl container mx-auto md:px-20 px-4 mt-20 pt-16 dark:bg-slate-800 dark:text-white'>
-			<div className='flex flex-col md:flex-row items-center space-y-12 md:space-y-0 md:space-x-16 mb-10'>
-				<div className='flex-1 md:w-1/3 text-left mb-5'>
+			<div className='flex flex-col md:flex-row items-center space-y-12 md:space-y-0 md:space-x-16 mb-5'>
+				<div className='flex-1 md:w-1/3 text-left mb-10'>
 					<div className='aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-xl'>
 						{/* שימוש בכתובת נכונה להטמעה */}
 						<iframe
