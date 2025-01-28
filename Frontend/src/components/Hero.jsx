@@ -7,31 +7,35 @@ export default function Hero() {
   const { t } = useTranslation()
   return (
     <>
-  <div className="max-w-screen-2xl container mx-auto md:px-20 px-6 flex flex-col md:flex-row my-10">
-    <div
-      className="hero h-96 md:h-[500px] rounded-box overflow-hidden"
-      style={{
-        backgroundImage: `url("https://www.akupunktur-noll.de/wp-content/uploads/2016/08/short-sightedness-myopia-is-considered-by-specialists-to-be-a-cause-of-glaucoma-en.png")`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
-      <div className="hero-overlay bg-opacity-60"></div>
-      <div className="hero-content text-right text-secondary-content"> {/* טקסט ימינה */}
-        <div className="max-w-lg ml-auto"> {/* הוספת ml-auto להזזת הטקסט ימינה */}
-          <h1 className="mb-5 sm:mb-7 text-4xl sm:text-5xl font-bold dark:text-black">
-            <span className="text-blue-300">{t('Azerbaijan Glaucoma Society')}</span>
-          </h1>
-          <p className="mb-5 sm:mb-7 sm:text-lg dark:text-black">
-            <span className="text-white">{t('heroText')}</span>
-          </p>
+      <div className="max-w-screen-2xl container mx-auto md:px-20 px-6 flex flex-col md:flex-row my-10">
+        <div
+          className="hero h-96 md:h-[500px] rounded-box overflow-hidden"
+          style={{
+            backgroundImage: `url("https://www.akupunktur-noll.de/wp-content/uploads/2016/08/short-sightedness-myopia-is-considered-by-specialists-to-be-a-cause-of-glaucoma-en.png")`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <div className="hero-overlay bg-opacity-60"></div>
+          <div
+            className="hero-content text-center text-secondary-content"
+            style={{ marginRight: "auto", marginLeft: "auto", textAlign: "right" }}
+          >
+            <div className="max-w-lg">
+              <h1 className="mb-5 sm:mb-7 text-4xl sm:text-5xl font-bold dark:text-black">
+                <span className="text-blue-300">{t('Azerbaijan Glaucoma Society')}</span>
+              </h1>
+              <p className="mb-5 sm:mb-7 sm:text-lg dark:text-black">
+                <span className="text-white">{t('heroText')}</span>
+              </p>
 
-          {/* <button className="btn btn-warning sm:btn-wide">Get Started</button> */}
+              {/* <button className="btn btn-warning sm:btn-wide">Get Started</button> */}
+            </div>
+          </div>
+
         </div>
       </div>
-    </div>
-  </div>
-</>
+    </>
     // <>
     //   <div className='max-w-screen-2xl container mx-auto md:px-20 px-6 flex flex-col md:flex-row my-10'>
     //     <div className="hero h-96 md:h-[500px] rounded-box overflow-hidden" style={{ backgroundImage: `url("https://www.akupunktur-noll.de/wp-content/uploads/2016/08/short-sightedness-myopia-is-considered-by-specialists-to-be-a-cause-of-glaucoma-en.png")` }}>
