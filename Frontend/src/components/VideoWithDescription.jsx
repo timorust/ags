@@ -25,7 +25,7 @@ const VideoWithDescription = () => {
 					<h3 className="font-semibold text-2xl md:text-3xl pb-4">
 						<span className="text-blue-500">{t('Our call to fight glaucoma')}</span>
 					</h3>
-					<ul className="mb-5 sm:mb-7 sm:text-lg dark:text-white">
+					<ul className="mb-5 sm:mb-7 sm:text-lg text-gray-500 dark:text-gray-300 font-light">
 						<li>Early Detection and Regular Screenings !!!</li>
 						<li>Effective Treatment !!!</li>
 						<li>Research and Innovation !!!</li>

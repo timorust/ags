@@ -20,7 +20,7 @@ export default function Hero() {
               <h1 className="mb-5 sm:mb-7 text-3xl sm:text-4xl font-bold">
                 <span className="text-blue-300">{t('Azerbaijan Glaucoma Society')}</span>
               </h1>
-              <p className="text-sm sm:text-base text-justify leading-relaxed tracking-normal text-gray-200">
+              <p className="text-sm sm:text-base text-justify leading-relaxed tracking-normal text-gray-500 dark:text-gray-300 font-light">
                 {t('heroText')}
               </p>
             </div>
