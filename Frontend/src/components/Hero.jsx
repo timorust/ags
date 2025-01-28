@@ -19,7 +19,6 @@ export default function Hero() {
           <div className="hero-overlay bg-opacity-60"></div>
           <div
             className="hero-content text-center text-secondary-content"
-            style={{ marginRight: "auto", marginLeft: "auto", textAlign: "right" }}
           >
             <div className="max-w-lg">
               <h1 className="mb-5 sm:mb-7 text-4xl sm:text-5xl font-bold dark:text-black">
