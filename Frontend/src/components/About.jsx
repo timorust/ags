@@ -68,16 +68,28 @@ function About() {
 					))}
 				</div> */}
 
-				<div className="relative w-full sm:h-96 h-64 overflow-hidden rounded-md shadow-lg sm:mb-12 mb-0 sm:p-4 p-0">
+				<div className="relative w-full h-64 sm:h-96 lg:h-[500px] xl:h-[600px] overflow-hidden rounded-md shadow-lg sm:mb-12 mb-0 sm:p-4 p-0">
 					{images.map((image, index) => (
 						<img
 							key={index}
 							src={image}
+							srcSet={`
+        ${image}?w=480 480w,
+        ${image}?w=768 768w,
+        ${image}?w=1024 1024w,
+        ${image}?w=1280 1280w,
+        ${image}?w=1920 1920w
+      `}
+							sizes="(max-width: 640px) 100vw, 
+             (max-width: 1024px) 90vw, 
+             (max-width: 1280px) 80vw, 
+             70vw"
 							alt={`Image ${index + 1}`}
-							className={`absolute inset-0 w-full h-full object-cover rounded-t-lg transition-all duration-500 ${index === imageIndex ? 'opacity-100' : 'opacity-0'}`}
+							className={`absolute inset-0 w-full h-full max-w-[100vw] object-cover rounded-t-lg transition-all duration-500 ${index === imageIndex ? 'opacity-100' : 'opacity-0'}`}
 						/>
 					))}
 				</div>
+
 
 
 
