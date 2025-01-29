@@ -48,7 +48,7 @@ function SendEmail() {
 						<span className='text-yellow-500'>{t('We look forward to seeing you')}!</span>
 					</h1>
 					<p className='mt-12'>
-						{t('Please fill out the form below to send us your message and let us know you`re interested in our event. We will respond to you soon')}!
+						{t('Fill out the form below to send us a message. We will contact you shortly')}!
 
 					</p>
 				</div>
