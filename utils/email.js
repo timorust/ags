@@ -67,14 +67,23 @@ export const sendRegistrationEmail = async (registrationData) => {
 				<h2>Registration Confirmation</h2>
 				<p><strong>Name:</strong> ${firstName} ${lastName}</p>
 				<p><strong>Phone:</strong> ${phone}</p>
-				<p><strong>Age:</strong> ${age}</p>
-				<p><strong>Lecture:</strong> ${lecture}</p>
+				// <p><strong>Age:</strong> ${age}</p>
+				// <p><strong>Lecture:</strong> ${lecture}</p>
 				<p><strong>Email:</strong> ${email}</p>
 				<hr>
-				<p>Thank you for registering! We look forward to seeing you.</p>
-				<p>If you have any questions, feel free to contact us.</p>
+				<p>You have successfully registered for the conference.
+If you have any questions, please contact the AGC-2025 conference organizer at glaucomaaz@gmail.com
+.</p>
+				<p>Thank you for your valuable contribution to the scientific program of the VI Conference of Azerbaijan Glaucomatologists.
+.</p>
 				<div class="footer">
-					<p>Best regards,<br> The Event Team</p>
+					<p>With best wishes,<br> Organizing Committee</p>
+				</div>
+				<p>Siz konfrans üçün uğurla qeydiyyatdan keçmisiniz.
+Hər hansı bir sualınız varsa, glaucomaaz@gmail.com ünvanında AGC-2025 konfransının təşkilatçısı ilə əlaqə saxlayın.</p>
+				<p>Azərbaycan Qlaukomatoloqlarının VI Konfransının elmi proqramına verdiyiniz dəyərli töhfəyə görə təşəkkür edirik.</p>
+				<div class="footer">
+					<p>Ən xoş arzularla,<br> Təşkilat Komitəs</p>
 				</div>
 			</div>
 		</body>
