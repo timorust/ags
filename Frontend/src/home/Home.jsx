@@ -13,8 +13,8 @@ function Home() {
 			<CountdownTimer targetDate='2025-03-15T09:00:00' />
 			<Navbar />
 			<Banner />
-			<Hero />
 			<VideoWithDescription />
+			<Hero />
 			<EventConference />
 			<Footer />
 		</>
