@@ -24,7 +24,7 @@ function About() {
 		'https://baki-xeber.com/uploads/posts/2024-04/zarifa_aliyeva_260414_01.webp',
 		'https://sia.az/storage/2023/01/24/zerife_eliyeva.jpg',
 		'https://scontent.ftlv5-1.fna.fbcdn.net/v/t1.6435-9/54255698_395658477651650_5148660954535297024_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=PVlFPdpVwnwQ7kNvgHE2z0K&_nc_zt=23&_nc_ht=scontent.ftlv5-1.fna&_nc_gid=A5YENtyk7dw7OeZS-h2nGSY&oh=00_AYDPNlhQ624YQKmAKcPjySqQ2GzmiKm0OE02UJvsl-Hipg&oe=67B673E4',
-		'https://scontent.ftlv5-1.fna.fbcdn.net/v/t39.30808-6/473117477_1711674109383407_6099483338691208202_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=thnwNFEysrkQ7kNvgEq_R_o&_nc_zt=23&_nc_ht=scontent.ftlv5-1.fna&_nc_gid=AuQJq1gNKOflgYfmD3O1y1o&oh=00_AYD0VwWDTa9UtjMylnFZEmtMur_V9llfS3m0YOrefFLAwA&oe=6794D7DA',
+		'https://scontent.ftlv5-1.fna.fbcdn.net/v/t39.30808-6/283672032_2096954183805126_7276582275136282506_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=MedKftGlUJcQ7kNvgE1nBsD&_nc_zt=23&_nc_ht=scontent.ftlv5-1.fna&_nc_gid=Ahy87AK6abrV50jfmSBOM99&oh=00_AYBwjur5hqATgI7y1H4c9Wl8oPCx88pMZpYlEfMyaHfnxg&oe=67A02DC6',
 
 
 	]
