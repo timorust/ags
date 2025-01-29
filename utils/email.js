@@ -67,8 +67,8 @@ export const sendRegistrationEmail = async (registrationData) => {
 				<h2>Registration Confirmation</h2>
 				<p><strong>Name:</strong> ${firstName} ${lastName}</p>
 				<p><strong>Phone:</strong> ${phone}</p>
-				// <p><strong>Age:</strong> ${age}</p>
-				// <p><strong>Lecture:</strong> ${lecture}</p>
+				<p><strong>Age:</strong> ${age}</p>
+				<p><strong>Experience years:</strong> ${lecture}</p>
 				<p><strong>Email:</strong> ${email}</p>
 				<hr>
 				<p>You have successfully registered for the conference.
