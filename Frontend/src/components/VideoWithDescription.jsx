@@ -27,7 +27,7 @@ const VideoWithDescription = () => {
 					</h3>
 					<ul className="mb-5 sm:mb-7 sm:text-lg text-gray-500 dark:text-gray-300 font-light">
 						<li>{t('Early Detection and Regular Screenings')}!!!</li>
-						<li>{t('Effective Treatment !!!')}</li>
+						<li>{t('Effective Treatment')}!!!</li>
 						<li>{t('Research and Innovation !!!')}</li>
 						<li>{t('Patient Education !!!')}</li>
 						<li>{t('Advocacy and Support !!!')}</li>
