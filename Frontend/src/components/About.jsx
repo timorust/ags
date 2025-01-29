@@ -19,7 +19,7 @@ function About() {
 		'https://baki-xeber.com/uploads/posts/2024-04/zarifa_aliyeva_260414_01.webp',
 		'/about2.jpg',
 		'/about3.jpg',
-		'https://sia.az/storage/2023/01/24/zerife_eliyeva.jpg',
+		'/meeting3.jpg',
 	]
 
 	useEffect(() => {
