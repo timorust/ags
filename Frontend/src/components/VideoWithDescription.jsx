@@ -26,12 +26,12 @@ const VideoWithDescription = () => {
 						<span className="text-blue-500">{t('Our call to fight glaucoma')}</span>
 					</h3>
 					<ul className="mb-5 sm:mb-7 sm:text-lg text-gray-500 dark:text-gray-300 font-light">
-						<li>Early Detection and Regular Screenings !!!</li>
-						<li>Effective Treatment !!!</li>
-						<li>Research and Innovation !!!</li>
-						<li>Patient Education !!!</li>
-						<li>Advocacy and Support !!!</li>
-						<li>Lifestyle and Risk Management !!!</li>
+						<li>{t('Early Detection and Regular Screenings !!!')}</li>
+						<li>{t('Effective Treatment !!!')}</li>
+						<li>{t('Research and Innovation !!!')}</li>
+						<li>{t('Patient Education !!!')}</li>
+						<li>{t('Advocacy and Support !!!')}</li>
+						<li>{t('Lifestyle and Risk Management !!!')}</li>
 					</ul>
 				</div>
 
