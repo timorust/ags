@@ -17,10 +17,9 @@ function About() {
 
 	const images = [
 		'/about4.jpg',
+		'/about5.png',
 		'/about2.jpg',
 		'/about3.jpg',
-		'/about5.png',
-		
 	]
 
 	useEffect(() => {
