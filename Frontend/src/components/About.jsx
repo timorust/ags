@@ -19,7 +19,7 @@ function About() {
 		'/about4.jpg',
 		'/about2.jpg',
 		'/about3.jpg',
-		'/about4.jpg',
+		'/about5.png',
 		
 	]
 
