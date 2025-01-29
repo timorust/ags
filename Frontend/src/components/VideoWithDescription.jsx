@@ -11,7 +11,7 @@ const VideoWithDescription = () => {
 						{/* שימוש בכתובת נכונה להטמעה */}
 						<iframe
 							className="w-full"
-							src="https://www.youtube.com/watch?v=1VkN_jg82WA" 
+							src="https://www.youtube.com/embed/1VkN_jg82WA" 
 							title="YouTube video player"
 							frameborder="0"
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
