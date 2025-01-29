@@ -63,7 +63,7 @@ function About() {
              (max-width: 1280px) 70vw, 
              60vw"
 							alt={`Image ${index + 1}`}
-							className={`absolute inset-0 w-full h-full max-w-[100vw] object-cover rounded-t-lg transition-all duration-500 ${index === imageIndex ? 'opacity-100' : 'opacity-0'}`}
+							className={`absolute inset-0 w-full h-full max-w-[100vw] object-contain rounded-t-lg transition-all duration-500 ${index === imageIndex ? 'opacity-100' : 'opacity-0'}`}
 						/>
 					))}
 				</div>
