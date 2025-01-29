@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { NavLink } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import Login from './Login'
 import Logout from './Logout'
@@ -41,31 +42,110 @@ function Navbar() {
       window.removeEventListener('scroll', handleScroll)
     }
   }, [])
-  const navItems = (
-    <>
-      <li>
-        <a href='/' className="text-blue-500 hover:text-blue-600 active:text-blue-700 duration-200">{t('Home')}</a>
-      </li>
-      <li>
-        <a href='/meeting' className="text-blue-500 hover:text-blue-600 active:text-blue-700 duration-200">{t('Events')}</a>
-      </li>
-      <li>
-        <a href='/contact' className="text-blue-500 hover:text-blue-600 active:text-blue-700 duration-200">{t('Contact')}</a>
-      </li>
-      <li>
-        <a href='/about' className="text-blue-500 hover:text-blue-600 active:text-blue-700 duration-200">{t('About')}</a>
-      </li>
-      <li>
-        <a href='/media' className="text-blue-500 hover:text-blue-600 active:text-blue-700 duration-200">{t('Media')}</a>
-      </li>
-      <li>
-        <a href='/registration' className="text-blue-500 hover:text-blue-600 active:text-blue-700 duration-200">{t('Join')}</a>
-      </li>
-      <li>
-        <a href='/list' className="text-blue-500 hover:text-blue-600 active:text-blue-700 duration-200">{t('Program')}</a>
-      </li>
-    </>
-  )
+
+
+ 
+
+const navItems = (
+  <>
+    <li>
+      <NavLink 
+        to="/" 
+        className={({ isActive }) => 
+          isActive ? "text-red-500 font-bold" : "text-blue-500 hover:text-blue-600 duration-200"
+        }
+      >
+        {t('Home')}
+      </NavLink>
+    </li>
+    <li>
+      <NavLink 
+        to="/meeting" 
+        className={({ isActive }) => 
+          isActive ? "text-red-500 font-bold" : "text-blue-500 hover:text-blue-600 duration-200"
+        }
+      >
+        {t('Events')}
+      </NavLink>
+    </li>
+    <li>
+      <NavLink 
+        to="/contact" 
+        className={({ isActive }) => 
+          isActive ? "text-red-500 font-bold" : "text-blue-500 hover:text-blue-600 duration-200"
+        }
+      >
+        {t('Contact')}
+      </NavLink>
+    </li>
+    <li>
+      <NavLink 
+        to="/about" 
+        className={({ isActive }) => 
+          isActive ? "text-red-500 font-bold" : "text-blue-500 hover:text-blue-600 duration-200"
+        }
+      >
+        {t('About')}
+      </NavLink>
+    </li>
+    <li>
+      <NavLink 
+        to="/media" 
+        className={({ isActive }) => 
+          isActive ? "text-red-500 font-bold" : "text-blue-500 hover:text-blue-600 duration-200"
+        }
+      >
+        {t('Media')}
+      </NavLink>
+    </li>
+    <li>
+      <NavLink 
+        to="/registration" 
+        className={({ isActive }) => 
+          isActive ? "text-red-500 font-bold" : "text-blue-500 hover:text-blue-600 duration-200"
+        }
+      >
+        {t('Join')}
+      </NavLink>
+    </li>
+    <li>
+      <NavLink 
+        to="/list" 
+        className={({ isActive }) => 
+          isActive ? "text-red-500 font-bold" : "text-blue-500 hover:text-blue-600 duration-200"
+        }
+      >
+        {t('Program')}
+      </NavLink>
+    </li>
+  </>
+);
+
+  // const navItems = (
+  //   <>
+  //     <li>
+  //       <a href='/' className="text-blue-500 hover:text-blue-600 active:text-blue-700 duration-200">{t('Home')}</a>
+  //     </li>
+  //     <li>
+  //       <a href='/meeting' className="text-blue-500 hover:text-blue-600 active:text-blue-700 duration-200">{t('Events')}</a>
+  //     </li>
+  //     <li>
+  //       <a href='/contact' className="text-blue-500 hover:text-blue-600 active:text-blue-700 duration-200">{t('Contact')}</a>
+  //     </li>
+  //     <li>
+  //       <a href='/about' className="text-blue-500 hover:text-blue-600 active:text-blue-700 duration-200">{t('About')}</a>
+  //     </li>
+  //     <li>
+  //       <a href='/media' className="text-blue-500 hover:text-blue-600 active:text-blue-700 duration-200">{t('Media')}</a>
+  //     </li>
+  //     <li>
+  //       <a href='/registration' className="text-blue-500 hover:text-blue-600 active:text-blue-700 duration-200">{t('Join')}</a>
+  //     </li>
+  //     <li>
+  //       <a href='/list' className="text-blue-500 hover:text-blue-600 active:text-blue-700 duration-200">{t('Program')}</a>
+  //     </li>
+  //   </>
+  // )
 
   // פונקציה חדשה לחיפוש דרך Google
   const handleSearch = (query) => { // //שינוי
