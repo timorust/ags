@@ -75,7 +75,7 @@ export const sendRegistrationEmail = async (registrationData) => {
                 Hər hansı bir sualınız varsa, glaucomaaz@gmail.com ünvanında AGC-2025 konfransının təşkilatçısı ilə əlaqə saxlayın.
 				</p>
 				<p>Azərbaycan Qlaukomatoloqlarının VI Konfransının elmi proqramına verdiyiniz dəyərli töhfəyə görə təşəkkür edirik.</p>
-				<p>Ən xoş arzularla,<br> Təşkilat Komitəs</p>
+				<p>Ən xoş arzularla,<br> Təşkilat Komitəsi</p>
 				<hr>
 				<p>You have successfully registered for the conference.
                 If you have any questions, please contact the AGC-2025 conference organizer at glaucomaaz@gmail.com.
