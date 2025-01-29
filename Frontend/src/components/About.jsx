@@ -70,7 +70,7 @@ function About() {
 				</div>
 
 
-				<div className='bg-gray-100 dark:bg-blue-300 p-4 rounded-md shadow-md mb-8 sm:mt-8'>
+				<div className='bg-gray-100 dark:bg-blue-300 p-4 rounded-md shadow-md mb-8 mt-8'>
 					<div
 						className='text-lg dark:text-white text-gray-700 marquee-container'
 						style={{
