@@ -16,7 +16,7 @@ function Footer() {
 				</nav> */}
 
 
-				<nav className="grid grid-flow-col gap-2">
+				<nav className="grid grid-flow-col gap-2 overflow-x-auto">
 					<NavLink
 						to="/"
 						className={({ isActive }) =>
