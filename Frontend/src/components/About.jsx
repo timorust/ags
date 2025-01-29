@@ -17,7 +17,7 @@ function About() {
 
 	const images = [
 		'https://baki-xeber.com/uploads/posts/2024-04/zarifa_aliyeva_260414_01.webp',
-		'https://sia.az/storage/2023/01/24/zerife_eliyeva.jpg',
+		'/about2.jpg',
 		'https://baki-xeber.com/uploads/posts/2024-04/zarifa_aliyeva_260414_01.webp',
 		'https://sia.az/storage/2023/01/24/zerife_eliyeva.jpg',
 	]
