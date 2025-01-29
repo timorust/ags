@@ -16,10 +16,11 @@ function About() {
 	]
 
 	const images = [
-		'https://baki-xeber.com/uploads/posts/2024-04/zarifa_aliyeva_260414_01.webp',
+		'/about4.jpg',
 		'/about2.jpg',
 		'/about3.jpg',
 		'/about4.jpg',
+		
 	]
 
 	useEffect(() => {
