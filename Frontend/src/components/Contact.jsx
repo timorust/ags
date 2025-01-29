@@ -43,7 +43,7 @@ function SendEmail() {
 			<CountdownTimer targetDate='2025-03-15T09:00:00' />
 			<div className='max-w-screen-2xl container mx-auto md:px-20 px-6 mb-10'>
 				<div className='mt-28 items-center justify-center text-center'>
-					<h1 className='text-2xl md:text-4xl'>
+					<h1 className='text-2xl md:text-4xl  dark:text-white text-grey break-words whitespace-normal leading-snug sm:leading-normal lg:leading-relaxed text-center'>
 						{t('Join Our Event')},{' '}
 						<span className='text-yellow-500'>{t('We look forward to seeing you')}!</span>
 					</h1>
