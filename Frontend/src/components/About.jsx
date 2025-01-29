@@ -52,7 +52,7 @@ function About() {
 						<img
 							key={index}
 							src={image}
-							srcSet={`
+							srcSet={` 
         ${image}?w=320 320w,
         ${image}?w=480 480w,
         ${image}?w=768 768w,
@@ -63,10 +63,12 @@ function About() {
              (max-width: 1280px) 70vw, 
              60vw"
 							alt={`Image ${index + 1}`}
-							className={`absolute inset-0 w-full h-full max-w-[100vw] object-contain rounded-t-lg transition-all duration-500 ${index === imageIndex ? 'opacity-100' : 'opacity-0'}`}
+							className={`absolute inset-0 w-full h-full max-w-[100vw] object-contain rounded-t-lg transition-all duration-500 ${index === imageIndex ? 'opacity-100' : 'opacity-0'} 
+        sm:mb-8 mb-0 lg:mt-8`} // הוספנו את המרגין הרצוי
 						/>
 					))}
 				</div>
+
 
 				<div className='bg-gray-100 dark:bg-blue-300 p-4 rounded-md shadow-md mb-8'>
 					<div
