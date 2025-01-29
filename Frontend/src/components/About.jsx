@@ -69,7 +69,7 @@ function About() {
 					))}
 				</div> */}
 
-				<div className="relative w-full h-48 sm:h-64 lg:h-80 xl:h-96 overflow-hidden rounded-lg shadow-lg sm:mb-8 mb-0 sm:p-2 p-0">
+				<div className="relative w-full h-48 sm:h-64 lg:h-80 xl:h-96 overflow-hidden rounded-lg shadow-lg sm:mb-8 mb-0 sm:p-2 p-0 flex justify-center items-center">
 					{images.map((image, index) => (
 						<img
 							key={index}
@@ -85,11 +85,11 @@ function About() {
              (max-width: 1280px) 70vw, 
              60vw"
 							alt={`Image ${index + 1}`}
-							className={`absolute inset-0 w-full h-full max-w-[100vw] object-contain rounded-lg transition-all duration-500 ${index === imageIndex ? 'opacity-100' : 'opacity-0'} 
-        sm:mb-8 mb-0 lg:mt-8`}
+							className={`absolute inset-0 w-full h-full max-w-[100vw] object-contain rounded-lg transition-all duration-500 ${index === imageIndex ? 'opacity-100' : 'opacity-0'} sm:mb-8 mb-0 lg:mt-8`}
 						/>
 					))}
 				</div>
+
 
 
 
