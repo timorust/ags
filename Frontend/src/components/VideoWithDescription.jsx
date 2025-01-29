@@ -30,8 +30,8 @@ const VideoWithDescription = () => {
 						<li>{t('Effective Treatment')}!!!</li>
 						<li>{t('Research and Innovation')}!!!</li>
 						<li>{t('Patient Education')}!!!</li>
-						<li>{t('Advocacy and Support !!!')}</li>
-						<li>{t('Lifestyle and Risk Management !!!')}</li>
+						<li>{t('Advocacy and Support')}!!!</li>
+						<li>{t('Lifestyle and Risk Management')}!!!</li>
 					</ul>
 				</div>
 
