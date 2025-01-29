@@ -16,7 +16,16 @@ function Footer() {
 				</nav> */}
 
 
-				<nav className="grid grid-flow-col gap-4">
+				<nav className="grid grid-flow-col gap-2">
+					<NavLink
+						to="/"
+						className={({ isActive }) =>
+							isActive ? "text-yellow-500 font-bold link link-hover" : "text-blue-500 hover:text-blue-600 duration-200 link link-hover"
+						}
+					>
+						{t('Home')}
+					</NavLink>
+
 					<NavLink
 						to="/meeting"
 						className={({ isActive }) =>
@@ -60,6 +69,15 @@ function Footer() {
 						}
 					>
 						{t('Join')}
+					</NavLink>
+
+					<NavLink
+						to="/list"
+						className={({ isActive }) =>
+							isActive ? "text-yellow-500 font-bold link link-hover" : "text-blue-500 hover:text-blue-600 duration-200 link link-hover"
+						}
+					>
+						{t('Program')}
 					</NavLink>
 				</nav>
 
