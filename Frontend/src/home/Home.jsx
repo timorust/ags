@@ -4,7 +4,6 @@ import Footer from '../components/Footer'
 import VideoWithDescription from '../components/VideoWithDescription'
 import CountdownTimer from '../components/CountdownTimer'
 import Hero from '../components/Hero'
-// import VideoMeeting from '../components/VideoMeeting'
 import EventConference from '../components/EventConference'
 
 function Home() {
@@ -15,9 +14,8 @@ function Home() {
 			<Navbar />
 			<Banner />
 			<VideoWithDescription />
-			<EventConference />
 			<Hero />
-			{/* <VideoMeeting /> */}
+			<EventConference />
 			<Footer />
 		</>
 	)
