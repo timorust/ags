@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import { NavLink } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import Login from './Login'
 import Logout from './Logout'
 import { useAuth } from '../context/AuthProvider'
@@ -52,7 +51,7 @@ const navItems = (
       <NavLink 
         to="/" 
         className={({ isActive }) => 
-          isActive ? "text-red-500 font-bold" : "text-blue-500 hover:text-blue-600 duration-200"
+          isActive ? "text-yellow-500 font-bold" : "text-blue-500 hover:text-blue-600 duration-200"
         }
       >
         {t('Home')}
@@ -62,7 +61,7 @@ const navItems = (
       <NavLink 
         to="/meeting" 
         className={({ isActive }) => 
-          isActive ? "text-red-500 font-bold" : "text-blue-500 hover:text-blue-600 duration-200"
+          isActive ? "text-yellow-500 font-bold" : "text-blue-500 hover:text-blue-600 duration-200"
         }
       >
         {t('Events')}
@@ -72,7 +71,7 @@ const navItems = (
       <NavLink 
         to="/contact" 
         className={({ isActive }) => 
-          isActive ? "text-red-500 font-bold" : "text-blue-500 hover:text-blue-600 duration-200"
+          isActive ? "text-yellow-500 font-bold" : "text-blue-500 hover:text-blue-600 duration-200"
         }
       >
         {t('Contact')}
@@ -82,7 +81,7 @@ const navItems = (
       <NavLink 
         to="/about" 
         className={({ isActive }) => 
-          isActive ? "text-red-500 font-bold" : "text-blue-500 hover:text-blue-600 duration-200"
+          isActive ? "text-yellow-500 font-bold" : "text-blue-500 hover:text-blue-600 duration-200"
         }
       >
         {t('About')}
@@ -92,7 +91,7 @@ const navItems = (
       <NavLink 
         to="/media" 
         className={({ isActive }) => 
-          isActive ? "text-red-500 font-bold" : "text-blue-500 hover:text-blue-600 duration-200"
+          isActive ? "text-yellow-500 font-bold" : "text-blue-500 hover:text-blue-600 duration-200"
         }
       >
         {t('Media')}
@@ -102,7 +101,7 @@ const navItems = (
       <NavLink 
         to="/registration" 
         className={({ isActive }) => 
-          isActive ? "text-red-500 font-bold" : "text-blue-500 hover:text-blue-600 duration-200"
+          isActive ? "text-yellow-500 font-bold" : "text-blue-500 hover:text-blue-600 duration-200"
         }
       >
         {t('Join')}
@@ -112,7 +111,7 @@ const navItems = (
       <NavLink 
         to="/list" 
         className={({ isActive }) => 
-          isActive ? "text-red-500 font-bold" : "text-blue-500 hover:text-blue-600 duration-200"
+          isActive ? "text-yellow-500 font-bold" : "text-blue-500 hover:text-blue-600 duration-200"
         }
       >
         {t('Program')}
@@ -121,33 +120,6 @@ const navItems = (
   </>
 );
 
-  // const navItems = (
-  //   <>
-  //     <li>
-  //       <a href='/' className="text-blue-500 hover:text-blue-600 active:text-blue-700 duration-200">{t('Home')}</a>
-  //     </li>
-  //     <li>
-  //       <a href='/meeting' className="text-blue-500 hover:text-blue-600 active:text-blue-700 duration-200">{t('Events')}</a>
-  //     </li>
-  //     <li>
-  //       <a href='/contact' className="text-blue-500 hover:text-blue-600 active:text-blue-700 duration-200">{t('Contact')}</a>
-  //     </li>
-  //     <li>
-  //       <a href='/about' className="text-blue-500 hover:text-blue-600 active:text-blue-700 duration-200">{t('About')}</a>
-  //     </li>
-  //     <li>
-  //       <a href='/media' className="text-blue-500 hover:text-blue-600 active:text-blue-700 duration-200">{t('Media')}</a>
-  //     </li>
-  //     <li>
-  //       <a href='/registration' className="text-blue-500 hover:text-blue-600 active:text-blue-700 duration-200">{t('Join')}</a>
-  //     </li>
-  //     <li>
-  //       <a href='/list' className="text-blue-500 hover:text-blue-600 active:text-blue-700 duration-200">{t('Program')}</a>
-  //     </li>
-  //   </>
-  // )
-
-  // פונקציה חדשה לחיפוש דרך Google
   const handleSearch = (query) => { // //שינוי
     const searchURL = `https://www.google.com/search?q=${query}`;
     window.open(searchURL, '_blank'); // //שינוי
@@ -184,12 +156,6 @@ const navItems = (
                   />
                 </svg>
               </div>
-              {/* <ul
-                tabIndex={0}
-                className='menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 dark:bg-slate-900 dark:text-white'
-              >
-                {navItems}
-              </ul> */}
               <ul
                 tabIndex={0}
                 className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100/80 rounded-box w-40 dark:bg-slate-900/80 dark:text-white"
