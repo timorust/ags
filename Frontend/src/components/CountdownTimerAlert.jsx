@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { useTranslation } from 'react-i18next'
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog'
 
 const CountdownTimerAlert = ({ targetDate }) => {
 	const { t } = useTranslation()
@@ -71,19 +70,21 @@ const CountdownTimerAlert = ({ targetDate }) => {
 				</div>
 			</div>
 
-			{/* מודאל של shadcn/ui */}
-			<Dialog open={showModal} onOpenChange={setShowModal}>
-				<DialogContent>
-					<DialogHeader>
-						<DialogTitle className="text-center text-2xl font-bold text-green-600">
-							🎉 CONGRATULATIONS! 🎉
-						</DialogTitle>
-					</DialogHeader>
-					<p className="text-center text-lg font-medium text-gray-700">
-						CONGRESS START NOW!
-					</p>
-				</DialogContent>
-			</Dialog>
+			{/* מודאל של daisyUI */}
+			{showModal && (
+				<div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+					<div className="modal-box p-6 bg-white rounded-lg shadow-lg text-center">
+						<h2 className="text-2xl font-bold text-green-600">🎉 CONGRATULATIONS! 🎉</h2>
+						<p className="text-lg font-medium text-gray-700 mt-4">CONGRESS START NOW!</p>
+						<button
+							onClick={() => setShowModal(false)}
+							className="btn btn-primary mt-6"
+						>
+							Close
+						</button>
+					</div>
+				</div>
+			)}
 		</>
 	)
 }
