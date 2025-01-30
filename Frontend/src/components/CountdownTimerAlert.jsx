@@ -73,7 +73,7 @@ const CountdownTimerAlert = ({ targetDate }) => {
 			{/* מודאל של daisyUI */}
 			{showModal && (
 				<div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-					<div className="modal-box p-6 bg-white rounded-lg shadow-lg text-center">
+					<div className="modal-box p-6 bg-grey rounded-lg shadow-lg text-center">
 						<h2 className="text-2xl font-bold text-green-600">🎉 CONGRATULATIONS! 🎉</h2>
 						<p className="text-lg font-medium text-gray-700 mt-4">CONGRESS START NOW!</p>
 						<button
