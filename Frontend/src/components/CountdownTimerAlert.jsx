@@ -24,7 +24,7 @@ const CountdownTimerAlert = ({ targetDate }) => {
 	}
 
 	const [timeLeft, setTimeLeft] = useState(calculateTimeLeft())
-	const [showModal, setShowModal] = useState(false)
+	const [showModal, setShowModal] = useState(true)
 
 	useEffect(() => {
 		const timer = setInterval(() => {
