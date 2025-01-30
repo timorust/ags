@@ -105,7 +105,7 @@ function Banner() {
 					</div>
 
 				</div>
-				<div className='order-1 w-full mt-20 md:w-1/2 flex justify-center md:justify-start overflow-hidden mr-10 ml-10 pt-10 pb-10 pr-10'>
+				<div className='order-1 w-full mt-8 md:w-1/2 flex justify-center md:justify-start overflow-hidden mr-10 ml-10 pt-10 pb-10 pr-10'>
 					<img
 						src={banner}
 						alt='Banner'
