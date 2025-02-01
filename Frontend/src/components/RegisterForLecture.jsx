@@ -124,7 +124,7 @@ function RegisterLecture() {
 
 						<div className='mb-6'>
 							<label className='block text-left text-gray-700 dark:bg-slate-900 dark:text-green-300'>
-								{t('Identity Card')}
+								{t('Identity card series and number')}
 							</label>
 							<input
 								type='text'
@@ -132,7 +132,7 @@ function RegisterLecture() {
 								value={formData.identityCard}
 								onChange={handleChange}
 								className='w-full px-4 py-2 border rounded-md dark:bg-slate-900 dark:text-white'
-								placeholder={t('Enter your identity card number')}
+								placeholder={t('Enter identity card series and number')}
 								required
 							/>
 						</div>
@@ -147,7 +147,7 @@ function RegisterLecture() {
 								value={formData.finCode}
 								onChange={handleChange}
 								className='w-full px-4 py-2 border rounded-md dark:bg-slate-900 dark:text-white'
-								placeholder={t('Enter your financial code')}
+								placeholder={t('Enter your Fin Code')}
 								required
 							/>
 						</div>
