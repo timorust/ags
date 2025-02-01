@@ -10,14 +10,14 @@ function RegisterLecture() {
 	const { t } = useTranslation()
 
 	const [formData, setFormData] = useState({
-		firstName: '',      // שם פרטי
-		lastName: '',       // שם משפחה
-		phone: '',          // טלפון
-		age: '',            // גיל
-		lecture: '',        // שם ההרצאה
-		email: '',          // אימייל
-		identityCard: '',   // תעודת זהות
-		finCode: '',        // קוד פיננסי
+		firstName: '',      
+		lastName: '',       
+		phone: '',          
+		age: '',           
+		lecture: '',        
+		email: '',          
+		identityCard: '',   
+		finCode: '',        
 	})
 
 	const [isRegistered, setIsRegistered] = useState(false)
@@ -60,7 +60,6 @@ function RegisterLecture() {
 					</div>
 				) : (
 					<form onSubmit={handleSubmit} className='mt-12 max-w-lg mx-auto'>
-						{/* שם פרטי */}
 						<div className='mb-6'>
 							<label className='block text-left text-gray-700 dark:bg-slate-900 dark:text-green-300'>
 								{t('First Name')}
@@ -76,7 +75,6 @@ function RegisterLecture() {
 							/>
 						</div>
 
-						{/* שם משפחה */}
 						<div className='mb-6'>
 							<label className='block text-left text-gray-700 dark:bg-slate-900 dark:text-green-300'>
 								{t('Last Name')}
@@ -92,7 +90,6 @@ function RegisterLecture() {
 							/>
 						</div>
 
-						{/* טלפון */}
 						<div className='mb-6'>
 							<label className='block text-left text-gray-700 dark:bg-slate-900 dark:text-green-300'>
 								{t('Phone')}
@@ -108,7 +105,6 @@ function RegisterLecture() {
 							/>
 						</div>
 
-						{/* גיל */}
 						<div className='mb-6'>
 							<label className='block text-left text-gray-700 dark:bg-slate-900 dark:text-green-300'>
 								{t('Age')}
@@ -124,7 +120,6 @@ function RegisterLecture() {
 							/>
 						</div>
 
-						{/* שם ההרצאה */}
 						<div className='mb-6'>
 							<label className='block text-left text-gray-700 dark:bg-slate-900 dark:text-green-300'>
 								{t('Experience years')}
@@ -140,7 +135,6 @@ function RegisterLecture() {
 							/>
 						</div>
 
-						{/* אימייל */}
 						<div className='mb-6'>
 							<label className='block text-left text-gray-700 dark:bg-slate-900 dark:text-green-300'>
 								{t('Email')}
@@ -156,7 +150,6 @@ function RegisterLecture() {
 							/>
 						</div>
 
-						{/* תעודת זהות */}
 						<div className='mb-6'>
 							<label className='block text-left text-gray-700 dark:bg-slate-900 dark:text-green-300'>
 								{t('Identity Card')}
@@ -172,7 +165,6 @@ function RegisterLecture() {
 							/>
 						</div>
 
-						{/* קוד פיננסי */}
 						<div className='mb-6'>
 							<label className='block text-left text-gray-700 dark:bg-slate-900 dark:text-green-300'>
 								{t('Fin Code')}
@@ -188,7 +180,6 @@ function RegisterLecture() {
 							/>
 						</div>
 						
-						{/* כפתור שליחה */}
 						<button
 							type='submit'
 							className='w-full bg-green-500 text-white px-4 py-2 rounded-md'
