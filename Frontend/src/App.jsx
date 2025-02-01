@@ -34,10 +34,6 @@ function App() {
 						path='/registration'
 						element={authUser ? <RegisterLecture /> : <Navigate to='/signup' />}
 					/>
-					{/* <Route
-						path='/meeting'
-						element={authUser ? <Meetings /> : <Navigate to='/signup' />}
-					/> */}
 					<Route path='/meeting' element={<Meetings />} />
 					<Route path='/contact' element={<SendEmail />} />
 					<Route path='/about' element={<About />} />

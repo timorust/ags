@@ -5,7 +5,7 @@ import Footer from './Footer';
 
 function DataTable() {
   const handleIconClick = () => {
-    window.location.href = 'https://drive.google.com/file/d/1p-ONpFgQCFO470vTIg_sgD7Sqwv-Ms3Y/view?usp=drive_link';
+    window.location.href = 'https://docs.google.com/document/d/1enLVDTKat4RTed2n4dFPfnGw_XCC-E9P/edit';
   };
 
   return (
