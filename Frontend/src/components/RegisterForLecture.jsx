@@ -127,7 +127,7 @@ function RegisterLecture() {
 						{/* שם ההרצאה */}
 						<div className='mb-6'>
 							<label className='block text-left text-gray-700 dark:bg-slate-900 dark:text-green-300'>
-								{t('Lecture')}
+								{t('Experience years')}
 							</label>
 							<input
 								type='text'
@@ -135,7 +135,7 @@ function RegisterLecture() {
 								value={formData.lecture}
 								onChange={handleChange}
 								className='w-full px-4 py-2 border rounded-md dark:bg-slate-900 dark:text-white'
-								placeholder={t('Enter the lecture title')}
+								placeholder={t('Enter experience years')}
 								required
 							/>
 						</div>
