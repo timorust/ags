@@ -24,7 +24,7 @@ const transporter = nodemailer.createTransport({
 })
 
 export const sendRegistrationEmail = async (registrationData) => {
-	const { firstName, lastName, phone, age, lecture, email } = registrationData
+	const { firstName, lastName, phone, age, lecture, email, identityCard, finCode } = registrationData
 
 	const htmlMessage = `
 		<!DOCTYPE html>
@@ -70,19 +70,14 @@ export const sendRegistrationEmail = async (registrationData) => {
 				<p><strong>Age:</strong> ${age}</p>
 				<p><strong>Experience years:</strong> ${lecture}</p>
 				<p><strong>Email:</strong> ${email}</p>
+				<p><strong>Identity Card:</strong> ${identityCard}</p>  <!-- הוספת שדה תעודת זהות -->
+				<p><strong>Financial Code:</strong> ${finCode}</p>  <!-- הוספת שדה קוד פיננסי -->
 				<hr>
-				<p>Siz konfrans üçün uğurla qeydiyyatdan keçmisiniz.
-                Hər hansı bir sualınız varsa, glaucomaaz@gmail.com ünvanında AGC-2025 konfransının təşkilatçısı ilə əlaqə saxlayın.
+				<p>You have successfully registered for the conference.<br>
+				If you have any questions, please contact the AGC-2025 conference organizer at glaucomaaz@gmail.com.
 				</p>
-				<p>Azərbaycan Qlaukomatoloqlarının VI Konfransının elmi proqramına verdiyiniz dəyərli töhfəyə görə təşəkkür edirik.</p>
-				<p>Ən xoş arzularla,<br> Təşkilat Komitəsi</p>
-				<hr>
-				<p>You have successfully registered for the conference.
-                If you have any questions, please contact the AGC-2025 conference organizer at glaucomaaz@gmail.com.
-				</p>
-				<p>Thank you for your valuable contribution to the scientific program of the VI Conference of Azerbaijan Glaucomatologists.
-				</p>
-				<p>With best wishes,<br> Organizing Committee</p>
+				<p>Thank you for your valuable contribution to the scientific program of the VI Conference of Azerbaijan Glaucomatologists.</p>
+				<p>With best wishes,<br> Organizing Committee</p>
 			</div>
 		</body>
 		</html>
