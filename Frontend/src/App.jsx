@@ -24,20 +24,23 @@ function App() {
 						path="/signup"
 						element={
 							authUser ? (
-								<Navigate to="/meeting" />
+								<Navigate to="/registration" />
 							) : (
 								<Signup onSignupSuccess={() => setAuthUser(true)} />
 							)
 						}
 					/>
 					<Route
+						path='/registration'
+						element={authUser ? <RegisterLecture /> : <Navigate to='/signup' />}
+					/>
+					{/* <Route
 						path='/meeting'
 						element={authUser ? <Meetings /> : <Navigate to='/signup' />}
-					/>
-					{/* <Route path='/signup' element={<Signup />} /> */}
+					/> */}
+					<Route path='/meeting' element={<Meetings />} />
 					<Route path='/contact' element={<SendEmail />} />
 					<Route path='/about' element={<About />} />
-					<Route path='/registration' element={<RegisterLecture />} />
 				</Routes>
 				<Toaster />
 			</div>
