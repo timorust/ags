@@ -10,12 +10,14 @@ function RegisterLecture() {
 	const { t } = useTranslation()
 
 	const [formData, setFormData] = useState({
-		firstName: '',
-		lastName: '',
-		phone: '',
-		age: '',
-		lecture: '',
-		email: '',
+		firstName: '',      // שם פרטי
+		lastName: '',       // שם משפחה
+		phone: '',          // טלפון
+		age: '',            // גיל
+		lecture: '',        // שם ההרצאה
+		email: '',          // אימייל
+		identityCard: '',   // תעודת זהות
+		finCode: '',        // קוד פיננסי
 	})
 
 	const [isRegistered, setIsRegistered] = useState(false)
@@ -44,7 +46,7 @@ function RegisterLecture() {
 			<Navbar />
 			<CountdownTimer targetDate='2025-03-15T09:00:00' />
 			<div className='max-w-screen-2xl container mx-auto md:px-20 px-6 mb-6'>
-			<div className='mt-10 items-center justify-center text-center'>
+				<div className='mt-10 items-center justify-center text-center'>
 					<h1 className='text-2xl md:text-4xl'>
 						<span className='text-yellow-500'>{t('Conference registration')}!</span>
 					</h1>
@@ -58,8 +60,9 @@ function RegisterLecture() {
 					</div>
 				) : (
 					<form onSubmit={handleSubmit} className='mt-12 max-w-lg mx-auto'>
+						{/* שם פרטי */}
 						<div className='mb-6'>
-							<label className='block text-left text-gray-700  dark:bg-slate-900 dark:text-green-300'>
+							<label className='block text-left text-gray-700 dark:bg-slate-900 dark:text-green-300'>
 								{t('First Name')}
 							</label>
 							<input
@@ -67,11 +70,13 @@ function RegisterLecture() {
 								name='firstName'
 								value={formData.firstName}
 								onChange={handleChange}
-								className='w-full px-4 py-2 border rounded-md  dark:bg-slate-900 dark:text-white'
+								className='w-full px-4 py-2 border rounded-md dark:bg-slate-900 dark:text-white'
 								placeholder={t('Enter your first name')}
 								required
 							/>
 						</div>
+
+						{/* שם משפחה */}
 						<div className='mb-6'>
 							<label className='block text-left text-gray-700 dark:bg-slate-900 dark:text-green-300'>
 								{t('Last Name')}
@@ -81,11 +86,13 @@ function RegisterLecture() {
 								name='lastName'
 								value={formData.lastName}
 								onChange={handleChange}
-								className='w-full px-4 py-2 border rounded-md  dark:bg-slate-900 dark:text-white'
+								className='w-full px-4 py-2 border rounded-md dark:bg-slate-900 dark:text-white'
 								placeholder={t('Enter your last name')}
 								required
 							/>
 						</div>
+
+						{/* טלפון */}
 						<div className='mb-6'>
 							<label className='block text-left text-gray-700 dark:bg-slate-900 dark:text-green-300'>
 								{t('Phone')}
@@ -95,11 +102,13 @@ function RegisterLecture() {
 								name='phone'
 								value={formData.phone}
 								onChange={handleChange}
-								className='w-full px-4 py-2 border rounded-md  dark:bg-slate-900 dark:text-white'
+								className='w-full px-4 py-2 border rounded-md dark:bg-slate-900 dark:text-white'
 								placeholder={t('Enter your phone number')}
 								required
 							/>
 						</div>
+
+						{/* גיל */}
 						<div className='mb-6'>
 							<label className='block text-left text-gray-700 dark:bg-slate-900 dark:text-green-300'>
 								{t('Age')}
@@ -109,25 +118,29 @@ function RegisterLecture() {
 								name='age'
 								value={formData.age}
 								onChange={handleChange}
-								className='w-full px-4 py-2 border rounded-md  dark:bg-slate-900 dark:text-white'
+								className='w-full px-4 py-2 border rounded-md dark:bg-slate-900 dark:text-white'
 								placeholder={t('Enter your age')}
 								required
 							/>
 						</div>
+
+						{/* שם ההרצאה */}
 						<div className='mb-6'>
 							<label className='block text-left text-gray-700 dark:bg-slate-900 dark:text-green-300'>
-								{t('Experience years')}
+								{t('Lecture')}
 							</label>
 							<input
 								type='text'
 								name='lecture'
 								value={formData.lecture}
 								onChange={handleChange}
-								className='w-full px-4 py-2 border rounded-md  dark:bg-slate-900 dark:text-white'
-								placeholder={t('Enter experience years')}
+								className='w-full px-4 py-2 border rounded-md dark:bg-slate-900 dark:text-white'
+								placeholder={t('Enter the lecture title')}
 								required
 							/>
 						</div>
+
+						{/* אימייל */}
 						<div className='mb-6'>
 							<label className='block text-left text-gray-700 dark:bg-slate-900 dark:text-green-300'>
 								{t('Email')}
@@ -137,11 +150,45 @@ function RegisterLecture() {
 								name='email'
 								value={formData.email}
 								onChange={handleChange}
-								className='w-full px-4 py-2 border rounded-md  dark:bg-slate-900 dark:text-white'
+								className='w-full px-4 py-2 border rounded-md dark:bg-slate-900 dark:text-white'
 								placeholder={t('Enter your email')}
 								required
 							/>
 						</div>
+
+						{/* תעודת זהות */}
+						<div className='mb-6'>
+							<label className='block text-left text-gray-700 dark:bg-slate-900 dark:text-green-300'>
+								{t('Identity Card')}
+							</label>
+							<input
+								type='text'
+								name='identityCard'
+								value={formData.identityCard}
+								onChange={handleChange}
+								className='w-full px-4 py-2 border rounded-md dark:bg-slate-900 dark:text-white'
+								placeholder={t('Enter your identity card number')}
+								required
+							/>
+						</div>
+
+						{/* קוד פיננסי */}
+						<div className='mb-6'>
+							<label className='block text-left text-gray-700 dark:bg-slate-900 dark:text-green-300'>
+								{t('Fin Code')}
+							</label>
+							<input
+								type='text'
+								name='finCode'
+								value={formData.finCode}
+								onChange={handleChange}
+								className='w-full px-4 py-2 border rounded-md dark:bg-slate-900 dark:text-white'
+								placeholder={t('Enter your financial code')}
+								required
+							/>
+						</div>
+						
+						{/* כפתור שליחה */}
 						<button
 							type='submit'
 							className='w-full bg-green-500 text-white px-4 py-2 rounded-md'
