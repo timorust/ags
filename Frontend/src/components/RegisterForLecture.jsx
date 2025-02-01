@@ -10,14 +10,14 @@ function RegisterLecture() {
 	const { t } = useTranslation()
 
 	const [formData, setFormData] = useState({
-		firstName: '',      
-		lastName: '',       
-		phone: '',          
-		age: '',           
-		lecture: '',        
-		email: '',          
-		identityCard: '',   
-		finCode: '',        
+		firstName: '',
+		lastName: '',
+		phone: '',
+		age: '',
+		lecture: '',
+		email: '',
+		identityCard: '',
+		finCode: '',
 	})
 
 	const [isRegistered, setIsRegistered] = useState(false)
@@ -92,21 +92,6 @@ function RegisterLecture() {
 
 						<div className='mb-6'>
 							<label className='block text-left text-gray-700 dark:bg-slate-900 dark:text-green-300'>
-								{t('Phone')}
-							</label>
-							<input
-								type='text'
-								name='phone'
-								value={formData.phone}
-								onChange={handleChange}
-								className='w-full px-4 py-2 border rounded-md dark:bg-slate-900 dark:text-white'
-								placeholder={t('Enter your phone number')}
-								required
-							/>
-						</div>
-
-						<div className='mb-6'>
-							<label className='block text-left text-gray-700 dark:bg-slate-900 dark:text-green-300'>
 								{t('Age')}
 							</label>
 							<input
@@ -119,6 +104,7 @@ function RegisterLecture() {
 								required
 							/>
 						</div>
+
 
 						<div className='mb-6'>
 							<label className='block text-left text-gray-700 dark:bg-slate-900 dark:text-green-300'>
@@ -135,20 +121,6 @@ function RegisterLecture() {
 							/>
 						</div>
 
-						<div className='mb-6'>
-							<label className='block text-left text-gray-700 dark:bg-slate-900 dark:text-green-300'>
-								{t('Email')}
-							</label>
-							<input
-								type='email'
-								name='email'
-								value={formData.email}
-								onChange={handleChange}
-								className='w-full px-4 py-2 border rounded-md dark:bg-slate-900 dark:text-white'
-								placeholder={t('Enter your email')}
-								required
-							/>
-						</div>
 
 						<div className='mb-6'>
 							<label className='block text-left text-gray-700 dark:bg-slate-900 dark:text-green-300'>
@@ -179,7 +151,41 @@ function RegisterLecture() {
 								required
 							/>
 						</div>
-						
+
+						<div className='mb-6'>
+							<label className='block text-left text-gray-700 dark:bg-slate-900 dark:text-green-300'>
+								{t('Phone')}
+							</label>
+							<input
+								type='text'
+								name='phone'
+								value={formData.phone}
+								onChange={handleChange}
+								className='w-full px-4 py-2 border rounded-md dark:bg-slate-900 dark:text-white'
+								placeholder={t('Enter your phone number')}
+								required
+							/>
+						</div>
+
+						<div className='mb-6'>
+							<label className='block text-left text-gray-700 dark:bg-slate-900 dark:text-green-300'>
+								{t('Email')}
+							</label>
+							<input
+								type='email'
+								name='email'
+								value={formData.email}
+								onChange={handleChange}
+								className='w-full px-4 py-2 border rounded-md dark:bg-slate-900 dark:text-white'
+								placeholder={t('Enter your email')}
+								required
+							/>
+						</div>
+
+
+
+
+
 						<button
 							type='submit'
 							className='w-full bg-green-500 text-white px-4 py-2 rounded-md'

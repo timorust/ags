@@ -66,12 +66,9 @@ export const sendRegistrationEmail = async (registrationData) => {
 			<div class="container">
 				<h2>AGC-2025 Registration🎉</h2>
 				<p><strong>Name:</strong> ${firstName} ${lastName}</p>
-				<p><strong>Phone:</strong> ${phone}</p>
-				<p><strong>Age:</strong> ${age}</p>
 				<p><strong>Experience years:</strong> ${lecture}</p>
+				<p><strong>Phone:</strong> ${phone}</p>
 				<p><strong>Email:</strong> ${email}</p>
-				<p><strong>Identity Card:</strong> ${identityCard}</p> 
-				<p><strong>Financial Code:</strong> ${finCode}</p>  
 				<hr>
 				<p>You have successfully registered for the conference.<br>
 				If you have any questions, please contact the AGC-2025 conference organizer at glaucomaaz@gmail.com.
