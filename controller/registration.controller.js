@@ -8,6 +8,14 @@ export const createRegistration = async (req, res) => {
             return res.status(400).json({ error: "All fields are required" });
         }
 
+        const existingUser = await Registration.findOne({
+            $or: [{ email }, { identityCard }]
+        });
+
+        if (existingUser) {
+            return res.status(400).json({ error: "You are already registered in the system" });
+        }
+
         const newRegistration = new Registration({
             firstName,
             lastName,
