@@ -64,7 +64,7 @@ const Cards = ({ item }) => {
               className='rounded-full border-[2px] bg-green-500 text-white px-3 py-2 rounded-md hover:bg-green-700 duration-300 cursor-pointer'
               onClick={handleClick}
             >
-              Register
+              {t('Register')}
             </div>
           )}
         </div>
