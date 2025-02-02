@@ -56,7 +56,7 @@ function EventConference() {
     },
     {
       id: 6,
-      image: 'https://scontent.fgyd21-1.fna.fbcdn.net/v/t39.30808-6/473675674_941754381430060_5723316019145664580_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=105&ccb=1-7&_nc_sid=e5c1b6&_nc_ohc=shwfjSnDe24Q7kNvgHJe7XL&_nc_zt=23&_nc_ht=scontent.fgyd21-1.fna&_nc_gid=AIzDXuZHQ-Q3Rq5ObvXHWcr&oh=00_AYBZtcSUbj8MB_Ef9_rgmlBMXPt0RtFPZIWrx78PoYd86g&oe=67996BEE',
+      image: '/meeting9.jpg',
       name: 'World Glaucoma Congress (WGC 2025)',
       category: 'active',
       title: 'Dates: 25 June - 28 June 2025',
