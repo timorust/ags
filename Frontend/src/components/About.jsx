@@ -11,7 +11,7 @@ function About() {
 	const [imageIndex, setImageIndex] = useState(0)
 
 	const textContent = [
-		'The Azerbaijan Glaucoma Society (AGS) is an organization,that unites glaucoma specialists and shares their clinical, and scientific knowledge for the benefit of glaucoma patients, colleagues and residents.'
+		t('AboutText')
 	]
 
 	const images = [
@@ -83,7 +83,7 @@ function About() {
 							style={{
 								display: 'inline-block',
 								paddingLeft: '100%',
-								animation: 'marquee 20s linear infinite', 
+								animation: 'marquee 20s linear infinite',
 							}}
 						>
 							{textContent[textIndex]}
