@@ -74,32 +74,6 @@ function RegisterLecture() {
 				)}
 
 
-				{/* {errorMessage && (
-					<dialog id="error_modal" className="modal">
-						<div className="modal-box dark:bg-slate-900 dark:text-white">
-							{/* Button to close the modal */}
-							<button
-								className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
-								onClick={() => setErrorMessage('')}
-							>
-								✕
-							</button>
-
-							{/* Error message */}
-							<p className="text-red-500">{errorMessage}</p>
-
-							{/* Close button */}
-							<button
-								className="mt-4 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-700 duration-200"
-								onClick={() => setErrorMessage('')}
-							>
-								{t('Close')}
-							</button>
-						</div>
-					</dialog>
-				)} */}
-
-
 
 				{isRegistered ? (
 					<div className='text-center mt-12'>
