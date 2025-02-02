@@ -30,7 +30,7 @@ function About() {
 		const interval = setInterval(() => {
 			setTextIndex(prevIndex => (prevIndex + 1) % textContent.length)
 			setImageIndex(prevIndex => (prevIndex + 1) % images.length)
-		}, 4000)
+		}, 5000)
 
 		return () => clearInterval(interval)
 	}, [textContent.length, images.length])
