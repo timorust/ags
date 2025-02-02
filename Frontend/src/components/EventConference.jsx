@@ -12,7 +12,7 @@ function EventConference() {
     {
       id: 1,
       image: '/meeting3.png', // Replace with your local or hosted image URLs
-      name: 'VI Conference of Azerbaijani Glaucomatologists within the framework of the International "Glaucoma Week',
+      name: t('VIText'),
       category: 'Free',
       title: 'March 15, 2025',
       price: 0,
@@ -21,7 +21,7 @@ function EventConference() {
     {
       id: 2,
       image: 'https://anzgsconference.com/wp-content/uploads/2024/07/rananz.jpg',
-      name: 'Australian and New Zealand Glaucoma Society Congress (ANZGS 2025)',
+      name: t('Australian and New Zealand Glaucoma Society Congress (ANZGS 2025)'),
       category: 'active',
       title: 'Second event to explore new opportunities.',
       price: 0,
@@ -30,7 +30,7 @@ function EventConference() {
     {
       id: 3,
       image: 'https://higherlogicdownload.s3.amazonaws.com/AMERICANGLAUCOMASOCIETY/9f15f56c-64ed-4e90-ab3e-9bc3fb0c245e/UploadedImages/AGS-2025-Banner-1200x450_4x.png',
-      name: 'American Glaucoma Society Annual Meeting (AGS 2025)',
+      name: t('American Glaucoma Society Annual Meeting (AGS 2025)'),
       category: 'active',
       title: 'Location: Washington, DC, USA',
       price: 99,
@@ -39,7 +39,7 @@ function EventConference() {
     {
       id: 4,
       image: 'https://www.sociedadglaucoma.com/wp-content/uploads/2025/01/cartel-seg-2025.jpg',
-      name: 'Congress of the Spanish Society of Glaucoma (SEG 2025)',
+      name: t('Congress of the Spanish Society of Glaucoma (SEG 2025)'),
       category: 'active',
       title: 'Dates: 6 March - 8 March 2025',
       price: 0,
@@ -48,7 +48,7 @@ function EventConference() {
     {
       id: 5,
       image: 'https://subspecialtyday.ascrs.org/-/media/all-annual-meetings/am-2024/am2024-images/2024-gd-hero.jpeg?cx=0.75&cy=0.44&cw=767&ch=767&hash=0ED3FEB8D9C021692101BCB147ACFD17',
-      name: 'ASCRS Glaucoma Day',
+      name: t('ASCRS Glaucoma Day'),
       category: 'active',
       title: 'Apr 25, 2025  Los Angeles, CA',
       price: 0,
@@ -57,7 +57,7 @@ function EventConference() {
     {
       id: 6,
       image: '/meeting9.jpg',
-      name: 'World Glaucoma Congress (WGC 2025)',
+      name: t('World Glaucoma Congress (WGC 2025)'),
       category: 'active',
       title: 'Dates: 25 June - 28 June 2025',
       price: 150,
@@ -105,9 +105,6 @@ function EventConference() {
         <h1 className="font-semibold text-2xl md:text-3xl pb-4">
           <span className="text-yellow-500">{t('Glaucoma conferences in 2025')}</span>
         </h1>
-        {/* <p className="text-gray-600 mb-6">
-          Discover upcoming conferences with exciting opportunities to learn and connect.
-        </p> */}
 
         <div className="slider-container">
           {conference.length === 0 ? (
