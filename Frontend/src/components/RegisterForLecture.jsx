@@ -48,9 +48,9 @@ function RegisterLecture() {
 				error.response || error.message
 			)
 			if (error.response && error.response.data.error === 'You are already registered in the system') {
-				setErrorMessage('You are already registered in the system')
+				setErrorMessage(t('You are already registered in the system'))
 			} else {
-				alert('Failed to register. Please try again.')
+				alert(t('Failed to register. Please try again.'))
 			}
 		}
 	}
