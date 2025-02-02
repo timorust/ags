@@ -23,7 +23,7 @@ function EventConference() {
       image: 'https://anzgsconference.com/wp-content/uploads/2024/07/rananz.jpg',
       name: t('Australian and New Zealand Glaucoma Society Congress (ANZGS 2025)'),
       category: 'active',
-      title: 'Second event to explore new opportunities.',
+      title: t('Second event to explore new opportunities.'),
       price: 0,
       url: 'https://anzgsconference.com/',
     },
