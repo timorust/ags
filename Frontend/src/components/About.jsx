@@ -47,28 +47,6 @@ function About() {
 					</h1>
 				</div>
 
-				{/* <div className="relative w-full h-48 sm:h-64 lg:h-80 xl:h-96 overflow-hidden rounded-md shadow-lg sm:mb-8 mb-0 sm:p-2 p-0">
-					{images.map((image, index) => (
-						<img
-							key={index}
-							src={image}
-							srcSet={` 
-        ${image}?w=320 320w,
-        ${image}?w=480 480w,
-        ${image}?w=768 768w,
-        ${image}?w=1024 1024w
-      `}
-							sizes="(max-width: 640px) 100vw, 
-             (max-width: 1024px) 80vw, 
-             (max-width: 1280px) 70vw, 
-             60vw"
-							alt={`Image ${index + 1}`}
-							className={`absolute inset-0 w-full h-full max-w-[100vw] object-contain rounded-t-lg transition-all duration-500 ${index === imageIndex ? 'opacity-100' : 'opacity-0'} 
-        sm:mb-8 mb-0 lg:mt-8`} // הוספנו את המרגין הרצוי
-						/>
-					))}
-				</div> */}
-
 				<div className="relative w-full h-48 sm:h-64 lg:h-80 xl:h-96 overflow-hidden rounded-lg shadow-lg sm:mb-8 mb-0 sm:p-2 p-0 flex justify-center items-center">
 					{images.map((image, index) => (
 						<img
@@ -92,8 +70,44 @@ function About() {
 
 
 
-
 				<div className='bg-gray-100 dark:bg-blue-300 p-4 rounded-md shadow-md mb-8 mt-8'>
+					<div
+						className='text-lg text-grey-500 marquee-container'
+						style={{
+							whiteSpace: 'nowrap',
+							overflow: 'hidden',
+							width: '100%',
+						}}
+					>
+						<div
+							className='marquee-text'
+							style={{
+								display: 'inline-block',
+								paddingLeft: '100%',
+								animation: 'marquee 20s linear infinite', // הפחתתי את מהירות האנימציה
+							}}
+						>
+							{textContent[textIndex]}
+						</div>
+					</div>
+				</div>
+
+				<style>
+					{`
+    @keyframes marquee {
+      from {
+        transform: translateX(0%);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+    }
+  `}
+				</style>
+
+
+
+				{/* <div className='bg-gray-100 dark:bg-blue-300 p-4 rounded-md shadow-md mb-8 mt-8'>
 					<div
 						className='text-lg text-grey-500 marquee-container'
 						style={{
@@ -113,7 +127,7 @@ function About() {
 							{textContent[textIndex]}
 						</div>
 					</div>
-				</div>
+				</div> */}
 			</div>
 			<Footer />
 		</>
