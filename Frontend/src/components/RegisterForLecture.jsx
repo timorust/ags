@@ -21,6 +21,7 @@ function RegisterLecture() {
 	})
 
 	const [isRegistered, setIsRegistered] = useState(false)
+	const [errorMessage, setErrorMessage] = useState('')
 
 	const handleChange = e => {
 		setFormData({ ...formData, [e.target.name]: e.target.value })
@@ -32,12 +33,17 @@ function RegisterLecture() {
 		try {
 			await axios.post('https://www.ags-az.com/registration', formData)
 			setIsRegistered(true)
+			setErrorMessage('')
 		} catch (error) {
 			console.error(
 				'Error during registration:',
 				error.response || error.message
 			)
-			alert('Failed to register. Please try again.')
+			if (error.response && error.response.data.error === 'You are already registered in the system') {
+				setErrorMessage('You are already registered in the system')
+			} else {
+				alert('Failed to register. Please try again.')
+			}
 		}
 	}
 
@@ -51,6 +57,23 @@ function RegisterLecture() {
 						<span className='text-yellow-500'>{t('Conference registration')}!</span>
 					</h1>
 				</div>
+
+
+				{errorMessage && (
+					<div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center">
+						<div className="bg-white p-6 rounded-md shadow-lg">
+							<p className="text-red-500">{errorMessage}</p>
+							<button
+								className="mt-4 bg-blue-500 text-white px-4 py-2 rounded-md"
+								onClick={() => setErrorMessage('')}
+							>
+								{t('Close')}
+							</button>
+						</div>
+					</div>
+				)}
+
+
 				{isRegistered ? (
 					<div className='text-center mt-12'>
 						<h2 className='text-2xl text-green-500'>
