@@ -99,23 +99,6 @@ function RegisterLecture() {
 					</dialog>
 				)}
 
-
-				{/* {errorMessage && (
-					<div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center">
-						<div className="bg-white p-6 rounded-md shadow-lg">
-							<p className="text-red-500">{errorMessage}</p>
-							<button
-								className="mt-4 bg-blue-500 text-white px-4 py-2 rounded-md"
-								onClick={() => setErrorMessage('')}
-							>
-								{t('Close')}
-							</button>
-						</div>
-					</div>
-				)} */}
-
-
-
 				{isRegistered ? (
 					<div className='text-center mt-12'>
 						<h2 className='text-2xl text-green-500'>
