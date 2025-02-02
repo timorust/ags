@@ -59,7 +59,7 @@ function RegisterLecture() {
 				</div>
 
 
-				{/* {errorMessage && (
+				{errorMessage && (
 					<div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center">
 						<div className="bg-white p-6 rounded-md shadow-lg">
 							<p className="text-red-500">{errorMessage}</p>
@@ -71,10 +71,10 @@ function RegisterLecture() {
 							</button>
 						</div>
 					</div>
-				)} */}
+				)}
 
 
-				{errorMessage && (
+				{/* {errorMessage && (
 					<dialog id="error_modal" className="modal">
 						<div className="modal-box dark:bg-slate-900 dark:text-white">
 							{/* Button to close the modal */}
@@ -97,7 +97,7 @@ function RegisterLecture() {
 							</button>
 						</div>
 					</dialog>
-				)}
+				)} */}
 
 
 
