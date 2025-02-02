@@ -64,7 +64,7 @@ export const sendRegistrationEmail = async (registrationData) => {
 		</head>
 		<body>
 			<div class="container">
-				<h2>AGC-2025 Registration🎉</h2>
+				<h2>🎉AGC-2025 Registration</h2>
 				<p><strong>Name:</strong> ${firstName} ${lastName}</p>
 				<p><strong>Experience years:</strong> ${lecture}</p>
 				<p><strong>Phone:</strong> ${phone}</p>
