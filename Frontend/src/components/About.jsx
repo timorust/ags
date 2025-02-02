@@ -12,7 +12,10 @@ function About() {
 	const [imageIndex, setImageIndex] = useState(0)
 
 	const textContent = [
-		'The Azerbaijan Glaucoma Society (AGS) is an organization,that unites glaucoma specialists and shares their clinical, and scientific knowledge for the benefit of glaucoma patients'
+		'The Azerbaijan Glaucoma Society (AGS) is an organization,that unites glaucoma specialists and shares their clinical, and scientific knowledge for the benefit of glaucoma patients, colleagues and residents.',
+		'The main goal of the AGS is to provide excellent and comprehensive care to all people with glaucoma and those at risk, improve their quality of life, provide a collegial environment for AGS members to exchange ideas and opinions, and jointly defeat glaucoma.',
+		'The organization`s activities include the prevention, early diagnosis and various treatment methods of glaucoma, a serious, widespread and blinding disease.',
+		'In addition, the society pays great attention to conducting wide propaganda about glaucoma. AGS was established in 2025.'
 	]
 
 	const images = [
