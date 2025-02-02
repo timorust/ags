@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import CountdownTimer from './CountdownTimer'
@@ -84,7 +83,7 @@ function About() {
 							style={{
 								display: 'inline-block',
 								paddingLeft: '100%',
-								animation: 'marquee 20s linear infinite', // הפחתתי את מהירות האנימציה
+								animation: 'marquee 20s linear infinite', 
 							}}
 						>
 							{textContent[textIndex]}
@@ -104,30 +103,6 @@ function About() {
     }
   `}
 				</style>
-
-
-
-				{/* <div className='bg-gray-100 dark:bg-blue-300 p-4 rounded-md shadow-md mb-8 mt-8'>
-					<div
-						className='text-lg text-grey-500 marquee-container'
-						style={{
-							whiteSpace: 'nowrap',
-							overflow: 'hidden',
-							width: '100%',
-						}}
-					>
-						<div
-							className='marquee-text'
-							style={{
-								display: 'inline-block',
-								paddingLeft: '100%',
-								animation: 'marquee 10s linear infinite',
-							}}
-						>
-							{textContent[textIndex]}
-						</div>
-					</div>
-				</div> */}
 			</div>
 			<Footer />
 		</>
