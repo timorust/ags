@@ -12,9 +12,9 @@ function EventConference() {
     {
       id: 1,
       image: '/meeting3.png', // Replace with your local or hosted image URLs
-      name: 'The Azerbaijan Glaucoma Society (AGS)',
+      name: 'VI Conference of Azerbaijani Glaucomatologists within the framework of the International "Glaucoma Week',
       category: 'Free',
-      title: 'Since glaucoma is a serious, currently incurable disease that leads to blindness, special attention is paid to this problem. For 6 years now, as a tradition, the scientific and practical conference of Azerbaijani glaucomatologists has been held in mid-March. This conference brings together local and foreign specialists involved in glaucoma every year and provides an opportunity to discuss innovations, clinical and scientific experiences in the field. The knowledge and experience gained in this conference are used by our local ophthalmologists, both in Baku and in all regions of our country, creating broad opportunities for the prevention, early diagnosis and appropriate treatment of glaucoma among the population. This year, adhering to the tradition, we invite all our colleagues who are interested in glaucoma to participate in the VI conference of Azerbaijani glaucomatologists on March 15.',
+      title: 'March 15, 2025',
       price: 0,
       url: 'https://youtu.be/ZYp1vuKR4UY',
     },
