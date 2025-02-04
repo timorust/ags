@@ -11,7 +11,7 @@ function EventConference() {
   const [conference] = useState([
     {
       id: 1,
-      image: '/meeting10.jpg', // Replace with your local or hosted image URLs
+      image: '/meeting10.png', // Replace with your local or hosted image URLs
       name: t('VIText'),
       category: 'Free',
       title: 'March 15, 2025',
