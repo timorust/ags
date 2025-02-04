@@ -16,7 +16,7 @@ function EventConference() {
       category: 'Free',
       title: 'March 15, 2025',
       price: 0,
-      url: 'https://youtu.be/ZYp1vuKR4UY',
+      url: 'https://youtu.be/kbKvlHWicKo',
     },
     {
       id: 2,
