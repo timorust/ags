@@ -32,7 +32,7 @@ function App() {
 					/>
 					<Route
 						path='/registration'
-						element={authUser ? <RegisterLecture /> : <Navigate to='/signup' />}
+						element={<RegisterLecture />}
 					/>
 					<Route path='/meeting' element={<Meetings />} />
 					<Route path='/contact' element={<SendEmail />} />
