@@ -37,7 +37,7 @@ const StripeButton = () => {
 			amount={product.price * 100}
 		>
 			<div className='rounded-full border-[2px] bg-pink-500 text-white px-3 py-2 rounded-md hover:bg-pink-700 duration-300 cursor-pointer'>
-				Buy now ₼{product.price}
+				Buy now ${product.price}
 			</div>
 		</StripeCheckout>
 	)
