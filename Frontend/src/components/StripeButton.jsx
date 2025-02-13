@@ -36,8 +36,8 @@ const StripeButton = () => {
 			name='By Congress'
 			amount={product.price * 100}
 		>
-			<div className='rounded-full border-[2px] bg-green-500 text-white px-3 py-2 rounded-md hover:bg-green-700 duration-300 cursor-pointer'>
-				Buy now ${product.price}
+			<div className='rounded-full border-[2px] bg-yellow-300 text-white px-3 py-2 rounded-md hover:bg-yellow-500 duration-300 cursor-pointer'>
+				Buy now ₼{product.price}
 			</div>
 		</StripeCheckout>
 	)
