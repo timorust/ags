@@ -82,7 +82,7 @@ const Cards = ({ item }) => {
               </div>
 
               {/* כפתור תשלום */}
-              <StripeButton/>
+              {/* <StripeButton/> */}
             </div>
           )}
 
