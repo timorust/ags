@@ -6,6 +6,7 @@ import userRoute from "./route/user.route.js"
 import path from "path"
 import { fileURLToPath } from 'url'
 import cors from "cors"
+import paymentRoutes from "./route/payment.route.js"
 
 // Resolving dirname for ES Module
 const __filename = fileURLToPath(import.meta.url)
@@ -52,6 +53,7 @@ connectToDb()
 app.use("/", conferenceRoute)
 app.use("/registration", registrationRoute)
 app.use("/user", userRoute)
+app.use("/payment", paymentRoutes)
 
 // Use the frontend app
 app.use(express.static(path.join(__dirname, "Frontend", "dist")))
