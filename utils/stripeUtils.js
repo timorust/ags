@@ -25,7 +25,7 @@ export const createStripePayment = async (product, token) => {
       {
         customer: customer.id,
         amount: product.price * 100,
-        currency: "usd",
+        currency: "azn",
         receipt_email: token.email,
         description: `Purchase of ${product.name}`,
         shipping: {
