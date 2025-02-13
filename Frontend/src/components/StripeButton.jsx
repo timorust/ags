@@ -1,7 +1,9 @@
 import { useState } from 'react'
 import StripeCheckout from 'react-stripe-checkout'
+import { useTranslation } from 'react-i18next';
 
 const StripeButton = () => {
+	const { t } = useTranslation();
 	const [product] = useState({
 		name: 'Congress from AGS',
 		price: 100,
@@ -37,7 +39,7 @@ const StripeButton = () => {
 			amount={product.price * 100}
 		>
 			<div className='rounded-full border-[2px] bg-pink-500 text-white px-3 py-2 rounded-md hover:bg-pink-700 duration-300 cursor-pointer'>
-				Buy now ${product.price}
+			{t('Buy now')}${product.price}
 			</div>
 		</StripeCheckout>
 	)
