@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types'
 import { useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next';
+import StripeButton from './StripeButton'
+
 
 const Cards = ({ item }) => {
 
@@ -27,25 +29,25 @@ const Cards = ({ item }) => {
           />
         </a>
       </figure>
-  
+
       {/* גוף הכרטיס */}
       <div className='card-body'>
         {/* שם הפריט (item.name) */}
-        <h6 
+        <h6
           className="card-title text-lg sm:text-xl whitespace-normal break-words max-w-full overflow-hidden text-ellipsis" // הגדרות לתמיכה בטקסט ארוך
           title={t(item.name)} // תצוגת הטקסט המלאה ב-tooltip
         >
           {truncateText(t(item.name), 30)} {/* קיצוץ אם הטקסט מאוד ארוך */}
         </h6>
-  
+
         {/* תיאור הפריט (item.title) */}
-        <p 
+        <p
           className="text-sm sm:text-base whitespace-normal break-words max-w-full overflow-hidden text-ellipsis" // הגדרות לתמיכה בטקסט ארוך
           title={item.title} // תצוגת הטקסט המלאה ב-tooltip
         >
           {truncateText(item.title, 50)} {/* קיצוץ אם הטקסט מאוד ארוך */}
         </p>
-  
+
         {/* פעולות הכרטיס */}
         <div className='card-actions justify-between mt-4'>
           {/* כפתור קישור */}
@@ -57,21 +59,38 @@ const Cards = ({ item }) => {
           >
             {t('Visit Link')}
           </a>
-  
+
           {/* כפתור הרשמה אם הקטגוריה היא "Free" */}
-          {item.category === 'Free' && (
+          {/* {item.category === 'Free' && (
             <div
               className='rounded-full border-[2px] bg-green-500 text-white px-3 py-2 rounded-md hover:bg-green-700 duration-300 cursor-pointer'
               onClick={handleClick}
             >
               {t('Register')}
             </div>
+            
+          )} */}
+
+          {/* כפתור הרשמה אם הקטגוריה היא "Free" */}
+          {item.category === 'Free' && (
+            <div className="flex items-center space-x-4">
+              <div
+                className="rounded-full border-[2px] bg-green-500 text-white px-3 py-2 rounded-md hover:bg-green-700 duration-300 cursor-pointer"
+                onClick={handleClick}
+              >
+                {t('Register')}
+              </div>
+
+              {/* כפתור תשלום */}
+              <StripeButton/>
+            </div>
           )}
+
         </div>
       </div>
     </div>
   )
-  
+
 }
 
 Cards.propTypes = {
