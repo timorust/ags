@@ -12,7 +12,7 @@ function Home() {
 	return (
 		<>
 			{/* <CountdownTimer targetDate='2025-03-15T09:00:00' /> */}
-			<CountdownTimerAlert targetDate='2025-03-15T00:00:00' />
+			<CountdownTimerAlert targetDate='2025-03-15T09:00:00' />
 			<Navbar />
 			<Banner />
 			<VideoWithDescription />
