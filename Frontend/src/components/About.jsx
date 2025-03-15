@@ -40,7 +40,7 @@ function About() {
 			<Navbar />
 			{/* <CountdownTimer targetDate='2025-03-15T09:00:00' /> */}
 			<div className='max-w-screen-lg container mx-auto px-4 md:px-12 mb-8'>
-				<div className='mt-20 items-center justify-center text-center mb-8'>
+				<div className='mt-16 items-center justify-center text-center mb-8'>
 					<h1 className="text-xl md:text-3xl">
 						{t('AboutTitle')}<span className="text-yellow-500">!</span>
 					</h1>
