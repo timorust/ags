@@ -24,8 +24,8 @@ function Meeting() {
   return (
     <div className="max-w-screen-2xl container mx-auto px-6 md:px-20">
       {/* Header Section */}
-      <div className="text-center mt-16">
-        <h1 className="text-2xl md:text-4xl">
+      <div className="text-center">
+        <h1 className="text-2xl mt-16 md:text-4xl">
           <span className="text-yellow-500">{t('WELCOME TO AGC-2025')}</span>
         </h1>
         {/* Featured Card Section */}
