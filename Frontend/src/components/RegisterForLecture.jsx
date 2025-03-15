@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from 'react'
 import axios from 'axios'
 import Navbar from './Navbar'
 import Footer from './Footer'
-import CountdownTimer from './CountdownTimer'
+// import CountdownTimer from './CountdownTimer'
 import { useTranslation } from 'react-i18next'
 
 function RegisterLecture() {
@@ -58,7 +58,7 @@ function RegisterLecture() {
 	return (
 		<>
 			<Navbar />
-			<CountdownTimer targetDate='2025-03-15T09:00:00' />
+			{/* <CountdownTimer targetDate='2025-03-15T09:00:00' /> */}
 			<div className='max-w-screen-2xl container mx-auto md:px-20 px-6 mb-6'>
 				<div className='mt-10 items-center justify-center text-center'>
 					<h1 className='text-2xl md:text-4xl'>
