@@ -41,7 +41,7 @@ function SendEmail() {
 		<>
 			{/* <Navbar /> */}
 			{/* <CountdownTimer targetDate='2025-03-15T09:00:00' /> */}
-			<div className='max-w-screen-2xl container mx-auto md:px-20 px-6 mb-10 pt-16'>
+			<div className='max-w-screen-2xl container mx-auto md:px-20 px-6 mb-10 pt-10'>
 				<div className='pt-16 items-center justify-center text-center'>
 					<h1 className='text-2xl md:text-4xl dark:text-white text-grey break-words whitespace-normal leading-snug sm:leading-normal lg:leading-relaxed text-center'>
 						{t('Join Our Event')},{' '}
