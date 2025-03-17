@@ -156,20 +156,13 @@ function Navbar() {
                   />
                 </svg>
               </div>
-              {/* <ul
-                tabIndex={0}
-                className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100/80 rounded-box w-40 dark:bg-slate-900/80 dark:text-white"
-              >
-                {navItems}
-              </ul> */}
               <ul
                 tabIndex={0}
-                className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100/80 rounded-box w-40 dark:bg-slate-900/80 dark:text-white flex flex-col items-center space-y-3"
+                className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100/80 rounded-box w-40 dark:bg-slate-900/80 dark:text-white flex flex-col justify-between space-y-2"
               >
                 {navItems}
               </ul>
-
-
+             
             </div>
             <a className='text-2xl font-bold cursor-pointer flex items-center gap-2'>
               <Link to="/">
