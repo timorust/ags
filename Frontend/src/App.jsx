@@ -5,7 +5,7 @@ import { useAuth } from './context/AuthProvider'
 import './i18n'
 import Meetings from './meetings/Meetings'
 import Signup from './components/Signup'
-import SendEmail from './components/Contact'
+// import SendEmail from './components/Contact'
 import About from './components/About'
 import RegisterLecture from './components/RegisterForLecture'
 import DataTable from './components/DataTable'
@@ -35,7 +35,7 @@ function App() {
 						element={<RegisterLecture />}
 					/>
 					<Route path='/meeting' element={<Meetings />} />
-					<Route path='/contact' element={<SendEmail />} />
+					{/* <Route path='/contact' element={<SendEmail />} /> */}
 					<Route path='/about' element={<About />} />
 				</Routes>
 				<Toaster />
