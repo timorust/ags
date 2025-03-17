@@ -43,32 +43,32 @@ function Navbar() {
   }, [])
 
 
- 
 
-const navItems = (
-  <>
-    <li>
-      <NavLink 
-        to="/" 
-        className={({ isActive }) => 
-          isActive ? "text-yellow-500 font-bold" : "text-blue-500 hover:text-blue-600 duration-200"
-        }
-      >
-        {t('Home')}
-      </NavLink>
-    </li>
-    <li>
-      <NavLink 
-        to="/meeting" 
-        className={({ isActive }) => 
-          isActive ? "text-yellow-500 font-bold" : "text-blue-500 hover:text-blue-600 duration-200"
-        }
-      >
-        {t('Events')}
-      </NavLink>
-    </li>
-    <li>
-      {/* <NavLink 
+
+  const navItems = (
+    <>
+      <li>
+        <NavLink
+          to="/"
+          className={({ isActive }) =>
+            isActive ? "text-yellow-500 font-bold" : "text-blue-500 hover:text-blue-600 duration-200"
+          }
+        >
+          {t('Home')}
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/meeting"
+          className={({ isActive }) =>
+            isActive ? "text-yellow-500 font-bold" : "text-blue-500 hover:text-blue-600 duration-200"
+          }
+        >
+          {t('Events')}
+        </NavLink>
+      </li>
+      <li>
+        {/* <NavLink 
         to="/contact" 
         className={({ isActive }) => 
           isActive ? "text-yellow-500 font-bold" : "text-blue-500 hover:text-blue-600 duration-200"
@@ -76,49 +76,49 @@ const navItems = (
       >
         {t('Contact')}
       </NavLink> */}
-    </li>
-    <li>
-      <NavLink 
-        to="/about" 
-        className={({ isActive }) => 
-          isActive ? "text-yellow-500 font-bold" : "text-blue-500 hover:text-blue-600 duration-200"
-        }
-      >
-        {t('About')}
-      </NavLink>
-    </li>
-    <li>
-      <NavLink 
-        to="/media" 
-        className={({ isActive }) => 
-          isActive ? "text-yellow-500 font-bold" : "text-blue-500 hover:text-blue-600 duration-200"
-        }
-      >
-        {t('Media')}
-      </NavLink>
-    </li>
-    <li>
-      <NavLink 
-        to="/registration" 
-        className={({ isActive }) => 
-          isActive ? "text-yellow-500 font-bold" : "text-blue-500 hover:text-blue-600 duration-200"
-        }
-      >
-        {t('Join')}
-      </NavLink>
-    </li>
-    <li>
-      <NavLink 
-        to="/list" 
-        className={({ isActive }) => 
-          isActive ? "text-yellow-500 font-bold" : "text-blue-500 hover:text-blue-600 duration-200"
-        }
-      >
-        {t('Program')}
-      </NavLink>
-    </li>
-  </>
-);
+      </li>
+      <li>
+        <NavLink
+          to="/about"
+          className={({ isActive }) =>
+            isActive ? "text-yellow-500 font-bold" : "text-blue-500 hover:text-blue-600 duration-200"
+          }
+        >
+          {t('About')}
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/media"
+          className={({ isActive }) =>
+            isActive ? "text-yellow-500 font-bold" : "text-blue-500 hover:text-blue-600 duration-200"
+          }
+        >
+          {t('Media')}
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/registration"
+          className={({ isActive }) =>
+            isActive ? "text-yellow-500 font-bold" : "text-blue-500 hover:text-blue-600 duration-200"
+          }
+        >
+          {t('Join')}
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/list"
+          className={({ isActive }) =>
+            isActive ? "text-yellow-500 font-bold" : "text-blue-500 hover:text-blue-600 duration-200"
+          }
+        >
+          {t('Program')}
+        </NavLink>
+      </li>
+    </>
+  );
 
   const handleSearch = (query) => { // //שינוי
     const searchURL = `https://www.google.com/search?q=${query}`;
@@ -156,12 +156,19 @@ const navItems = (
                   />
                 </svg>
               </div>
-              <ul
+              {/* <ul
                 tabIndex={0}
                 className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100/80 rounded-box w-40 dark:bg-slate-900/80 dark:text-white"
               >
                 {navItems}
+              </ul> */}
+              <ul
+                tabIndex={0}
+                className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100/80 rounded-box w-40 dark:bg-slate-900/80 dark:text-white flex flex-col items-center space-y-3"
+              >
+                {navItems}
               </ul>
+
 
             </div>
             <a className='text-2xl font-bold cursor-pointer flex items-center gap-2'>
