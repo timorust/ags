@@ -26,14 +26,14 @@ function Footer() {
 						{t('Events')}
 					</NavLink>
 
-					<NavLink
+					{/* <NavLink
 						to="/contact"
 						className={({ isActive }) =>
 							isActive ? "text-yellow-500 font-bold link link-hover" : "text-blue-500 hover:text-blue-600 duration-200 link link-hover"
 						}
 					>
 						{t('Contact')}
-					</NavLink>
+					</NavLink> */}
 
 					<NavLink
 						to="/about"

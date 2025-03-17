@@ -1,6 +1,7 @@
 import Navbar from '../components/Navbar'
 import Banner from '../components/Banner'
 import Footer from '../components/Footer'
+import Contact from '../components/Contact'
 import VideoWithDescription from '../components/VideoWithDescription'
 // import CountdownTimer from '../components/CountdownTimer'
 import Hero from '../components/Hero'
@@ -18,6 +19,7 @@ function Home() {
 			<VideoWithDescription />
 			<Hero />
 			<EventConference />
+			<Contact/>
 			<Footer />
 		</>
 	)

@@ -68,14 +68,14 @@ const navItems = (
       </NavLink>
     </li>
     <li>
-      <NavLink 
+      {/* <NavLink 
         to="/contact" 
         className={({ isActive }) => 
           isActive ? "text-yellow-500 font-bold" : "text-blue-500 hover:text-blue-600 duration-200"
         }
       >
         {t('Contact')}
-      </NavLink>
+      </NavLink> */}
     </li>
     <li>
       <NavLink 
