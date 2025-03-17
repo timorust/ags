@@ -42,9 +42,9 @@ function VideoMeeting() {
     <>
       <Navbar />
       {/* <CountdownTimer targetDate="2025-03-15T09:00:00" /> */}
-      <div className="max-w-screen-2xl container mx-auto px-6 md:px-20">
+      <div className="max-w-screen-2xl container mx-auto px-6 md:px-20 pt-16">
         {/* Header Section */}
-        <div className="mt-16 text-center">
+        <div className="pt-16 text-center">
           <h1 className="text-2xl md:text-4xl">
             <span className="text-yellow-500">{t('MEDIA GALLERY')}</span>
           </h1>
