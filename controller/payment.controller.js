@@ -1,3 +1,5 @@
+import { createStripePayment } from "../utils/stripeUtils.js"
+
 export default async function processPayment(req, res) {
 	try {
 		const { product, token } = req.body;
