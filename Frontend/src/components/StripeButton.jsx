@@ -11,7 +11,7 @@ const StripeButton = () => {
 	})
 
 	const makePayment = token => {
-		fetch(`https://www.ags-az.com/payment`, {
+		fetch(`/payment`, {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
