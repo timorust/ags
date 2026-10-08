@@ -7,7 +7,12 @@ const conferenceSchema = mongoose.Schema({
     image: String,
     title: String,
     url: String,
+    paymentEnabled: {
+        type: Boolean,
+        default: false,
+    },
 })
+
 const Conference = mongoose.model("Conference", conferenceSchema)
 
 export default Conference

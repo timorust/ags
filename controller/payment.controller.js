@@ -1,16 +1,13 @@
 import Conference from "../model/conference.model.js"
 import { createStripePayment } from "../utils/stripeUtils.js"
 
-const PAYABLE_CONFERENCE_ID = "676bace0326a947b99e7b610"
-const CONFERENCE_PRICE_USD = 100
-
 export default async function processPayment(req, res) {
         try {
                 const { conferenceId, token } = req.body
 
-                if (conferenceId !== PAYABLE_CONFERENCE_ID) {
+                if (!conferenceId) {
                         return res.status(400).json({
-                                error: "Payment is not available for this conference",
+                                error: "Conference ID is required",
                         })
                 }
 
@@ -22,9 +19,21 @@ export default async function processPayment(req, res) {
                         })
                 }
 
+                if (conference.paymentEnabled !== true) {
+                        return res.status(400).json({
+                                error: "Payment is not available for this conference",
+                        })
+                }
+
+                if (!Number.isFinite(conference.price) || conference.price <= 0) {
+                        return res.status(500).json({
+                                error: "Conference price is invalid",
+                        })
+                }
+
                 const product = {
                         name: conference.name,
-                        price: CONFERENCE_PRICE_USD,
+                        price: conference.price,
                 }
 
                 const charge = await createStripePayment(product, token)
