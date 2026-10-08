@@ -76,3 +76,7 @@ export const createCheckoutSession = async conference => {
     cancel_url: `${origin}/meeting?checkout=cancelled`,
   })
 }
+
+export const retrieveCheckoutSession = async sessionId => {
+  return stripe.checkout.sessions.retrieve(sessionId)
+}
