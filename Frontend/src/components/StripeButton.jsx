@@ -33,7 +33,7 @@ const StripeButton = ({ conferenceId, price }) => {
 
         return (
                 <StripeCheckout
-                        stripeKey='pk_test_51PMHJLD2fhn4jTSPIzW6eQmeVQHQc6s4S0DH2hCXiKkoV6Q0YZjOCAdSP8iaBPhQR31kZlCUjLjJ4Q7rRPigOZwS00bqewuKwX'
+                        stripeKey={import.meta.env.VITE_STRIPE_PUBLISHABLE_KEY}
                         token={makePayment}
                         name='AGS Conference'
                         amount={Math.round(price * 100)}
