@@ -1,9 +1,10 @@
 import Conference from "../model/conference.model.js"
-import { createStripePayment } from "../utils/stripeUtils.js"
+// import { createStripePayment } from "../utils/stripeUtils.js"
+import { createCheckoutSession } from "../utils/stripeUtils.js"
 
 export default async function processPayment(req, res) {
         try {
-                const { conferenceId, token } = req.body
+                const { conferenceId } = req.body
 
                 if (!conferenceId) {
                         return res.status(400).json({
@@ -31,17 +32,16 @@ export default async function processPayment(req, res) {
                         })
                 }
 
-                const product = {
-                        name: conference.name,
-                        price: conference.price,
-                }
+                const session = await createCheckoutSession(conference)
 
-                const charge = await createStripePayment(product, token)
-
-                return res.status(200).json(charge)
+return res.status(200).json({
+        url: session.url,
+})
         } catch (error) {
-                return res.status(500).json({
-                        error: error.message,
-                })
+                console.error("Checkout creation failed:", error.message)
+
+return res.status(500).json({
+        error: "Unable to create checkout session",
+})
         }
 }

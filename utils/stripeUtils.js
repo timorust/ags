@@ -41,3 +41,38 @@ export const createStripePayment = async (product, token) => {
     throw error
   }
 }
+
+export const createCheckoutSession = async conference => {
+  const baseUrl = process.env.APP_BASE_URL
+
+  if (!baseUrl) {
+    throw new Error("APP_BASE_URL is missing")
+  }
+
+  const origin = new URL(baseUrl).origin
+  const conferenceId = conference._id.toString()
+
+  return stripe.checkout.sessions.create({
+    mode: "payment",
+    payment_method_types: ["card"],
+    line_items: [
+      {
+        price_data: {
+          currency: "usd",
+          product_data: {
+            name: conference.name,
+          },
+          unit_amount: Math.round(conference.price * 100),
+        },
+        quantity: 1,
+      },
+    ],
+    client_reference_id: conferenceId,
+    metadata: {
+      conferenceId,
+    },
+    success_url:
+      `${origin}/meeting?session_id={CHECKOUT_SESSION_ID}`,
+    cancel_url: `${origin}/meeting?checkout=cancelled`,
+  })
+}
