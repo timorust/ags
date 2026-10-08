@@ -1,11 +1,16 @@
+import { useState } from 'react'
 import PropTypes from 'prop-types'
-import StripeCheckout from 'react-stripe-checkout'
 import { useTranslation } from 'react-i18next'
 
 const StripeButton = ({ conferenceId, price }) => {
         const { t } = useTranslation()
+        const [isLoading, setIsLoading] = useState(false)
 
-        const makePayment = async token => {
+        const makePayment = async () => {
+                if (isLoading) return
+
+                setIsLoading(true)
+
                 try {
                         const response = await fetch('/payment', {
                                 method: 'POST',
@@ -14,38 +19,45 @@ const StripeButton = ({ conferenceId, price }) => {
                                 },
                                 body: JSON.stringify({
                                         conferenceId,
-                                        token,
                                 }),
                         })
 
                         const data = await response.json()
 
                         if (!response.ok) {
-                                throw new Error(data.error || 'Payment failed')
+                                throw new Error(
+                                        data.error || 'Unable to open checkout'
+                                )
                         }
 
-                        alert('Payment successful!')
+                        const checkoutUrl = new URL(data.url)
+
+                        if (
+                                checkoutUrl.protocol !== 'https:' ||
+                                checkoutUrl.hostname !== 'checkout.stripe.com'
+                        ) {
+                                throw new Error('Invalid checkout URL')
+                        }
+
+                        window.location.assign(checkoutUrl.href)
                 } catch (error) {
-                        console.error('Payment Error:', error)
-                        alert(`Payment failed: ${error.message}`)
+                        console.error('Checkout Error:', error)
+                        alert(`Checkout failed: ${error.message}`)
+                        setIsLoading(false)
                 }
         }
 
         return (
-                <StripeCheckout
-                        stripeKey={import.meta.env.VITE_STRIPE_PUBLISHABLE_KEY}
-                        token={makePayment}
-                        name='AGS Conference'
-                        amount={Math.round(price * 100)}
-                        currency='USD'
+                <button
+                        type='button'
+                        onClick={makePayment}
+                        disabled={isLoading}
+                        className='border-2 bg-pink-500 text-white px-3 py-2 rounded-md hover:bg-pink-700 duration-300 cursor-pointer disabled:opacity-50 disabled:cursor-wait'
                 >
-                        <button
-                                type='button'
-                                className='border-2 bg-pink-500 text-white px-3 py-2 rounded-md hover:bg-pink-700 duration-300 cursor-pointer'
-                        >
-                                {t('Buy now')} ${price}
-                        </button>
-                </StripeCheckout>
+                        {isLoading
+                                ? t('Loading...')
+                                : `${t('Buy now')} $${price}`}
+                </button>
         )
 }
 
