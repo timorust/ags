@@ -8,7 +8,7 @@
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"start": "node -r dotenv/config index.js",
         "dev": "nodemon -r dotenv/config index.js",
-		"build": "npm install --prefix ./Frontend && npm run build --prefix ./Frontend && npm install"
+		"build": "npm ci && npm ci --prefix ./Frontend --include=dev && npm run build --prefix ./Frontend"
 	},
 	"repository": {
 		"type": "git",
