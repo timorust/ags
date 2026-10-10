@@ -6,8 +6,9 @@
 	"type": "module",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"start": "nodemon index.js",
-		"build": "npm install --prefix ./Frontend && npm run build --prefix ./Frontend && npm install"
+		"start": "node -r dotenv/config index.js",
+        "dev": "nodemon -r dotenv/config index.js",
+		"build": "npm ci && npm ci --prefix ./Frontend --include=dev && npm run build --prefix ./Frontend"
 	},
 	"repository": {
 		"type": "git",

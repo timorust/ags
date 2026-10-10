@@ -1,48 +1,69 @@
 import { useState } from 'react'
-import StripeCheckout from 'react-stripe-checkout'
-import { useTranslation } from 'react-i18next';
+import PropTypes from 'prop-types'
+import { useTranslation } from 'react-i18next'
 
-const StripeButton = () => {
-	const { t } = useTranslation();
-	const [product] = useState({
-		name: 'Congress from AGS',
-		price: 100,
-		productBy: 'AGS',
-	})
+const StripeButton = ({ conferenceId, price }) => {
+        const { t } = useTranslation()
+        const [isLoading, setIsLoading] = useState(false)
 
-	const makePayment = token => {
-		fetch(`https://www.ags-az.com/payment`, {
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json',
-			},
-			body: JSON.stringify({
-				token,
-				product,
-			}),
-		})
-			.then(response => response.json())
-			.then(() => {
-				alert('Payment successful!')
-			})
-			.catch(error => {
-				console.error('Payment Error:', error)
-				alert('Payment failed.')
-			})
-	}
+        const makePayment = async () => {
+                if (isLoading) return
 
-	return (
-		<StripeCheckout
-			stripeKey='pk_test_51PMHJLD2fhn4jTSPIzW6eQmeVQHQc6s4S0DH2hCXiKkoV6Q0YZjOCAdSP8iaBPhQR31kZlCUjLjJ4Q7rRPigOZwS00bqewuKwX'
-			token={makePayment}
-			name='By Congress'
-			amount={product.price * 100}
-		>
-			<div className='rounded-full border-[2px] bg-pink-500 text-white px-3 py-2 rounded-md hover:bg-pink-700 duration-300 cursor-pointer'>
-			{t('Buy now')}${product.price}
-			</div>
-		</StripeCheckout>
-	)
+                setIsLoading(true)
+
+                try {
+                        const response = await fetch('/payment', {
+                                method: 'POST',
+                                headers: {
+                                        'Content-Type': 'application/json',
+                                },
+                                body: JSON.stringify({
+                                        conferenceId,
+                                }),
+                        })
+
+                        const data = await response.json()
+
+                        if (!response.ok) {
+                                throw new Error(
+                                        data.error || 'Unable to open checkout'
+                                )
+                        }
+
+                        const checkoutUrl = new URL(data.url)
+
+                        if (
+                                checkoutUrl.protocol !== 'https:' ||
+                                checkoutUrl.hostname !== 'checkout.stripe.com'
+                        ) {
+                                throw new Error('Invalid checkout URL')
+                        }
+
+                        window.location.assign(checkoutUrl.href)
+                } catch (error) {
+                        console.error('Checkout Error:', error)
+                        alert(`Checkout failed: ${error.message}`)
+                        setIsLoading(false)
+                }
+        }
+
+        return (
+                <button
+                        type='button'
+                        onClick={makePayment}
+                        disabled={isLoading}
+                        className='border-2 bg-pink-500 text-white px-3 py-2 rounded-md hover:bg-pink-700 duration-300 cursor-pointer disabled:opacity-50 disabled:cursor-wait'
+                >
+                        {isLoading
+                                ? t('Loading...')
+                                : `${t('Buy now')} $${price}`}
+                </button>
+        )
+}
+
+StripeButton.propTypes = {
+        conferenceId: PropTypes.string.isRequired,
+        price: PropTypes.number.isRequired,
 }
 
 export default StripeButton

@@ -17,7 +17,7 @@ i18n
 		},
 
 		backend: {
-			loadPath: "https://ags-az.onrender.com/locales/{{lng}}/{{ns}}.json"
+			loadPath: "/locales/{{lng}}/{{ns}}.json"
 		},
 	})
 

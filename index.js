@@ -35,10 +35,7 @@ const MONGODB_URI = process.env.MongoDB
 // MongoDB connection function
 const connectToDb = async () => {
     try {
-        await mongoose.connect(MONGODB_URI, {
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
-        })
+        await mongoose.connect(MONGODB_URI)
         console.log("Connected to MongoDB")
     } catch (error) {
         console.error("Error connecting to MongoDB:", error)
@@ -46,8 +43,7 @@ const connectToDb = async () => {
     }
 }
 
-// Establish the connection to the database
-connectToDb()
+
 
 // Setup routes
 app.use("/", conferenceRoute)
@@ -73,7 +69,9 @@ app.use((req, res, next) => {
     res.status(404).send({ error: "Route not found" })
 })
 
-// Start the server
+// Connect to MongoDB before accepting requests
+await connectToDb()
+
 app.listen(PORT, () => {
     console.log(`Server is listening on port ${PORT}`)
 })

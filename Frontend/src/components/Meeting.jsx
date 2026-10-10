@@ -11,7 +11,7 @@ function Meeting() {
   useEffect(() => {
     const getConference = async () => {
       try {
-        const res = await axios.get('https://www.ags-az.com/conference');
+        const res = await axios.get('/conference');
         console.log(res.data);
         setConference(res.data);
       } catch (error) {
